@@ -9,7 +9,7 @@ namespace NetSatis.Entities.Tables
     public class Stok
     {
         public int Id { get; set; }
-        public bool Durum { get; set; }
+        public bool Durumu { get; set; }
         public string StokKodu { get; set; }
         public string StokAdi { get; set; }
         public string Barkod { get; set; }
@@ -24,7 +24,7 @@ namespace NetSatis.Entities.Tables
         public string OzelKod3 { get; set; }
         public string OzelKod4 { get; set; }
         public string GarantiSuresi { get; set; }
-        public string UraticiKodu { get; set; }
+        public string UreticiKodu { get; set; }
         public int AlisKdv { get; set; }
         public int SatisKdv { get; set; }
         public decimal AlisFiyati1 { get; set; }
@@ -35,6 +35,6 @@ namespace NetSatis.Entities.Tables
         public decimal SatisFiyati3 { get; set; }
         public decimal MinStokMiktarı { get; set; }
         public decimal MaxStokMiktarı { get; set; }
-
+        public string Aciklama { get; set; }
     }
 }

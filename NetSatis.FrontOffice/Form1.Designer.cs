@@ -1,4 +1,5 @@
-﻿namespace NetSatis.FrontOffice
+﻿
+namespace NetSatis.FrontOffice
 {
     partial class Form1
     {

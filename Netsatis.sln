@@ -1,13 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 17
-VisualStudioVersion = 17.3.32819.101
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32929.386
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetSatis.Entities", "NetSatis.Entities\NetSatis.Entities.csproj", "{C44DCA00-7517-45DD-8840-99C1EBEB6B00}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetSatis.BackOffice", "NetSatis.BackOffice\NetSatis.BackOffice.csproj", "{1DD08F14-DA2B-411A-98A4-F54612BD619C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetSatis.BackOffice", "NetSatis.BackOffice\NetSatis.BackOffice.csproj", "{D94E96B6-AA94-4774-BACB-32E887839F9C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetSatis.FrontOffice", "NetSatis.FrontOffice\NetSatis.FrontOffice.csproj", "{7794977B-515C-460F-8230-9C9E8C706489}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetSatis.FrontOffice", "NetSatis.FrontOffice\NetSatis.FrontOffice.csproj", "{567290F8-EF6E-4F54-B3B6-3E216D07ABF8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,14 +19,14 @@ Global
 		{C44DCA00-7517-45DD-8840-99C1EBEB6B00}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C44DCA00-7517-45DD-8840-99C1EBEB6B00}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C44DCA00-7517-45DD-8840-99C1EBEB6B00}.Release|Any CPU.Build.0 = Release|Any CPU
-		{1DD08F14-DA2B-411A-98A4-F54612BD619C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{1DD08F14-DA2B-411A-98A4-F54612BD619C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{1DD08F14-DA2B-411A-98A4-F54612BD619C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{1DD08F14-DA2B-411A-98A4-F54612BD619C}.Release|Any CPU.Build.0 = Release|Any CPU
-		{7794977B-515C-460F-8230-9C9E8C706489}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{7794977B-515C-460F-8230-9C9E8C706489}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{7794977B-515C-460F-8230-9C9E8C706489}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{7794977B-515C-460F-8230-9C9E8C706489}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D94E96B6-AA94-4774-BACB-32E887839F9C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D94E96B6-AA94-4774-BACB-32E887839F9C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D94E96B6-AA94-4774-BACB-32E887839F9C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D94E96B6-AA94-4774-BACB-32E887839F9C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{567290F8-EF6E-4F54-B3B6-3E216D07ABF8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{567290F8-EF6E-4F54-B3B6-3E216D07ABF8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{567290F8-EF6E-4F54-B3B6-3E216D07ABF8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{567290F8-EF6E-4F54-B3B6-3E216D07ABF8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
