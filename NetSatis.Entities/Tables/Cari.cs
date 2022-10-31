@@ -9,7 +9,7 @@ namespace NetSatis.Entities.Tables
     public class Cari
     {
         public int Id { get; set; }
-        public bool Durum { get; set; }
+        public bool Durumu { get; set; }
         public string CariTuru { get; set; }
         public string CariKodu { get; set; }
         public string CariAdi { get; set; }
