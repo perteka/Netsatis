@@ -69,6 +69,8 @@
   <ItemGroup>
     <Compile Include="Class1.cs" />
     <Compile Include="Context\NetSatisContext.cs" />
+    <Compile Include="Data Access\CariDAL.cs" />
+    <Compile Include="Data Access\StokDAL.cs" />
     <Compile Include="Mapping\CariMap.cs" />
     <Compile Include="Mapping\DepoMap.cs" />
     <Compile Include="Mapping\FisMap.cs" />
@@ -99,6 +101,8 @@
     <Compile Include="Validations\OdemeTuruValidator.cs" />
     <Compile Include="Validations\StokValidator.cs" />
     <Compile Include="Validations\TanimValidator.cs" />
+    <Compile Include="İnterfaces\IEntity.cs" />
+    <Compile Include="İnterfaces\IEntityRepository.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

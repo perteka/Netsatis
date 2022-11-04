@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using NetSatis.Entities.İnterfaces;
 
 namespace NetSatis.Entities.Tables
 {
-    public class Cari
+    public class Cari :IEntity
     {
         public int Id { get; set; }
         public bool Durumu { get; set; }

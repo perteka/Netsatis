@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using NetSatis.Entities.İnterfaces;
 namespace NetSatis.Entities.Tables
 {
-    public class Kasa
+    public class Kasa :IEntity
     {
         public int Id { get; set; }
         public string KasaKodu { get; set; }

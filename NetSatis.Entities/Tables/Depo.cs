@@ -3,10 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using NetSatis.Entities.İnterfaces;
+
+
 
 namespace NetSatis.Entities.Tables
 {
-    public class Depo
+    public class Depo : IEntity
     {
         public int Id { get; set; }
         public string DepoKodu { get; set; }

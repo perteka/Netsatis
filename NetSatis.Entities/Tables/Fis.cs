@@ -6,10 +6,11 @@ using System.Runtime.ConstrainedExecution;
 using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
+using NetSatis.Entities.İnterfaces;
 
 namespace NetSatis.Entities.Tables
 {
-    public class Fis
+    public class Fis : IEntity
     {
         public int Id { get; set; }
         public string FisKodu { get; set; }
