@@ -1,4 +1,5 @@
-﻿using NetSatis.Entities.Tables;
+﻿using NetSatis.Entities.Mapping;
+using NetSatis.Entities.Tables;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity;
@@ -21,5 +22,17 @@ namespace NetSatis.Entities.Context
         public DbSet<StokHareket> StokHareketleri { get; set; }
         public DbSet<Tanim> Tanimlar { get; set; }
 
+        protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        {
+            modelBuilder.Configurations.Add(new StokMap());
+            modelBuilder.Configurations.Add(new CariMap());
+            modelBuilder.Configurations.Add(new DepoMap());
+            modelBuilder.Configurations.Add(new FisMap());
+            modelBuilder.Configurations.Add(new KasaHareketMap());
+            modelBuilder.Configurations.Add(new KasaMap());
+            modelBuilder.Configurations.Add(new OdemeTuruMap());
+            modelBuilder.Configurations.Add(new StokHareketMap());
+            modelBuilder.Configurations.Add(new TanimMap());
+        }
     }
 }

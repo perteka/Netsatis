@@ -9,16 +9,16 @@ using System.Threading.Tasks;
 
 namespace NetSatis.Entities.Mapping
 {
-    public class KasaMap:EntityTypeConfiguration<Kasa>
+    public class KasaMap : EntityTypeConfiguration<Kasa>
     {
         public KasaMap()
         {
             this.HasKey(p => p.Id);
             this.Property(p => p.Id).HasDatabaseGeneratedOption(DatabaseGeneratedOption.Identity);
-            this.Property(p => p.KasaKodu).HasMaxLength(30);
+            this.Property(p => p.KasaKodu).HasMaxLength(12);
             this.Property(p => p.KasaAdi).HasMaxLength(30);
-            this.Property(p => p.YetkiliKodu).HasMaxLength(30);
-            this.Property(p => p.YetkiliAdi).HasMaxLength(30);
+            this.Property(p => p.YetkiliKodu).HasMaxLength(12);
+            this.Property(p => p.YetkiliAdi).HasMaxLength(50);
             this.Property(p => p.Aciklama).HasMaxLength(200);
 
             this.ToTable("Kasalar");

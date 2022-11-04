@@ -15,14 +15,14 @@ namespace NetSatis.Entities.Mapping
         {
             this.HasKey(p => p.Id);
             this.Property(p => p.Id).HasDatabaseGeneratedOption(DatabaseGeneratedOption.Identity);
-            this.Property(p => p.FisKodu).HasMaxLength(30);
-            this.Property(p => p.Hareket).HasMaxLength(30);
-            this.Property(p => p.KasaKodu).HasMaxLength(30);
+            this.Property(p => p.FisKodu).HasMaxLength(12);
+            this.Property(p => p.Hareket).HasMaxLength(10);
+            this.Property(p => p.KasaKodu).HasMaxLength(12);
             this.Property(p => p.KasaAdi).HasMaxLength(30);
-            this.Property(p => p.OdemeTuruKodu).HasMaxLength(30);
+            this.Property(p => p.OdemeTuruKodu).HasMaxLength(12);
             this.Property(p => p.OdemeTuruAdi).HasMaxLength(30);
-            this.Property(p => p.CariAdi).HasMaxLength(30);
-            //this.Property(p => p.Tarih).has(30);
+            this.Property(p => p.CariKodu).HasMaxLength(12);
+            this.Property(p => p.CariAdi).HasMaxLength(50);
             this.Property(p => p.Tutar).HasPrecision(12, 2);
             this.Property(p => p.Aciklama).HasMaxLength(200);
 

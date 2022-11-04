@@ -9,13 +9,13 @@ using System.Threading.Tasks;
 
 namespace NetSatis.Entities.Mapping
 {
-    public class OdemeTuruMap :EntityTypeConfiguration<OdemeTuru>
+    public class OdemeTuruMap : EntityTypeConfiguration<OdemeTuru>
     {
         public OdemeTuruMap()
         {
             this.HasKey(p => p.Id);
             this.Property(p => p.Id).HasDatabaseGeneratedOption(DatabaseGeneratedOption.Identity);
-            this.Property(p => p.OdemeTuruKodu).HasMaxLength(30);
+            this.Property(p => p.OdemeTuruKodu).HasMaxLength(12);
             this.Property(p => p.OdemeTuruAdi).HasMaxLength(30);
             this.Property(p => p.Aciklama).HasMaxLength(200);
 
