@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace NetSatis.Entities.İnterfaces
+namespace NetSatis.Entities.Interfaces
 {
     public interface IEntity
     {

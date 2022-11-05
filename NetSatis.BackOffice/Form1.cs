@@ -1,4 +1,5 @@
 ﻿using NetSatis.Entities.Context;
+using NetSatis.Entities.Data_Access;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -22,5 +23,9 @@ namespace NetSatis.BackOffice
             }
         }
 
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

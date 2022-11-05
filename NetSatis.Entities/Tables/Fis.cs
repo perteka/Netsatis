@@ -6,7 +6,7 @@ using System.Runtime.ConstrainedExecution;
 using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
-using NetSatis.Entities.İnterfaces;
+using NetSatis.Entities.Interfaces;
 
 namespace NetSatis.Entities.Tables
 {

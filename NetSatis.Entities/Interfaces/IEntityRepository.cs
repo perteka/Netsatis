@@ -1,4 +1,5 @@
 ﻿using NetSatis.Entities.Context;
+using NetSatis.Entities.Interfaces;
 using NetSatis.Entities.Tables;
 using System;
 using System.Collections.Generic;
@@ -8,7 +9,7 @@ using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace NetSatis.Entities.İnterfaces
+namespace NetSatis.Entities.Interfaces
 {
     public interface IEntityRepository<TContext, TEntity>
         where TContext : DbContext, new()

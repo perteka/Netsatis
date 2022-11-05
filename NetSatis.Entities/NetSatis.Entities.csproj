@@ -70,7 +70,14 @@
     <Compile Include="Class1.cs" />
     <Compile Include="Context\NetSatisContext.cs" />
     <Compile Include="Data Access\CariDAL.cs" />
+    <Compile Include="Data Access\DepoDAL.cs" />
+    <Compile Include="Data Access\FisDAL.cs" />
+    <Compile Include="Data Access\KasaDAL.cs" />
+    <Compile Include="Data Access\KasaHareketDAL.cs" />
+    <Compile Include="Data Access\OdemeTuruDAL.cs" />
     <Compile Include="Data Access\StokDAL.cs" />
+    <Compile Include="Data Access\StokHareketDAL.cs" />
+    <Compile Include="Data Access\TanimDAL.cs" />
     <Compile Include="Mapping\CariMap.cs" />
     <Compile Include="Mapping\DepoMap.cs" />
     <Compile Include="Mapping\FisMap.cs" />
@@ -86,6 +93,8 @@
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositories\EntityRepositoryBase.cs" />
+    <Compile Include="Repositories\IEntityRepository.cs" />
     <Compile Include="Tables\Cari.cs" />
     <Compile Include="Tables\Depo.cs" />
     <Compile Include="Tables\Fis.cs" />
@@ -101,8 +110,8 @@
     <Compile Include="Validations\OdemeTuruValidator.cs" />
     <Compile Include="Validations\StokValidator.cs" />
     <Compile Include="Validations\TanimValidator.cs" />
-    <Compile Include="İnterfaces\IEntity.cs" />
-    <Compile Include="İnterfaces\IEntityRepository.cs" />
+    <Compile Include="Interfaces\IEntity.cs" />
+    <Compile Include="Interfaces\IEntityRepository.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -116,5 +125,6 @@
       <DependentUpon>202211022156179_InitialCreate.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
