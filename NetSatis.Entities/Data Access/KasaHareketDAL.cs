@@ -1,6 +1,7 @@
 ﻿using NetSatis.Entities.Context;
 using NetSatis.Entities.Repositories;
 using NetSatis.Entities.Tables;
+using NetSatis.Entities.Validations;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace NetSatis.Entities.Data_Access
 {
-    public class KasaHareketDAL : EntityRepositoryBase<NetSatisContext, KasaHareket>
+    public class KasaHareketDAL : EntityRepositoryBase<NetSatisContext, KasaHareket, KasaHareketValidator>
     {
     }
 }

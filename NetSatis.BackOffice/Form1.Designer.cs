@@ -50,7 +50,6 @@ namespace NetSatis.BackOffice
             this.ribbonControl1.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.ribbonPage1});
             this.ribbonControl1.Size = new System.Drawing.Size(884, 193);
-      
             // 
             // ribbonPage1
             // 

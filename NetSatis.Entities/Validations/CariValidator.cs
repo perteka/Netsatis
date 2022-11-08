@@ -16,7 +16,6 @@ namespace NetSatis.Entities.Validations
             RuleFor(p => p.CariAdi).NotEmpty().WithMessage("Cari Adi alanı boş geçilemez.");
             RuleFor(p => p.YetkiliKisi).NotEmpty().WithMessage("YetkiliKisi alanı boş geçilemez.");
             RuleFor(p => p.FaturaUnvani).NotEmpty().WithMessage("FaturaUnvani alanı boş geçilemez.");
-            RuleFor(p => p.EMail).NotEmpty().WithMessage("EMail alanı boş geçilemez.");
             RuleFor(p => p.IskontoOrani).GreaterThanOrEqualTo(0).WithMessage("IskontoOrani alanı 0'dan küçük olamaz.");
             RuleFor(p => p.RiskLimiti).GreaterThanOrEqualTo(0).WithMessage("RiskLimiti alanı 0'dan küçük olamaz.");
 
