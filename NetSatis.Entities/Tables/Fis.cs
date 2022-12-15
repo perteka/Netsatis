@@ -21,9 +21,9 @@ namespace NetSatis.Entities.Tables
         public DateTime Tarih { get; set; }
         public string PlasiyerKodu { get; set; }
         public string PlasiyerAdi { get; set; }
-        public decimal IskontoOrani { get; set; }
-        public decimal IskontoTutar { get; set; }
-        public decimal ToplamTutar { get; set; }
+        public Nullable<decimal> IskontoOrani { get; set; }
+        public Nullable<decimal> IskontoTutar { get; set; }
+        public Nullable<decimal> ToplamTutar { get; set; }
         public string Aciklama { get; set; }
 
     }
