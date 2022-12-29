@@ -36,8 +36,8 @@ namespace NetSatis.Entities.Mapping
             this.Property(p => p.SatisFiyati1).HasPrecision(12, 2);
             this.Property(p => p.SatisFiyati2).HasPrecision(12, 2);
             this.Property(p => p.SatisFiyati3).HasPrecision(12, 2);
-            this.Property(p => p.MinStokMiktarı).HasPrecision(12, 3);
-            this.Property(p => p.MaxStokMiktarı).HasPrecision(12, 3);
+            this.Property(p => p.MinStokMiktari).HasPrecision(12, 3);
+            this.Property(p => p.MaxStokMiktari).HasPrecision(12, 3);
             this.Property(p => p.Aciklama).HasMaxLength(30);
 
             this.ToTable("Stoklar");
@@ -66,8 +66,8 @@ namespace NetSatis.Entities.Mapping
             this.Property(p => p.SatisFiyati1).HasColumnName("SatisFiyati1");
             this.Property(p => p.SatisFiyati2).HasColumnName("SatisFiyati2");
             this.Property(p => p.SatisFiyati3).HasColumnName("SatisFiyati3");
-            this.Property(p => p.MinStokMiktarı).HasColumnName("MinStokMiktarı");
-            this.Property(p => p.MaxStokMiktarı).HasColumnName("MaxStokMiktarı");
+            this.Property(p => p.MinStokMiktari).HasColumnName("MinStokMiktari");
+            this.Property(p => p.MaxStokMiktari).HasColumnName("MaxStokMiktari");
             this.Property(p => p.Aciklama).HasColumnName("Aciklama");
         }
 

@@ -55,7 +55,7 @@ namespace NetSatis.BackOffice
             this.ribbonControl1.OptionsMenuMinWidth = 481;
             this.ribbonControl1.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.ribbonPage1});
-            this.ribbonControl1.Size = new System.Drawing.Size(1151, 193);
+            this.ribbonControl1.Size = new System.Drawing.Size(1341, 193);
             // 
             // barButtonItem1
             // 
@@ -89,7 +89,7 @@ namespace NetSatis.BackOffice
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1151, 659);
+            this.ClientSize = new System.Drawing.Size(1341, 772);
             this.Controls.Add(this.ribbonControl1);
             this.IsMdiContainer = true;
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);

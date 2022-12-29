@@ -104,13 +104,14 @@ namespace NetSatis.BackOffice.Stok
             this.lblBaslik.Appearance.Options.UseTextOptions = true;
             this.lblBaslik.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.lblBaslik.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
+            this.lblBaslik.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.UltraFlat;
             this.lblBaslik.Dock = System.Windows.Forms.DockStyle.Top;
             this.lblBaslik.ImageOptions.Alignment = System.Drawing.ContentAlignment.MiddleLeft;
             this.lblBaslik.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("lblBaslik.ImageOptions.Image")));
             this.lblBaslik.Location = new System.Drawing.Point(0, 0);
-            this.lblBaslik.Margin = new System.Windows.Forms.Padding(4);
+            this.lblBaslik.Margin = new System.Windows.Forms.Padding(5);
             this.lblBaslik.Name = "lblBaslik";
-            this.lblBaslik.Size = new System.Drawing.Size(1721, 52);
+            this.lblBaslik.Size = new System.Drawing.Size(1776, 65);
             this.lblBaslik.TabIndex = 0;
             this.lblBaslik.Text = "Stok Kartları";
             // 
@@ -124,9 +125,10 @@ namespace NetSatis.BackOffice.Stok
             this.groupControl1.Controls.Add(this.btnDuzenle);
             this.groupControl1.Controls.Add(this.btnEkle);
             this.groupControl1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.groupControl1.Location = new System.Drawing.Point(0, 586);
+            this.groupControl1.Location = new System.Drawing.Point(0, 561);
+            this.groupControl1.Margin = new System.Windows.Forms.Padding(4);
             this.groupControl1.Name = "groupControl1";
-            this.groupControl1.Size = new System.Drawing.Size(1721, 94);
+            this.groupControl1.Size = new System.Drawing.Size(1776, 118);
             this.groupControl1.TabIndex = 1;
             this.groupControl1.Text = "Menü";
             // 
@@ -135,9 +137,10 @@ namespace NetSatis.BackOffice.Stok
             this.btnKapat.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnKapat.ImageOptions.ImageIndex = 6;
             this.btnKapat.ImageOptions.ImageList = this.imgMenu;
-            this.btnKapat.Location = new System.Drawing.Point(1617, 31);
+            this.btnKapat.Location = new System.Drawing.Point(1646, 39);
+            this.btnKapat.Margin = new System.Windows.Forms.Padding(4);
             this.btnKapat.Name = "btnKapat";
-            this.btnKapat.Size = new System.Drawing.Size(94, 51);
+            this.btnKapat.Size = new System.Drawing.Size(118, 64);
             this.btnKapat.TabIndex = 2;
             this.btnKapat.Text = "Kapat";
             this.btnKapat.Click += new System.EventHandler(this.btnKapat_Click);
@@ -160,9 +163,10 @@ namespace NetSatis.BackOffice.Stok
             // 
             this.btnAra.ImageOptions.ImageIndex = 5;
             this.btnAra.ImageOptions.ImageList = this.imgMenu;
-            this.btnAra.Location = new System.Drawing.Point(512, 31);
+            this.btnAra.Location = new System.Drawing.Point(640, 39);
+            this.btnAra.Margin = new System.Windows.Forms.Padding(4);
             this.btnAra.Name = "btnAra";
-            this.btnAra.Size = new System.Drawing.Size(94, 51);
+            this.btnAra.Size = new System.Drawing.Size(118, 64);
             this.btnAra.TabIndex = 2;
             this.btnAra.Text = "Ara";
             this.btnAra.Click += new System.EventHandler(this.btnAra_Click);
@@ -171,9 +175,10 @@ namespace NetSatis.BackOffice.Stok
             // 
             this.btnGuncelle.ImageOptions.ImageIndex = 0;
             this.btnGuncelle.ImageOptions.ImageList = this.imgMenu;
-            this.btnGuncelle.Location = new System.Drawing.Point(412, 31);
+            this.btnGuncelle.Location = new System.Drawing.Point(515, 39);
+            this.btnGuncelle.Margin = new System.Windows.Forms.Padding(4);
             this.btnGuncelle.Name = "btnGuncelle";
-            this.btnGuncelle.Size = new System.Drawing.Size(94, 51);
+            this.btnGuncelle.Size = new System.Drawing.Size(118, 64);
             this.btnGuncelle.TabIndex = 2;
             this.btnGuncelle.Text = "Güncelle";
             this.btnGuncelle.Click += new System.EventHandler(this.btnGuncelle_Click);
@@ -182,19 +187,22 @@ namespace NetSatis.BackOffice.Stok
             // 
             this.btnKopyala.ImageOptions.ImageIndex = 3;
             this.btnKopyala.ImageOptions.ImageList = this.imgMenu;
-            this.btnKopyala.Location = new System.Drawing.Point(312, 31);
+            this.btnKopyala.Location = new System.Drawing.Point(390, 39);
+            this.btnKopyala.Margin = new System.Windows.Forms.Padding(4);
             this.btnKopyala.Name = "btnKopyala";
-            this.btnKopyala.Size = new System.Drawing.Size(94, 51);
+            this.btnKopyala.Size = new System.Drawing.Size(118, 64);
             this.btnKopyala.TabIndex = 2;
             this.btnKopyala.Text = "Kopyala";
+            this.btnKopyala.Click += new System.EventHandler(this.btnKopyala_Click);
             // 
             // btnSıl
             // 
             this.btnSıl.ImageOptions.ImageIndex = 4;
             this.btnSıl.ImageOptions.ImageList = this.imgMenu;
-            this.btnSıl.Location = new System.Drawing.Point(212, 31);
+            this.btnSıl.Location = new System.Drawing.Point(265, 39);
+            this.btnSıl.Margin = new System.Windows.Forms.Padding(4);
             this.btnSıl.Name = "btnSıl";
-            this.btnSıl.Size = new System.Drawing.Size(94, 51);
+            this.btnSıl.Size = new System.Drawing.Size(118, 64);
             this.btnSıl.TabIndex = 2;
             this.btnSıl.Text = "Sil";
             this.btnSıl.Click += new System.EventHandler(this.btnSıl_Click);
@@ -203,27 +211,32 @@ namespace NetSatis.BackOffice.Stok
             // 
             this.btnDuzenle.ImageOptions.ImageIndex = 1;
             this.btnDuzenle.ImageOptions.ImageList = this.imgMenu;
-            this.btnDuzenle.Location = new System.Drawing.Point(112, 31);
+            this.btnDuzenle.Location = new System.Drawing.Point(140, 39);
+            this.btnDuzenle.Margin = new System.Windows.Forms.Padding(4);
             this.btnDuzenle.Name = "btnDuzenle";
-            this.btnDuzenle.Size = new System.Drawing.Size(94, 51);
+            this.btnDuzenle.Size = new System.Drawing.Size(118, 64);
             this.btnDuzenle.TabIndex = 2;
             this.btnDuzenle.Text = "Düzenle";
+            this.btnDuzenle.Click += new System.EventHandler(this.btnDuzenle_Click);
             // 
             // btnEkle
             // 
             this.btnEkle.ImageOptions.ImageIndex = 2;
             this.btnEkle.ImageOptions.ImageList = this.imgMenu;
-            this.btnEkle.Location = new System.Drawing.Point(12, 31);
+            this.btnEkle.Location = new System.Drawing.Point(15, 39);
+            this.btnEkle.Margin = new System.Windows.Forms.Padding(4);
             this.btnEkle.Name = "btnEkle";
-            this.btnEkle.Size = new System.Drawing.Size(94, 51);
+            this.btnEkle.Size = new System.Drawing.Size(118, 64);
             this.btnEkle.TabIndex = 2;
             this.btnEkle.Text = "Ekle";
+            this.btnEkle.Click += new System.EventHandler(this.btnEkle_Click);
             // 
             // splitContainerControl1
             // 
             this.splitContainerControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.splitContainerControl1.Horizontal = false;
-            this.splitContainerControl1.Location = new System.Drawing.Point(0, 52);
+            this.splitContainerControl1.Location = new System.Drawing.Point(0, 65);
+            this.splitContainerControl1.Margin = new System.Windows.Forms.Padding(4);
             this.splitContainerControl1.Name = "splitContainerControl1";
             // 
             // splitContainerControl1.Panel1
@@ -238,8 +251,8 @@ namespace NetSatis.BackOffice.Stok
             // 
             this.splitContainerControl1.Panel2.Controls.Add(this.gridSplitContainer1);
             this.splitContainerControl1.Panel2.Text = "Panel2";
-            this.splitContainerControl1.Size = new System.Drawing.Size(1721, 534);
-            this.splitContainerControl1.SplitterPosition = 178;
+            this.splitContainerControl1.Size = new System.Drawing.Size(1776, 496);
+            this.splitContainerControl1.SplitterPosition = 222;
             this.splitContainerControl1.TabIndex = 2;
             // 
             // btnFiltreKapat
@@ -248,9 +261,10 @@ namespace NetSatis.BackOffice.Stok
             this.btnFiltreKapat.ImageOptions.ImageIndex = 6;
             this.btnFiltreKapat.ImageOptions.ImageList = this.imgMenu;
             this.btnFiltreKapat.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleCenter;
-            this.btnFiltreKapat.Location = new System.Drawing.Point(1658, 122);
+            this.btnFiltreKapat.Location = new System.Drawing.Point(1697, 152);
+            this.btnFiltreKapat.Margin = new System.Windows.Forms.Padding(4);
             this.btnFiltreKapat.Name = "btnFiltreKapat";
-            this.btnFiltreKapat.Size = new System.Drawing.Size(53, 45);
+            this.btnFiltreKapat.Size = new System.Drawing.Size(66, 56);
             this.btnFiltreKapat.TabIndex = 2;
             this.btnFiltreKapat.Click += new System.EventHandler(this.btnFiltreKapat_Click);
             // 
@@ -260,9 +274,10 @@ namespace NetSatis.BackOffice.Stok
             this.btnFiltrele.ImageOptions.ImageIndex = 7;
             this.btnFiltrele.ImageOptions.ImageList = this.imgMenu;
             this.btnFiltrele.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleCenter;
-            this.btnFiltrele.Location = new System.Drawing.Point(1540, 122);
+            this.btnFiltrele.Location = new System.Drawing.Point(1550, 152);
+            this.btnFiltrele.Margin = new System.Windows.Forms.Padding(4);
             this.btnFiltrele.Name = "btnFiltrele";
-            this.btnFiltrele.Size = new System.Drawing.Size(53, 45);
+            this.btnFiltrele.Size = new System.Drawing.Size(66, 56);
             this.btnFiltrele.TabIndex = 2;
             this.btnFiltrele.Click += new System.EventHandler(this.btnFiltrele_Click);
             // 
@@ -272,9 +287,10 @@ namespace NetSatis.BackOffice.Stok
             this.btnFiltreleIptal.ImageOptions.ImageIndex = 8;
             this.btnFiltreleIptal.ImageOptions.ImageList = this.imgMenu;
             this.btnFiltreleIptal.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleCenter;
-            this.btnFiltreleIptal.Location = new System.Drawing.Point(1599, 122);
+            this.btnFiltreleIptal.Location = new System.Drawing.Point(1624, 152);
+            this.btnFiltreleIptal.Margin = new System.Windows.Forms.Padding(4);
             this.btnFiltreleIptal.Name = "btnFiltreleIptal";
-            this.btnFiltreleIptal.Size = new System.Drawing.Size(53, 45);
+            this.btnFiltreleIptal.Size = new System.Drawing.Size(66, 56);
             this.btnFiltreleIptal.TabIndex = 2;
             this.btnFiltreleIptal.Click += new System.EventHandler(this.btnFiltreleIptal_Click);
             // 
@@ -283,9 +299,10 @@ namespace NetSatis.BackOffice.Stok
             this.filterControl1.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.filterControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.filterControl1.Location = new System.Drawing.Point(0, 0);
+            this.filterControl1.Margin = new System.Windows.Forms.Padding(4);
             this.filterControl1.Name = "filterControl1";
             this.filterControl1.NodeSeparatorHeight = 2;
-            this.filterControl1.Size = new System.Drawing.Size(1721, 178);
+            this.filterControl1.Size = new System.Drawing.Size(1776, 222);
             this.filterControl1.SourceControl = this.gridControl1;
             this.filterControl1.TabIndex = 0;
             this.filterControl1.Text = "s";
@@ -293,10 +310,12 @@ namespace NetSatis.BackOffice.Stok
             // gridControl1
             // 
             this.gridControl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gridControl1.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(4);
             this.gridControl1.Location = new System.Drawing.Point(0, 0);
             this.gridControl1.MainView = this.gridView1;
+            this.gridControl1.Margin = new System.Windows.Forms.Padding(4);
             this.gridControl1.Name = "gridControl1";
-            this.gridControl1.Size = new System.Drawing.Size(1721, 344);
+            this.gridControl1.Size = new System.Drawing.Size(1776, 262);
             this.gridControl1.TabIndex = 0;
             this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
@@ -335,7 +354,8 @@ namespace NetSatis.BackOffice.Stok
             this.gridColumn1,
             this.gridColumn2,
             this.gridColumn3});
-            this.gridView1.CustomizationFormBounds = new System.Drawing.Rectangle(1190, 336, 314, 265);
+            this.gridView1.CustomizationFormBounds = new System.Drawing.Rectangle(1190, 336, 392, 331);
+            this.gridView1.DetailHeight = 437;
             this.gridView1.GridControl = this.gridControl1;
             this.gridView1.Name = "gridView1";
             this.gridView1.OptionsView.ShowGroupPanel = false;
@@ -344,358 +364,360 @@ namespace NetSatis.BackOffice.Stok
             // 
             this.colDurumu.Caption = "Durumu";
             this.colDurumu.FieldName = "Durumu";
-            this.colDurumu.MinWidth = 25;
+            this.colDurumu.MinWidth = 31;
             this.colDurumu.Name = "colDurumu";
             this.colDurumu.OptionsColumn.AllowEdit = false;
             this.colDurumu.OptionsColumn.AllowMove = false;
             this.colDurumu.Visible = true;
             this.colDurumu.VisibleIndex = 0;
-            this.colDurumu.Width = 53;
+            this.colDurumu.Width = 66;
             // 
             // colStokKodu
             // 
             this.colStokKodu.Caption = "Stok Kodu";
             this.colStokKodu.FieldName = "StokKodu";
-            this.colStokKodu.MinWidth = 25;
+            this.colStokKodu.MinWidth = 31;
             this.colStokKodu.Name = "colStokKodu";
             this.colStokKodu.OptionsColumn.AllowEdit = false;
             this.colStokKodu.OptionsColumn.AllowMove = false;
             this.colStokKodu.Visible = true;
             this.colStokKodu.VisibleIndex = 1;
+            this.colStokKodu.Width = 94;
             // 
             // colStokAdi
             // 
             this.colStokAdi.Caption = "Stok Adı";
             this.colStokAdi.FieldName = "StokAdi";
-            this.colStokAdi.MinWidth = 25;
+            this.colStokAdi.MinWidth = 31;
             this.colStokAdi.Name = "colStokAdi";
             this.colStokAdi.OptionsColumn.AllowEdit = false;
             this.colStokAdi.OptionsColumn.AllowMove = false;
             this.colStokAdi.Visible = true;
             this.colStokAdi.VisibleIndex = 2;
-            this.colStokAdi.Width = 171;
+            this.colStokAdi.Width = 214;
             // 
             // colBarkod
             // 
             this.colBarkod.Caption = "Barkod";
             this.colBarkod.FieldName = "Barkod";
-            this.colBarkod.MinWidth = 25;
+            this.colBarkod.MinWidth = 31;
             this.colBarkod.Name = "colBarkod";
             this.colBarkod.OptionsColumn.AllowEdit = false;
             this.colBarkod.OptionsColumn.AllowMove = false;
             this.colBarkod.Visible = true;
             this.colBarkod.VisibleIndex = 3;
-            this.colBarkod.Width = 61;
+            this.colBarkod.Width = 76;
             // 
             // colBarkodTuru
             // 
             this.colBarkodTuru.Caption = "Barkod Türü";
             this.colBarkodTuru.FieldName = "BarkodTuru";
-            this.colBarkodTuru.MinWidth = 25;
+            this.colBarkodTuru.MinWidth = 31;
             this.colBarkodTuru.Name = "colBarkodTuru";
             this.colBarkodTuru.OptionsColumn.AllowEdit = false;
             this.colBarkodTuru.OptionsColumn.AllowMove = false;
             this.colBarkodTuru.Visible = true;
             this.colBarkodTuru.VisibleIndex = 4;
-            this.colBarkodTuru.Width = 91;
+            this.colBarkodTuru.Width = 114;
             // 
             // colId
             // 
             this.colId.FieldName = "Id";
-            this.colId.MinWidth = 25;
+            this.colId.MinWidth = 31;
             this.colId.Name = "colId";
             this.colId.OptionsColumn.AllowEdit = false;
-            this.colId.Width = 94;
+            this.colId.Width = 117;
             // 
             // colBirimi
             // 
             this.colBirimi.Caption = "Birimi";
             this.colBirimi.FieldName = "Birimi";
-            this.colBirimi.MinWidth = 25;
+            this.colBirimi.MinWidth = 31;
             this.colBirimi.Name = "colBirimi";
             this.colBirimi.OptionsColumn.AllowEdit = false;
             this.colBirimi.OptionsColumn.AllowMove = false;
             this.colBirimi.Visible = true;
             this.colBirimi.VisibleIndex = 5;
-            this.colBirimi.Width = 73;
+            this.colBirimi.Width = 91;
             // 
             // colStokGrubu
             // 
             this.colStokGrubu.Caption = "Stok Grubu";
             this.colStokGrubu.FieldName = "StokGrubu";
-            this.colStokGrubu.MinWidth = 25;
+            this.colStokGrubu.MinWidth = 31;
             this.colStokGrubu.Name = "colStokGrubu";
             this.colStokGrubu.OptionsColumn.AllowEdit = false;
             this.colStokGrubu.OptionsColumn.AllowMove = false;
             this.colStokGrubu.Visible = true;
             this.colStokGrubu.VisibleIndex = 6;
-            this.colStokGrubu.Width = 87;
+            this.colStokGrubu.Width = 109;
             // 
             // colStokAltGrubu
             // 
             this.colStokAltGrubu.Caption = "Stok Alt Grubu";
             this.colStokAltGrubu.FieldName = "StokAltGrubu";
-            this.colStokAltGrubu.MinWidth = 25;
+            this.colStokAltGrubu.MinWidth = 31;
             this.colStokAltGrubu.Name = "colStokAltGrubu";
             this.colStokAltGrubu.OptionsColumn.AllowEdit = false;
             this.colStokAltGrubu.OptionsColumn.AllowMove = false;
             this.colStokAltGrubu.Visible = true;
             this.colStokAltGrubu.VisibleIndex = 8;
-            this.colStokAltGrubu.Width = 71;
+            this.colStokAltGrubu.Width = 89;
             // 
             // colMarka
             // 
             this.colMarka.Caption = "Marka";
             this.colMarka.FieldName = "Marka";
-            this.colMarka.MinWidth = 25;
+            this.colMarka.MinWidth = 31;
             this.colMarka.Name = "colMarka";
             this.colMarka.OptionsColumn.AllowEdit = false;
             this.colMarka.OptionsColumn.AllowMove = false;
-            this.colMarka.Width = 94;
+            this.colMarka.Width = 117;
             // 
             // colModeli
             // 
             this.colModeli.Caption = "Modeli";
             this.colModeli.FieldName = "Modeli";
-            this.colModeli.MinWidth = 25;
+            this.colModeli.MinWidth = 31;
             this.colModeli.Name = "colModeli";
             this.colModeli.OptionsColumn.AllowEdit = false;
             this.colModeli.OptionsColumn.AllowMove = false;
-            this.colModeli.Width = 94;
+            this.colModeli.Width = 117;
             // 
             // colOzelKod1
             // 
             this.colOzelKod1.Caption = "Özel Kod-1";
             this.colOzelKod1.FieldName = "OzelKod1";
-            this.colOzelKod1.MinWidth = 25;
+            this.colOzelKod1.MinWidth = 31;
             this.colOzelKod1.Name = "colOzelKod1";
             this.colOzelKod1.OptionsColumn.AllowEdit = false;
             this.colOzelKod1.OptionsColumn.AllowMove = false;
-            this.colOzelKod1.Width = 94;
+            this.colOzelKod1.Width = 117;
             // 
             // colOzelKod2
             // 
             this.colOzelKod2.Caption = "Özel Kod-2";
             this.colOzelKod2.FieldName = "OzelKod2";
-            this.colOzelKod2.MinWidth = 25;
+            this.colOzelKod2.MinWidth = 31;
             this.colOzelKod2.Name = "colOzelKod2";
             this.colOzelKod2.OptionsColumn.AllowEdit = false;
             this.colOzelKod2.OptionsColumn.AllowMove = false;
-            this.colOzelKod2.Width = 94;
+            this.colOzelKod2.Width = 117;
             // 
             // colOzelKod3
             // 
             this.colOzelKod3.Caption = "Özel Kod-3";
             this.colOzelKod3.FieldName = "OzelKod3";
-            this.colOzelKod3.MinWidth = 25;
+            this.colOzelKod3.MinWidth = 31;
             this.colOzelKod3.Name = "colOzelKod3";
             this.colOzelKod3.OptionsColumn.AllowEdit = false;
             this.colOzelKod3.OptionsColumn.AllowMove = false;
-            this.colOzelKod3.Width = 94;
+            this.colOzelKod3.Width = 117;
             // 
             // colOzelKod4
             // 
             this.colOzelKod4.Caption = "Özel Kod-4";
             this.colOzelKod4.FieldName = "OzelKod4";
-            this.colOzelKod4.MinWidth = 25;
+            this.colOzelKod4.MinWidth = 31;
             this.colOzelKod4.Name = "colOzelKod4";
             this.colOzelKod4.OptionsColumn.AllowEdit = false;
             this.colOzelKod4.OptionsColumn.AllowMove = false;
-            this.colOzelKod4.Width = 94;
+            this.colOzelKod4.Width = 117;
             // 
             // colGarantiSuresi
             // 
             this.colGarantiSuresi.Caption = "Garanti Süresi";
             this.colGarantiSuresi.FieldName = "GarantiSuresi";
-            this.colGarantiSuresi.MinWidth = 25;
+            this.colGarantiSuresi.MinWidth = 31;
             this.colGarantiSuresi.Name = "colGarantiSuresi";
             this.colGarantiSuresi.OptionsColumn.AllowEdit = false;
             this.colGarantiSuresi.OptionsColumn.AllowMove = false;
-            this.colGarantiSuresi.Width = 94;
+            this.colGarantiSuresi.Width = 117;
             // 
             // colUreticiKodu
             // 
             this.colUreticiKodu.Caption = "Üretici Kodu";
             this.colUreticiKodu.FieldName = "UreticiKodu";
-            this.colUreticiKodu.MinWidth = 25;
+            this.colUreticiKodu.MinWidth = 31;
             this.colUreticiKodu.Name = "colUreticiKodu";
             this.colUreticiKodu.OptionsColumn.AllowEdit = false;
             this.colUreticiKodu.OptionsColumn.AllowMove = false;
-            this.colUreticiKodu.Width = 94;
+            this.colUreticiKodu.Width = 117;
             // 
             // colAlisKdv
             // 
             this.colAlisKdv.Caption = "KDV(Alış)";
             this.colAlisKdv.FieldName = "AlisKdv";
-            this.colAlisKdv.MinWidth = 25;
+            this.colAlisKdv.MinWidth = 31;
             this.colAlisKdv.Name = "colAlisKdv";
             this.colAlisKdv.OptionsColumn.AllowEdit = false;
             this.colAlisKdv.OptionsColumn.AllowMove = false;
             this.colAlisKdv.Visible = true;
             this.colAlisKdv.VisibleIndex = 7;
-            this.colAlisKdv.Width = 73;
+            this.colAlisKdv.Width = 91;
             // 
             // colSatisKdv
             // 
             this.colSatisKdv.Caption = "KDV(Satış)";
             this.colSatisKdv.FieldName = "SatisKdv";
-            this.colSatisKdv.MinWidth = 25;
+            this.colSatisKdv.MinWidth = 31;
             this.colSatisKdv.Name = "colSatisKdv";
             this.colSatisKdv.OptionsColumn.AllowEdit = false;
             this.colSatisKdv.OptionsColumn.AllowMove = false;
-            this.colSatisKdv.Width = 94;
+            this.colSatisKdv.Width = 117;
             // 
             // colAlisFiyati1
             // 
             this.colAlisFiyati1.Caption = "Alış Fiyatı-1";
             this.colAlisFiyati1.FieldName = "AlisFiyati1";
-            this.colAlisFiyati1.MinWidth = 25;
+            this.colAlisFiyati1.MinWidth = 31;
             this.colAlisFiyati1.Name = "colAlisFiyati1";
             this.colAlisFiyati1.OptionsColumn.AllowEdit = false;
             this.colAlisFiyati1.OptionsColumn.AllowMove = false;
-            this.colAlisFiyati1.Width = 94;
+            this.colAlisFiyati1.Width = 117;
             // 
             // colAlisFiyati2
             // 
             this.colAlisFiyati2.Caption = "Alış Fiyatı-2";
             this.colAlisFiyati2.FieldName = "AlisFiyati2";
-            this.colAlisFiyati2.MinWidth = 25;
+            this.colAlisFiyati2.MinWidth = 31;
             this.colAlisFiyati2.Name = "colAlisFiyati2";
             this.colAlisFiyati2.OptionsColumn.AllowEdit = false;
             this.colAlisFiyati2.OptionsColumn.AllowMove = false;
             this.colAlisFiyati2.Visible = true;
             this.colAlisFiyati2.VisibleIndex = 11;
-            this.colAlisFiyati2.Width = 84;
+            this.colAlisFiyati2.Width = 105;
             // 
             // colAlisFiyati3
             // 
             this.colAlisFiyati3.Caption = "Alış Fiyatı-3";
             this.colAlisFiyati3.FieldName = "AlisFiyati3";
-            this.colAlisFiyati3.MinWidth = 25;
+            this.colAlisFiyati3.MinWidth = 31;
             this.colAlisFiyati3.Name = "colAlisFiyati3";
             this.colAlisFiyati3.OptionsColumn.AllowEdit = false;
             this.colAlisFiyati3.OptionsColumn.AllowMove = false;
             this.colAlisFiyati3.Visible = true;
             this.colAlisFiyati3.VisibleIndex = 9;
-            this.colAlisFiyati3.Width = 56;
+            this.colAlisFiyati3.Width = 70;
             // 
             // colSatisFiyati1
             // 
             this.colSatisFiyati1.Caption = "Satış Fiyatı-1";
             this.colSatisFiyati1.FieldName = "SatisFiyati1";
-            this.colSatisFiyati1.MinWidth = 25;
+            this.colSatisFiyati1.MinWidth = 31;
             this.colSatisFiyati1.Name = "colSatisFiyati1";
             this.colSatisFiyati1.OptionsColumn.AllowEdit = false;
             this.colSatisFiyati1.OptionsColumn.AllowMove = false;
-            this.colSatisFiyati1.Width = 94;
+            this.colSatisFiyati1.Width = 117;
             // 
             // colSatisFiyati2
             // 
             this.colSatisFiyati2.Caption = "Satış Fiyatı-2";
             this.colSatisFiyati2.FieldName = "SatisFiyati2";
-            this.colSatisFiyati2.MinWidth = 25;
+            this.colSatisFiyati2.MinWidth = 31;
             this.colSatisFiyati2.Name = "colSatisFiyati2";
             this.colSatisFiyati2.OptionsColumn.AllowEdit = false;
             this.colSatisFiyati2.OptionsColumn.AllowMove = false;
-            this.colSatisFiyati2.Width = 94;
+            this.colSatisFiyati2.Width = 117;
             // 
             // colSatisFiyati3
             // 
             this.colSatisFiyati3.Caption = "Satış Fiyatı-3";
             this.colSatisFiyati3.FieldName = "SatisFiyati3";
-            this.colSatisFiyati3.MinWidth = 25;
+            this.colSatisFiyati3.MinWidth = 31;
             this.colSatisFiyati3.Name = "colSatisFiyati3";
             this.colSatisFiyati3.OptionsColumn.AllowEdit = false;
             this.colSatisFiyati3.OptionsColumn.AllowMove = false;
-            this.colSatisFiyati3.Width = 94;
+            this.colSatisFiyati3.Width = 117;
             // 
             // colMinStokMiktarı
             // 
             this.colMinStokMiktarı.Caption = "Min. Stok Miktari";
             this.colMinStokMiktarı.FieldName = "MinStokMiktarı";
-            this.colMinStokMiktarı.MinWidth = 25;
+            this.colMinStokMiktarı.MinWidth = 31;
             this.colMinStokMiktarı.Name = "colMinStokMiktarı";
             this.colMinStokMiktarı.OptionsColumn.AllowEdit = false;
             this.colMinStokMiktarı.OptionsColumn.AllowMove = false;
             this.colMinStokMiktarı.Visible = true;
             this.colMinStokMiktarı.VisibleIndex = 10;
-            this.colMinStokMiktarı.Width = 91;
+            this.colMinStokMiktarı.Width = 114;
             // 
             // colMaxStokMiktarı
             // 
             this.colMaxStokMiktarı.Caption = "Max. Stok Miktari";
             this.colMaxStokMiktarı.FieldName = "MaxStokMiktarı";
-            this.colMaxStokMiktarı.MinWidth = 25;
+            this.colMaxStokMiktarı.MinWidth = 31;
             this.colMaxStokMiktarı.Name = "colMaxStokMiktarı";
             this.colMaxStokMiktarı.OptionsColumn.AllowEdit = false;
             this.colMaxStokMiktarı.OptionsColumn.AllowMove = false;
             this.colMaxStokMiktarı.Visible = true;
             this.colMaxStokMiktarı.VisibleIndex = 12;
-            this.colMaxStokMiktarı.Width = 105;
+            this.colMaxStokMiktarı.Width = 131;
             // 
             // colAciklama
             // 
             this.colAciklama.Caption = "Açıklama";
             this.colAciklama.FieldName = "Aciklama";
-            this.colAciklama.MinWidth = 25;
+            this.colAciklama.MinWidth = 31;
             this.colAciklama.Name = "colAciklama";
             this.colAciklama.OptionsColumn.AllowEdit = false;
             this.colAciklama.OptionsColumn.AllowMove = false;
             this.colAciklama.Visible = true;
             this.colAciklama.VisibleIndex = 13;
-            this.colAciklama.Width = 173;
+            this.colAciklama.Width = 216;
             // 
             // gridColumn1
             // 
             this.gridColumn1.Caption = "Stok Giriş";
             this.gridColumn1.FieldName = "StokGiris";
-            this.gridColumn1.MinWidth = 25;
+            this.gridColumn1.MinWidth = 31;
             this.gridColumn1.Name = "gridColumn1";
             this.gridColumn1.OptionsColumn.AllowEdit = false;
             this.gridColumn1.Visible = true;
             this.gridColumn1.VisibleIndex = 14;
-            this.gridColumn1.Width = 65;
+            this.gridColumn1.Width = 81;
             // 
             // gridColumn2
             // 
             this.gridColumn2.Caption = "Stok Çıkış";
             this.gridColumn2.FieldName = "StokCikis";
-            this.gridColumn2.MinWidth = 25;
+            this.gridColumn2.MinWidth = 31;
             this.gridColumn2.Name = "gridColumn2";
             this.gridColumn2.OptionsColumn.AllowEdit = false;
             this.gridColumn2.Visible = true;
             this.gridColumn2.VisibleIndex = 15;
-            this.gridColumn2.Width = 85;
+            this.gridColumn2.Width = 106;
             // 
             // gridColumn3
             // 
             this.gridColumn3.Caption = "Mevcut Stok";
             this.gridColumn3.FieldName = "MevcutStok";
-            this.gridColumn3.MinWidth = 25;
+            this.gridColumn3.MinWidth = 31;
             this.gridColumn3.Name = "gridColumn3";
             this.gridColumn3.OptionsColumn.AllowEdit = false;
             this.gridColumn3.Visible = true;
             this.gridColumn3.VisibleIndex = 16;
-            this.gridColumn3.Width = 81;
+            this.gridColumn3.Width = 101;
             // 
             // gridSplitContainer1
             // 
             this.gridSplitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gridSplitContainer1.Grid = this.gridControl1;
             this.gridSplitContainer1.Location = new System.Drawing.Point(0, 0);
+            this.gridSplitContainer1.Margin = new System.Windows.Forms.Padding(4);
             this.gridSplitContainer1.Name = "gridSplitContainer1";
             // 
             // gridSplitContainer1.Panel1
             // 
             this.gridSplitContainer1.Panel1.Controls.Add(this.gridControl1);
-            this.gridSplitContainer1.Size = new System.Drawing.Size(1721, 344);
+            this.gridSplitContainer1.Size = new System.Drawing.Size(1776, 262);
             this.gridSplitContainer1.TabIndex = 0;
             // 
             // FrmStok
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1721, 680);
+            this.ClientSize = new System.Drawing.Size(1776, 679);
             this.Controls.Add(this.splitContainerControl1);
             this.Controls.Add(this.groupControl1);
             this.Controls.Add(this.lblBaslik);

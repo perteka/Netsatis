@@ -14,7 +14,7 @@ namespace NetSatis.Entities.Data_Access
 {
     public class StokDAL:EntityRepositoryBase<NetSatisContext,Stok,StokValidator>
     {
-     public object GetAllJoin(NetSatisContext context)
+        public object GetAllJoin(NetSatisContext context)
         {
             var tablo = context.Stoklar.GroupJoin(context.StokHareketleri, c => c.StokKodu, c => c.StokKodu, 
                 (Stoklar, StokHareketleri) =>
@@ -45,8 +45,8 @@ namespace NetSatis.Entities.Data_Access
                              Stoklar.SatisFiyati1,
                              Stoklar.SatisFiyati2,
                              Stoklar.SatisFiyati3,
-                             Stoklar.MinStokMiktarı,
-                             Stoklar.MaxStokMiktarı,
+                             Stoklar.MinStokMiktari,
+                             Stoklar.MaxStokMiktari,
                              Stoklar.Aciklama,
                              StokGiris = StokHareketleri.Where(c => c.Hareket == "Stok Giriş").Sum(c => c.Miktar) ?? 0,
                              StokCikis = StokHareketleri.Where(c => c.Hareket == "Stok Çıkış").Sum(c => c.Miktar) ?? 0,

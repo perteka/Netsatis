@@ -16,7 +16,7 @@ namespace NetSatis.BackOffice.Stok
     public partial class FrmStok : DevExpress.XtraEditors.XtraForm
     {
         NetSatisContext context = new NetSatisContext();
-        StokDAL stokDAL=new StokDAL();
+        StokDAL stokDal = new StokDAL();
         public FrmStok()
         {
             InitializeComponent();
@@ -28,7 +28,7 @@ namespace NetSatis.BackOffice.Stok
         }
         public void GetAll()
         {
-            gridControl1.DataSource=stokDAL.GetAllJoin(context);
+            gridControl1.DataSource = stokDal.GetAllJoin(context);
         }
         private void btnKapat_Click(object sender, EventArgs e)
         {
@@ -42,7 +42,7 @@ namespace NetSatis.BackOffice.Stok
 
         private void btnFiltreleIptal_Click(object sender, EventArgs e)
         {
-            filterControl1.FilterString=null;
+            filterControl1.FilterString = null;
             filterControl1.ApplyFilter();
         }
 
@@ -63,13 +63,37 @@ namespace NetSatis.BackOffice.Stok
 
         private void btnSıl_Click(object sender, EventArgs e)
         {
-            if(MessageBox.Show("Seçili olan veriyi silmek istediğinize emin misiniz?", "Uyarı", MessageBoxButtons.YesNo)==DialogResult.Yes)
+            if (MessageBox.Show("Seçili olan veriyi silmek istediğinize emin misiniz?", "Uyarı", MessageBoxButtons.YesNo) == DialogResult.Yes)
             {
                 string secilen = gridView1.GetFocusedRowCellValue(colStokKodu).ToString();
-                stokDAL.Delete(context, c => c.StokKodu ==secilen);
-                stokDAL.Save(context);
+                stokDal.Delete(context, c => c.StokKodu == secilen);
+                stokDal.Save(context);
                 GetAll();
             }
+        }
+
+        private void btnEkle_Click(object sender, EventArgs e)
+        {
+            FrmStokIslem form = new FrmStokIslem(new Entities.Tables.Stok());
+            form.ShowDialog();
+        }
+
+        private void btnDuzenle_Click(object sender, EventArgs e)
+        {
+            string secilen = gridView1.GetFocusedRowCellValue(colStokKodu).ToString();
+            FrmStokIslem form = new FrmStokIslem(stokDal.GetByFilter(context, c => c.StokKodu == secilen));
+            form.ShowDialog();
+        }
+
+        private void btnKopyala_Click(object sender, EventArgs e)
+        {
+            string secilen = gridView1.GetFocusedRowCellValue(colStokKodu).ToString();
+            Entities.Tables.Stok stokEntity = new Entities.Tables.Stok();
+            stokEntity = stokDal.GetByFilter(context, c => c.StokKodu == secilen);
+            stokEntity.Id = -1;
+            stokEntity.StokKodu = null;
+            FrmStokIslem form = new FrmStokIslem(stokEntity);
+            form.ShowDialog();
         }
     }
 }
