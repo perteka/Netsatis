@@ -245,7 +245,7 @@ namespace NetSatis.BackOffice.Stok
             this.lblBaslik.Location = new System.Drawing.Point(0, 0);
             this.lblBaslik.Margin = new System.Windows.Forms.Padding(19);
             this.lblBaslik.Name = "lblBaslik";
-            this.lblBaslik.Size = new System.Drawing.Size(763, 54);
+            this.lblBaslik.Size = new System.Drawing.Size(784, 54);
             this.lblBaslik.TabIndex = 1;
             this.lblBaslik.Text = "Stok Kartı İşlemleri";
             // 
@@ -255,10 +255,10 @@ namespace NetSatis.BackOffice.Stok
             this.groupMenu.Controls.Add(this.btnKaydet);
             this.groupMenu.Controls.Add(this.btnKapat);
             this.groupMenu.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.groupMenu.Location = new System.Drawing.Point(0, 706);
+            this.groupMenu.Location = new System.Drawing.Point(0, 725);
             this.groupMenu.Margin = new System.Windows.Forms.Padding(15);
             this.groupMenu.Name = "groupMenu";
-            this.groupMenu.Size = new System.Drawing.Size(763, 74);
+            this.groupMenu.Size = new System.Drawing.Size(784, 74);
             this.groupMenu.TabIndex = 5;
             this.groupMenu.Text = "Menü";
             // 
@@ -267,7 +267,7 @@ namespace NetSatis.BackOffice.Stok
             this.btnKaydet.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnKaydet.ImageOptions.ImageIndex = 0;
             this.btnKaydet.ImageOptions.ImageList = this.ımageList1;
-            this.btnKaydet.Location = new System.Drawing.Point(516, 31);
+            this.btnKaydet.Location = new System.Drawing.Point(537, 31);
             this.btnKaydet.Margin = new System.Windows.Forms.Padding(19);
             this.btnKaydet.Name = "btnKaydet";
             this.btnKaydet.Size = new System.Drawing.Size(110, 39);
@@ -287,7 +287,7 @@ namespace NetSatis.BackOffice.Stok
             this.btnKapat.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnKapat.ImageOptions.ImageIndex = 1;
             this.btnKapat.ImageOptions.ImageList = this.ımageList1;
-            this.btnKapat.Location = new System.Drawing.Point(636, 31);
+            this.btnKapat.Location = new System.Drawing.Point(657, 31);
             this.btnKapat.Margin = new System.Windows.Forms.Padding(15);
             this.btnKapat.Name = "btnKapat";
             this.btnKapat.Size = new System.Drawing.Size(110, 39);
@@ -324,7 +324,7 @@ namespace NetSatis.BackOffice.Stok
             this.groupGenel.Dock = System.Windows.Forms.DockStyle.Top;
             this.groupGenel.Location = new System.Drawing.Point(0, 54);
             this.groupGenel.Name = "groupGenel";
-            this.groupGenel.Size = new System.Drawing.Size(763, 286);
+            this.groupGenel.Size = new System.Drawing.Size(784, 286);
             this.groupGenel.TabIndex = 6;
             this.groupGenel.Text = "Genel Bilgiler";
             // 
@@ -598,7 +598,7 @@ namespace NetSatis.BackOffice.Stok
             this.groupGruplar.Dock = System.Windows.Forms.DockStyle.Top;
             this.groupGruplar.Location = new System.Drawing.Point(0, 340);
             this.groupGruplar.Name = "groupGruplar";
-            this.groupGruplar.Size = new System.Drawing.Size(763, 156);
+            this.groupGruplar.Size = new System.Drawing.Size(784, 156);
             this.groupGruplar.TabIndex = 7;
             this.groupGruplar.Text = "Gruplar";
             // 
@@ -851,7 +851,7 @@ namespace NetSatis.BackOffice.Stok
             this.groupKDV.Dock = System.Windows.Forms.DockStyle.Top;
             this.groupKDV.Location = new System.Drawing.Point(0, 496);
             this.groupKDV.Name = "groupKDV";
-            this.groupKDV.Size = new System.Drawing.Size(763, 75);
+            this.groupKDV.Size = new System.Drawing.Size(784, 75);
             this.groupKDV.TabIndex = 8;
             this.groupKDV.Text = "KDV Oranları";
             // 
@@ -918,7 +918,7 @@ namespace NetSatis.BackOffice.Stok
             this.groupFiyatlar.Dock = System.Windows.Forms.DockStyle.Top;
             this.groupFiyatlar.Location = new System.Drawing.Point(0, 571);
             this.groupFiyatlar.Name = "groupFiyatlar";
-            this.groupFiyatlar.Size = new System.Drawing.Size(763, 135);
+            this.groupFiyatlar.Size = new System.Drawing.Size(784, 135);
             this.groupFiyatlar.TabIndex = 9;
             this.groupFiyatlar.Text = "Fiyatlar";
             // 
@@ -1065,7 +1065,7 @@ namespace NetSatis.BackOffice.Stok
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(784, 666);
+            this.ClientSize = new System.Drawing.Size(784, 799);
             this.Controls.Add(this.groupFiyatlar);
             this.Controls.Add(this.groupKDV);
             this.Controls.Add(this.groupGruplar);
