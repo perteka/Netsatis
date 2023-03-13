@@ -35,10 +35,11 @@ namespace NetSatis.BackOffice.Stok
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
             this.btnKapat = new DevExpress.XtraEditors.SimpleButton();
             this.imgMenu = new System.Windows.Forms.ImageList(this.components);
+            this.btnstokhareket = new DevExpress.XtraEditors.SimpleButton();
             this.btnAra = new DevExpress.XtraEditors.SimpleButton();
             this.btnGuncelle = new DevExpress.XtraEditors.SimpleButton();
             this.btnKopyala = new DevExpress.XtraEditors.SimpleButton();
-            this.btnSıl = new DevExpress.XtraEditors.SimpleButton();
+            this.btnSil = new DevExpress.XtraEditors.SimpleButton();
             this.btnDuzenle = new DevExpress.XtraEditors.SimpleButton();
             this.btnEkle = new DevExpress.XtraEditors.SimpleButton();
             this.splitContainerControl1 = new DevExpress.XtraEditors.SplitContainerControl();
@@ -118,10 +119,11 @@ namespace NetSatis.BackOffice.Stok
             // groupControl1
             // 
             this.groupControl1.Controls.Add(this.btnKapat);
+            this.groupControl1.Controls.Add(this.btnstokhareket);
             this.groupControl1.Controls.Add(this.btnAra);
             this.groupControl1.Controls.Add(this.btnGuncelle);
             this.groupControl1.Controls.Add(this.btnKopyala);
-            this.groupControl1.Controls.Add(this.btnSıl);
+            this.groupControl1.Controls.Add(this.btnSil);
             this.groupControl1.Controls.Add(this.btnDuzenle);
             this.groupControl1.Controls.Add(this.btnEkle);
             this.groupControl1.Dock = System.Windows.Forms.DockStyle.Bottom;
@@ -158,12 +160,25 @@ namespace NetSatis.BackOffice.Stok
             this.imgMenu.Images.SetKeyName(6, "folder_out.png");
             this.imgMenu.Images.SetKeyName(7, "funnel.png");
             this.imgMenu.Images.SetKeyName(8, "funnel_delete.png");
+            this.imgMenu.Images.SetKeyName(9, "StokHareket.png");
+            // 
+            // btnstokhareket
+            // 
+            this.btnstokhareket.ImageOptions.ImageIndex = 9;
+            this.btnstokhareket.ImageOptions.ImageList = this.imgMenu;
+            this.btnstokhareket.Location = new System.Drawing.Point(516, 39);
+            this.btnstokhareket.Margin = new System.Windows.Forms.Padding(4);
+            this.btnstokhareket.Name = "btnstokhareket";
+            this.btnstokhareket.Size = new System.Drawing.Size(118, 64);
+            this.btnstokhareket.TabIndex = 2;
+            this.btnstokhareket.Text = "Stok\r\nHareket";
+            this.btnstokhareket.Click += new System.EventHandler(this.btnAra_Click);
             // 
             // btnAra
             // 
             this.btnAra.ImageOptions.ImageIndex = 5;
             this.btnAra.ImageOptions.ImageList = this.imgMenu;
-            this.btnAra.Location = new System.Drawing.Point(640, 39);
+            this.btnAra.Location = new System.Drawing.Point(768, 39);
             this.btnAra.Margin = new System.Windows.Forms.Padding(4);
             this.btnAra.Name = "btnAra";
             this.btnAra.Size = new System.Drawing.Size(118, 64);
@@ -175,7 +190,7 @@ namespace NetSatis.BackOffice.Stok
             // 
             this.btnGuncelle.ImageOptions.ImageIndex = 0;
             this.btnGuncelle.ImageOptions.ImageList = this.imgMenu;
-            this.btnGuncelle.Location = new System.Drawing.Point(515, 39);
+            this.btnGuncelle.Location = new System.Drawing.Point(642, 39);
             this.btnGuncelle.Margin = new System.Windows.Forms.Padding(4);
             this.btnGuncelle.Name = "btnGuncelle";
             this.btnGuncelle.Size = new System.Drawing.Size(118, 64);
@@ -195,17 +210,17 @@ namespace NetSatis.BackOffice.Stok
             this.btnKopyala.Text = "Kopyala";
             this.btnKopyala.Click += new System.EventHandler(this.btnKopyala_Click);
             // 
-            // btnSıl
+            // btnSil
             // 
-            this.btnSıl.ImageOptions.ImageIndex = 4;
-            this.btnSıl.ImageOptions.ImageList = this.imgMenu;
-            this.btnSıl.Location = new System.Drawing.Point(265, 39);
-            this.btnSıl.Margin = new System.Windows.Forms.Padding(4);
-            this.btnSıl.Name = "btnSıl";
-            this.btnSıl.Size = new System.Drawing.Size(118, 64);
-            this.btnSıl.TabIndex = 2;
-            this.btnSıl.Text = "Sil";
-            this.btnSıl.Click += new System.EventHandler(this.btnSıl_Click);
+            this.btnSil.ImageOptions.ImageIndex = 4;
+            this.btnSil.ImageOptions.ImageList = this.imgMenu;
+            this.btnSil.Location = new System.Drawing.Point(265, 39);
+            this.btnSil.Margin = new System.Windows.Forms.Padding(4);
+            this.btnSil.Name = "btnSil";
+            this.btnSil.Size = new System.Drawing.Size(118, 64);
+            this.btnSil.TabIndex = 2;
+            this.btnSil.Text = "Sil";
+            this.btnSil.Click += new System.EventHandler(this.btnSil_Click);
             // 
             // btnDuzenle
             // 
@@ -252,7 +267,7 @@ namespace NetSatis.BackOffice.Stok
             this.splitContainerControl1.Panel2.Controls.Add(this.gridSplitContainer1);
             this.splitContainerControl1.Panel2.Text = "Panel2";
             this.splitContainerControl1.Size = new System.Drawing.Size(1776, 496);
-            this.splitContainerControl1.SplitterPosition = 222;
+            this.splitContainerControl1.SplitterPosition = 217;
             this.splitContainerControl1.TabIndex = 2;
             // 
             // btnFiltreKapat
@@ -261,7 +276,7 @@ namespace NetSatis.BackOffice.Stok
             this.btnFiltreKapat.ImageOptions.ImageIndex = 6;
             this.btnFiltreKapat.ImageOptions.ImageList = this.imgMenu;
             this.btnFiltreKapat.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleCenter;
-            this.btnFiltreKapat.Location = new System.Drawing.Point(1697, 152);
+            this.btnFiltreKapat.Location = new System.Drawing.Point(1697, 147);
             this.btnFiltreKapat.Margin = new System.Windows.Forms.Padding(4);
             this.btnFiltreKapat.Name = "btnFiltreKapat";
             this.btnFiltreKapat.Size = new System.Drawing.Size(66, 56);
@@ -274,7 +289,7 @@ namespace NetSatis.BackOffice.Stok
             this.btnFiltrele.ImageOptions.ImageIndex = 7;
             this.btnFiltrele.ImageOptions.ImageList = this.imgMenu;
             this.btnFiltrele.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleCenter;
-            this.btnFiltrele.Location = new System.Drawing.Point(1550, 152);
+            this.btnFiltrele.Location = new System.Drawing.Point(1550, 147);
             this.btnFiltrele.Margin = new System.Windows.Forms.Padding(4);
             this.btnFiltrele.Name = "btnFiltrele";
             this.btnFiltrele.Size = new System.Drawing.Size(66, 56);
@@ -287,7 +302,7 @@ namespace NetSatis.BackOffice.Stok
             this.btnFiltreleIptal.ImageOptions.ImageIndex = 8;
             this.btnFiltreleIptal.ImageOptions.ImageList = this.imgMenu;
             this.btnFiltreleIptal.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleCenter;
-            this.btnFiltreleIptal.Location = new System.Drawing.Point(1624, 152);
+            this.btnFiltreleIptal.Location = new System.Drawing.Point(1624, 147);
             this.btnFiltreleIptal.Margin = new System.Windows.Forms.Padding(4);
             this.btnFiltreleIptal.Name = "btnFiltreleIptal";
             this.btnFiltreleIptal.Size = new System.Drawing.Size(66, 56);
@@ -302,7 +317,7 @@ namespace NetSatis.BackOffice.Stok
             this.filterControl1.Margin = new System.Windows.Forms.Padding(4);
             this.filterControl1.Name = "filterControl1";
             this.filterControl1.NodeSeparatorHeight = 2;
-            this.filterControl1.Size = new System.Drawing.Size(1776, 222);
+            this.filterControl1.Size = new System.Drawing.Size(1776, 217);
             this.filterControl1.SourceControl = this.gridControl1;
             this.filterControl1.TabIndex = 0;
             this.filterControl1.Text = "s";
@@ -315,7 +330,7 @@ namespace NetSatis.BackOffice.Stok
             this.gridControl1.MainView = this.gridView1;
             this.gridControl1.Margin = new System.Windows.Forms.Padding(4);
             this.gridControl1.Name = "gridControl1";
-            this.gridControl1.Size = new System.Drawing.Size(1776, 262);
+            this.gridControl1.Size = new System.Drawing.Size(1776, 267);
             this.gridControl1.TabIndex = 0;
             this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
@@ -710,7 +725,7 @@ namespace NetSatis.BackOffice.Stok
             // gridSplitContainer1.Panel1
             // 
             this.gridSplitContainer1.Panel1.Controls.Add(this.gridControl1);
-            this.gridSplitContainer1.Size = new System.Drawing.Size(1776, 262);
+            this.gridSplitContainer1.Size = new System.Drawing.Size(1776, 267);
             this.gridSplitContainer1.TabIndex = 0;
             // 
             // FrmStok
@@ -749,7 +764,7 @@ namespace NetSatis.BackOffice.Stok
         private DevExpress.XtraEditors.SimpleButton btnAra;
         private DevExpress.XtraEditors.SimpleButton btnGuncelle;
         private DevExpress.XtraEditors.SimpleButton btnKopyala;
-        private DevExpress.XtraEditors.SimpleButton btnSıl;
+        private DevExpress.XtraEditors.SimpleButton btnSil;
         private DevExpress.XtraEditors.SimpleButton btnDuzenle;
         private DevExpress.XtraEditors.SimpleButton btnEkle;
         private System.Windows.Forms.ImageList imgMenu;
@@ -794,5 +809,6 @@ namespace NetSatis.BackOffice.Stok
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn1;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn2;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn3;
+        private DevExpress.XtraEditors.SimpleButton btnstokhareket;
     }
 }

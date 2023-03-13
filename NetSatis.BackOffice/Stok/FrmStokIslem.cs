@@ -85,6 +85,7 @@ namespace NetSatis.BackOffice.Stok
 
         }
 
+
         private void FrmStokIslem_Load(object sender, EventArgs e)
         {
 
@@ -95,6 +96,7 @@ namespace NetSatis.BackOffice.Stok
             stokDal.AddOrUpdate(context, _entity);
             stokDal.Save(context);
             this.Close();
+
         }
 
         private void btnKapat_Click(object sender, EventArgs e)

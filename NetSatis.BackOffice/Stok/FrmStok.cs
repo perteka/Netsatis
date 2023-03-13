@@ -61,7 +61,7 @@ namespace NetSatis.BackOffice.Stok
             GetAll();
         }
 
-        private void btnSıl_Click(object sender, EventArgs e)
+        private void btnSil_Click(object sender, EventArgs e)
         {
             if (MessageBox.Show("Seçili olan veriyi silmek istediğinize emin misiniz?", "Uyarı", MessageBoxButtons.YesNo) == DialogResult.Yes)
             {
@@ -95,5 +95,6 @@ namespace NetSatis.BackOffice.Stok
             FrmStokIslem form = new FrmStokIslem(stokEntity);
             form.ShowDialog();
         }
+
     }
 }
