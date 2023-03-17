@@ -17,6 +17,7 @@ namespace NetSatis.BackOffice.Stok
     {
         NetSatisContext context = new NetSatisContext();
         StokDAL stokDal = new StokDAL();
+        private string secilen;
         public FrmStok()
         {
             InitializeComponent();
@@ -65,7 +66,7 @@ namespace NetSatis.BackOffice.Stok
         {
             if (MessageBox.Show("Seçili olan veriyi silmek istediğinize emin misiniz?", "Uyarı", MessageBoxButtons.YesNo) == DialogResult.Yes)
             {
-                string secilen = gridView1.GetFocusedRowCellValue(colStokKodu).ToString();
+                secilen = gridView1.GetFocusedRowCellValue(colStokKodu).ToString();
                 stokDal.Delete(context, c => c.StokKodu == secilen);
                 stokDal.Save(context);
                 GetAll();
@@ -80,19 +81,26 @@ namespace NetSatis.BackOffice.Stok
 
         private void btnDuzenle_Click(object sender, EventArgs e)
         {
-            string secilen = gridView1.GetFocusedRowCellValue(colStokKodu).ToString();
+            secilen = gridView1.GetFocusedRowCellValue(colStokKodu).ToString();
             FrmStokIslem form = new FrmStokIslem(stokDal.GetByFilter(context, c => c.StokKodu == secilen));
             form.ShowDialog();
         }
 
         private void btnKopyala_Click(object sender, EventArgs e)
         {
-            string secilen = gridView1.GetFocusedRowCellValue(colStokKodu).ToString();
+            secilen = gridView1.GetFocusedRowCellValue(colStokKodu).ToString();
             Entities.Tables.Stok stokEntity = new Entities.Tables.Stok();
             stokEntity = stokDal.GetByFilter(context, c => c.StokKodu == secilen);
             stokEntity.Id = -1;
             stokEntity.StokKodu = null;
             FrmStokIslem form = new FrmStokIslem(stokEntity);
+            form.ShowDialog();
+        }
+        private void btnStokHareket_Click(object sender, EventArgs e)
+        {
+            secilen = gridView1.GetFocusedRowCellValue(colStokKodu).ToString();
+            string secilenAd = gridView1.GetFocusedRowCellValue(colStokAdi).ToString();
+            FrmStokHareket form = new FrmStokHareket(secilen, secilenAd);
             form.ShowDialog();
         }
 
