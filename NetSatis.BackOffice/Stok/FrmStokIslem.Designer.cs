@@ -255,10 +255,10 @@ namespace NetSatis.BackOffice.Stok
             this.groupMenu.Controls.Add(this.btnKaydet);
             this.groupMenu.Controls.Add(this.btnKapat);
             this.groupMenu.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.groupMenu.Location = new System.Drawing.Point(0, 725);
+            this.groupMenu.Location = new System.Drawing.Point(0, 714);
             this.groupMenu.Margin = new System.Windows.Forms.Padding(15);
             this.groupMenu.Name = "groupMenu";
-            this.groupMenu.Size = new System.Drawing.Size(784, 74);
+            this.groupMenu.Size = new System.Drawing.Size(784, 85);
             this.groupMenu.TabIndex = 5;
             this.groupMenu.Text = "Menü";
             // 
@@ -270,7 +270,7 @@ namespace NetSatis.BackOffice.Stok
             this.btnKaydet.Location = new System.Drawing.Point(537, 31);
             this.btnKaydet.Margin = new System.Windows.Forms.Padding(19);
             this.btnKaydet.Name = "btnKaydet";
-            this.btnKaydet.Size = new System.Drawing.Size(110, 39);
+            this.btnKaydet.Size = new System.Drawing.Size(110, 50);
             this.btnKaydet.TabIndex = 2;
             this.btnKaydet.Text = "Kaydet";
             this.btnKaydet.Click += new System.EventHandler(this.btnKaydet_Click);
@@ -290,7 +290,7 @@ namespace NetSatis.BackOffice.Stok
             this.btnKapat.Location = new System.Drawing.Point(657, 31);
             this.btnKapat.Margin = new System.Windows.Forms.Padding(15);
             this.btnKapat.Name = "btnKapat";
-            this.btnKapat.Size = new System.Drawing.Size(110, 39);
+            this.btnKapat.Size = new System.Drawing.Size(110, 50);
             this.btnKapat.TabIndex = 2;
             this.btnKapat.Text = "Kapat";
             this.btnKapat.Click += new System.EventHandler(this.btnKapat_Click);
@@ -418,8 +418,8 @@ namespace NetSatis.BackOffice.Stok
             // 
             this.toggleDurumu.Location = new System.Drawing.Point(131, 38);
             this.toggleDurumu.Name = "toggleDurumu";
-            this.toggleDurumu.Properties.OffText = "Off";
-            this.toggleDurumu.Properties.OnText = "On";
+            this.toggleDurumu.Properties.OffText = "Pasif";
+            this.toggleDurumu.Properties.OnText = "Aktif";
             this.toggleDurumu.Size = new System.Drawing.Size(95, 24);
             this.toggleDurumu.TabIndex = 8;
             // 

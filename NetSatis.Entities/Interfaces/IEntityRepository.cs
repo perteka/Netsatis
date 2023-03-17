@@ -15,7 +15,7 @@ namespace NetSatis.Entities.Interfaces
         where TContext : DbContext, new()
         where TEntity : class, IEntity, new()
     {
-        void AddOrUpdate(TContext context, TEntity entity);
+        bool AddOrUpdate(TContext context, TEntity entity);
         void Delete(TContext context, Expression<Func<TEntity, bool>> filter);
         void Save(TContext context);
     }

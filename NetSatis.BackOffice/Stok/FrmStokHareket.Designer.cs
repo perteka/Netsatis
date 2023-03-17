@@ -125,7 +125,7 @@ namespace NetSatis.BackOffice.Stok
             this.lblBaslik.Location = new System.Drawing.Point(0, 0);
             this.lblBaslik.Margin = new System.Windows.Forms.Padding(5);
             this.lblBaslik.Name = "lblBaslik";
-            this.lblBaslik.Size = new System.Drawing.Size(1302, 65);
+            this.lblBaslik.Size = new System.Drawing.Size(1302, 60);
             this.lblBaslik.TabIndex = 1;
             this.lblBaslik.Text = "Stok Kartları";
             // 
@@ -135,10 +135,10 @@ namespace NetSatis.BackOffice.Stok
             this.groupControl1.Controls.Add(this.btnAra);
             this.groupControl1.Controls.Add(this.btnGuncelle);
             this.groupControl1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.groupControl1.Location = new System.Drawing.Point(0, 614);
+            this.groupControl1.Location = new System.Drawing.Point(0, 620);
             this.groupControl1.Margin = new System.Windows.Forms.Padding(4);
             this.groupControl1.Name = "groupControl1";
-            this.groupControl1.Size = new System.Drawing.Size(1302, 118);
+            this.groupControl1.Size = new System.Drawing.Size(1302, 112);
             this.groupControl1.TabIndex = 2;
             this.groupControl1.Text = "Menü";
             // 
@@ -147,10 +147,10 @@ namespace NetSatis.BackOffice.Stok
             this.btnKapat.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnKapat.ImageOptions.ImageIndex = 0;
             this.btnKapat.ImageOptions.ImageList = this.ımageList1;
-            this.btnKapat.Location = new System.Drawing.Point(1172, 39);
+            this.btnKapat.Location = new System.Drawing.Point(1172, 42);
             this.btnKapat.Margin = new System.Windows.Forms.Padding(4);
             this.btnKapat.Name = "btnKapat";
-            this.btnKapat.Size = new System.Drawing.Size(117, 64);
+            this.btnKapat.Size = new System.Drawing.Size(117, 57);
             this.btnKapat.TabIndex = 2;
             this.btnKapat.Text = "Kapat";
             this.btnKapat.Click += new System.EventHandler(this.btnKapat_Click);
@@ -167,10 +167,10 @@ namespace NetSatis.BackOffice.Stok
             // 
             this.btnAra.ImageOptions.ImageIndex = 2;
             this.btnAra.ImageOptions.ImageList = this.ımageList1;
-            this.btnAra.Location = new System.Drawing.Point(135, 39);
+            this.btnAra.Location = new System.Drawing.Point(135, 41);
             this.btnAra.Margin = new System.Windows.Forms.Padding(4);
             this.btnAra.Name = "btnAra";
-            this.btnAra.Size = new System.Drawing.Size(118, 64);
+            this.btnAra.Size = new System.Drawing.Size(118, 57);
             this.btnAra.TabIndex = 2;
             this.btnAra.Text = "Ara";
             this.btnAra.Click += new System.EventHandler(this.btnAra_Click);
@@ -179,10 +179,10 @@ namespace NetSatis.BackOffice.Stok
             // 
             this.btnGuncelle.ImageOptions.ImageIndex = 1;
             this.btnGuncelle.ImageOptions.ImageList = this.ımageList1;
-            this.btnGuncelle.Location = new System.Drawing.Point(9, 39);
+            this.btnGuncelle.Location = new System.Drawing.Point(9, 41);
             this.btnGuncelle.Margin = new System.Windows.Forms.Padding(4);
             this.btnGuncelle.Name = "btnGuncelle";
-            this.btnGuncelle.Size = new System.Drawing.Size(118, 64);
+            this.btnGuncelle.Size = new System.Drawing.Size(118, 57);
             this.btnGuncelle.TabIndex = 2;
             this.btnGuncelle.Text = "Güncelle";
             this.btnGuncelle.Click += new System.EventHandler(this.btnGuncelle_Click);
@@ -191,7 +191,7 @@ namespace NetSatis.BackOffice.Stok
             // 
             this.splitContainerControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.splitContainerControl1.Horizontal = false;
-            this.splitContainerControl1.Location = new System.Drawing.Point(0, 65);
+            this.splitContainerControl1.Location = new System.Drawing.Point(0, 60);
             this.splitContainerControl1.Name = "splitContainerControl1";
             // 
             // splitContainerControl1.Panel1
@@ -203,7 +203,7 @@ namespace NetSatis.BackOffice.Stok
             // 
             this.splitContainerControl1.Panel2.Controls.Add(this.splitContainerControl2);
             this.splitContainerControl1.Panel2.Text = "Panel2";
-            this.splitContainerControl1.Size = new System.Drawing.Size(1302, 549);
+            this.splitContainerControl1.Size = new System.Drawing.Size(1302, 560);
             this.splitContainerControl1.SplitterPosition = 326;
             this.splitContainerControl1.TabIndex = 3;
             // 
@@ -251,6 +251,7 @@ namespace NetSatis.BackOffice.Stok
             // 
             // colId1
             // 
+            this.colId1.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
             this.colId1.FieldName = "Id";
             this.colId1.MinWidth = 25;
             this.colId1.Name = "colId1";
@@ -338,6 +339,8 @@ namespace NetSatis.BackOffice.Stok
             // colKdv1
             // 
             this.colKdv1.Caption = "(KDV)%";
+            this.colKdv1.DisplayFormat.FormatString = "\'%\'0";
+            this.colKdv1.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
             this.colKdv1.FieldName = "Kdv";
             this.colKdv1.MinWidth = 25;
             this.colKdv1.Name = "colKdv1";
@@ -349,6 +352,8 @@ namespace NetSatis.BackOffice.Stok
             // colBirimFiyati
             // 
             this.colBirimFiyati.Caption = "Birim Fiyatı";
+            this.colBirimFiyati.DisplayFormat.FormatString = "C2";
+            this.colBirimFiyati.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
             this.colBirimFiyati.FieldName = "BirimFiyati";
             this.colBirimFiyati.MinWidth = 25;
             this.colBirimFiyati.Name = "colBirimFiyati";
@@ -360,6 +365,8 @@ namespace NetSatis.BackOffice.Stok
             // colIndirimOrani
             // 
             this.colIndirimOrani.Caption = "İnd. Oran(%)";
+            this.colIndirimOrani.DisplayFormat.FormatString = "\'%\'0";
+            this.colIndirimOrani.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
             this.colIndirimOrani.FieldName = "IndirimOrani";
             this.colIndirimOrani.MinWidth = 25;
             this.colIndirimOrani.Name = "colIndirimOrani";
@@ -371,6 +378,8 @@ namespace NetSatis.BackOffice.Stok
             // colIndirimTutarı
             // 
             this.colIndirimTutarı.Caption = "İnd. Tutar";
+            this.colIndirimTutarı.DisplayFormat.FormatString = "C2";
+            this.colIndirimTutarı.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
             this.colIndirimTutarı.FieldName = "IndirimTutari";
             this.colIndirimTutarı.MinWidth = 25;
             this.colIndirimTutarı.Name = "colIndirimTutarı";
@@ -382,6 +391,8 @@ namespace NetSatis.BackOffice.Stok
             // colToplamTutar
             // 
             this.colToplamTutar.Caption = "Toplam Tutar";
+            this.colToplamTutar.DisplayFormat.FormatString = "C2";
+            this.colToplamTutar.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
             this.colToplamTutar.FieldName = "ToplamTutar";
             this.colToplamTutar.MinWidth = 25;
             this.colToplamTutar.Name = "colToplamTutar";
@@ -420,6 +431,8 @@ namespace NetSatis.BackOffice.Stok
             // colTarih
             // 
             this.colTarih.Caption = "Tarih";
+            this.colTarih.DisplayFormat.FormatString = "d";
+            this.colTarih.DisplayFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
             this.colTarih.FieldName = "Tarih";
             this.colTarih.MinWidth = 25;
             this.colTarih.Name = "colTarih";
@@ -431,6 +444,8 @@ namespace NetSatis.BackOffice.Stok
             // colSaat
             // 
             this.colSaat.Caption = "Saat";
+            this.colSaat.DisplayFormat.FormatString = "t";
+            this.colSaat.DisplayFormat.FormatType = DevExpress.Utils.FormatType.DateTime;
             this.colSaat.FieldName = "Tarih";
             this.colSaat.MinWidth = 25;
             this.colSaat.Name = "colSaat";
@@ -464,7 +479,7 @@ namespace NetSatis.BackOffice.Stok
             // 
             this.splitContainerControl2.Panel2.Controls.Add(this.groupControl3);
             this.splitContainerControl2.Panel2.Text = "Panel2";
-            this.splitContainerControl2.Size = new System.Drawing.Size(1302, 211);
+            this.splitContainerControl2.Size = new System.Drawing.Size(1302, 222);
             this.splitContainerControl2.SplitterPosition = 563;
             this.splitContainerControl2.TabIndex = 0;
             // 
@@ -474,7 +489,7 @@ namespace NetSatis.BackOffice.Stok
             this.groupControl2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupControl2.Location = new System.Drawing.Point(0, 0);
             this.groupControl2.Name = "groupControl2";
-            this.groupControl2.Size = new System.Drawing.Size(563, 211);
+            this.groupControl2.Size = new System.Drawing.Size(563, 222);
             this.groupControl2.TabIndex = 0;
             this.groupControl2.Text = "Depo Bazında Stok Miktarları";
             // 
@@ -486,7 +501,7 @@ namespace NetSatis.BackOffice.Stok
             this.gridcontDepoStok.MainView = this.gridDepoStok;
             this.gridcontDepoStok.Margin = new System.Windows.Forms.Padding(4);
             this.gridcontDepoStok.Name = "gridcontDepoStok";
-            this.gridcontDepoStok.Size = new System.Drawing.Size(559, 181);
+            this.gridcontDepoStok.Size = new System.Drawing.Size(559, 192);
             this.gridcontDepoStok.TabIndex = 2;
             this.gridcontDepoStok.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridDepoStok});
@@ -566,7 +581,7 @@ namespace NetSatis.BackOffice.Stok
             this.groupControl3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupControl3.Location = new System.Drawing.Point(0, 0);
             this.groupControl3.Name = "groupControl3";
-            this.groupControl3.Size = new System.Drawing.Size(727, 211);
+            this.groupControl3.Size = new System.Drawing.Size(727, 222);
             this.groupControl3.TabIndex = 1;
             this.groupControl3.Text = "Genel Stok Durumu";
             // 
@@ -578,7 +593,7 @@ namespace NetSatis.BackOffice.Stok
             this.gridcontGenelStok.MainView = this.gridGenelStok;
             this.gridcontGenelStok.Margin = new System.Windows.Forms.Padding(4);
             this.gridcontGenelStok.Name = "gridcontGenelStok";
-            this.gridcontGenelStok.Size = new System.Drawing.Size(723, 181);
+            this.gridcontGenelStok.Size = new System.Drawing.Size(723, 192);
             this.gridcontGenelStok.TabIndex = 2;
             this.gridcontGenelStok.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridGenelStok});

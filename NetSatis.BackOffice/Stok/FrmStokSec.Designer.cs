@@ -1,7 +1,7 @@
 ﻿
 namespace NetSatis.BackOffice.Stok
 {
-    partial class FrmStok
+    partial class FrmStokSec
     {
         /// <summary>
         /// Required designer variable.
@@ -30,25 +30,12 @@ namespace NetSatis.BackOffice.Stok
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmStok));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmStokSec));
             this.lblBaslik = new DevExpress.XtraEditors.LabelControl();
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
             this.btnKapat = new DevExpress.XtraEditors.SimpleButton();
-            this.imgMenu = new System.Windows.Forms.ImageList(this.components);
-            this.btnStokHareket = new DevExpress.XtraEditors.SimpleButton();
-            this.btnAra = new DevExpress.XtraEditors.SimpleButton();
-            this.btnGuncelle = new DevExpress.XtraEditors.SimpleButton();
-            this.btnKopyala = new DevExpress.XtraEditors.SimpleButton();
-            this.btnSil = new DevExpress.XtraEditors.SimpleButton();
-            this.btnDuzenle = new DevExpress.XtraEditors.SimpleButton();
-            this.btnEkle = new DevExpress.XtraEditors.SimpleButton();
-            this.splitContainerControl1 = new DevExpress.XtraEditors.SplitContainerControl();
-            this.btnFiltreKapat = new DevExpress.XtraEditors.SimpleButton();
-            this.btnFiltrele = new DevExpress.XtraEditors.SimpleButton();
-            this.btnFiltreleIptal = new DevExpress.XtraEditors.SimpleButton();
-            this.filterControl1 = new DevExpress.XtraEditors.FilterControl();
-            this.gridControl1 = new DevExpress.XtraGrid.GridControl();
-            this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.gridcontStoklar = new DevExpress.XtraGrid.GridControl();
+            this.gridStoklar = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.colDurumu = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colStokKodu = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colStokAdi = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -80,22 +67,13 @@ namespace NetSatis.BackOffice.Stok
             this.gridColumn1 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn2 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn3 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridSplitContainer1 = new DevExpress.XtraGrid.GridSplitContainer();
+            this.btnSec = new DevExpress.XtraEditors.SimpleButton();
+            this.ımageList1 = new System.Windows.Forms.ImageList(this.components);
+            this.lnlUyari = new DevExpress.XtraEditors.LabelControl();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl1.Panel1)).BeginInit();
-            this.splitContainerControl1.Panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl1.Panel2)).BeginInit();
-            this.splitContainerControl1.Panel2.SuspendLayout();
-            this.splitContainerControl1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridSplitContainer1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridSplitContainer1.Panel1)).BeginInit();
-            this.gridSplitContainer1.Panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gridSplitContainer1.Panel2)).BeginInit();
-            this.gridSplitContainer1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gridcontStoklar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridStoklar)).BeginInit();
             this.SuspendLayout();
             // 
             // lblBaslik
@@ -112,232 +90,52 @@ namespace NetSatis.BackOffice.Stok
             this.lblBaslik.Location = new System.Drawing.Point(0, 0);
             this.lblBaslik.Margin = new System.Windows.Forms.Padding(5);
             this.lblBaslik.Name = "lblBaslik";
-            this.lblBaslik.Size = new System.Drawing.Size(1600, 65);
-            this.lblBaslik.TabIndex = 0;
-            this.lblBaslik.Text = "Stok Kartları";
+            this.lblBaslik.Size = new System.Drawing.Size(1121, 65);
+            this.lblBaslik.TabIndex = 2;
+            this.lblBaslik.Text = "Stok Seçim Ekranı";
             // 
             // groupControl1
             // 
+            this.groupControl1.Controls.Add(this.lnlUyari);
+            this.groupControl1.Controls.Add(this.btnSec);
             this.groupControl1.Controls.Add(this.btnKapat);
-            this.groupControl1.Controls.Add(this.btnStokHareket);
-            this.groupControl1.Controls.Add(this.btnAra);
-            this.groupControl1.Controls.Add(this.btnGuncelle);
-            this.groupControl1.Controls.Add(this.btnKopyala);
-            this.groupControl1.Controls.Add(this.btnSil);
-            this.groupControl1.Controls.Add(this.btnDuzenle);
-            this.groupControl1.Controls.Add(this.btnEkle);
             this.groupControl1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.groupControl1.Location = new System.Drawing.Point(0, 561);
+            this.groupControl1.Location = new System.Drawing.Point(0, 540);
             this.groupControl1.Margin = new System.Windows.Forms.Padding(4);
             this.groupControl1.Name = "groupControl1";
-            this.groupControl1.Size = new System.Drawing.Size(1600, 118);
-            this.groupControl1.TabIndex = 1;
+            this.groupControl1.Size = new System.Drawing.Size(1121, 100);
+            this.groupControl1.TabIndex = 3;
             this.groupControl1.Text = "Menü";
             // 
             // btnKapat
             // 
             this.btnKapat.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnKapat.ImageOptions.ImageIndex = 6;
-            this.btnKapat.ImageOptions.ImageList = this.imgMenu;
-            this.btnKapat.Location = new System.Drawing.Point(1470, 39);
+            this.btnKapat.ImageOptions.ImageIndex = 1;
+            this.btnKapat.ImageOptions.ImageList = this.ımageList1;
+            this.btnKapat.Location = new System.Drawing.Point(998, 40);
             this.btnKapat.Margin = new System.Windows.Forms.Padding(4);
             this.btnKapat.Name = "btnKapat";
-            this.btnKapat.Size = new System.Drawing.Size(118, 64);
+            this.btnKapat.Size = new System.Drawing.Size(117, 45);
             this.btnKapat.TabIndex = 2;
             this.btnKapat.Text = "Kapat";
             this.btnKapat.Click += new System.EventHandler(this.btnKapat_Click);
             // 
-            // imgMenu
+            // gridcontStoklar
             // 
-            this.imgMenu.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imgMenu.ImageStream")));
-            this.imgMenu.TransparentColor = System.Drawing.Color.Transparent;
-            this.imgMenu.Images.SetKeyName(0, "refresh.png");
-            this.imgMenu.Images.SetKeyName(1, "Stok Düzenle.png");
-            this.imgMenu.Images.SetKeyName(2, "Stok Ekle.png");
-            this.imgMenu.Images.SetKeyName(3, "Stok Kopyala.png");
-            this.imgMenu.Images.SetKeyName(4, "Stok Sil.png");
-            this.imgMenu.Images.SetKeyName(5, "view.png");
-            this.imgMenu.Images.SetKeyName(6, "folder_out.png");
-            this.imgMenu.Images.SetKeyName(7, "funnel.png");
-            this.imgMenu.Images.SetKeyName(8, "funnel_delete.png");
-            this.imgMenu.Images.SetKeyName(9, "StokHareket.png");
+            this.gridcontStoklar.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gridcontStoklar.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(4);
+            this.gridcontStoklar.Location = new System.Drawing.Point(0, 65);
+            this.gridcontStoklar.MainView = this.gridStoklar;
+            this.gridcontStoklar.Margin = new System.Windows.Forms.Padding(4);
+            this.gridcontStoklar.Name = "gridcontStoklar";
+            this.gridcontStoklar.Size = new System.Drawing.Size(1121, 475);
+            this.gridcontStoklar.TabIndex = 4;
+            this.gridcontStoklar.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.gridStoklar});
             // 
-            // btnStokHareket
+            // gridStoklar
             // 
-            this.btnStokHareket.ImageOptions.ImageIndex = 9;
-            this.btnStokHareket.ImageOptions.ImageList = this.imgMenu;
-            this.btnStokHareket.Location = new System.Drawing.Point(516, 39);
-            this.btnStokHareket.Margin = new System.Windows.Forms.Padding(4);
-            this.btnStokHareket.Name = "btnStokHareket";
-            this.btnStokHareket.Size = new System.Drawing.Size(118, 64);
-            this.btnStokHareket.TabIndex = 2;
-            this.btnStokHareket.Text = "Stok\r\nHareket";
-            this.btnStokHareket.Click += new System.EventHandler(this.btnStokHareket_Click);
-            // 
-            // btnAra
-            // 
-            this.btnAra.ImageOptions.ImageIndex = 5;
-            this.btnAra.ImageOptions.ImageList = this.imgMenu;
-            this.btnAra.Location = new System.Drawing.Point(768, 39);
-            this.btnAra.Margin = new System.Windows.Forms.Padding(4);
-            this.btnAra.Name = "btnAra";
-            this.btnAra.Size = new System.Drawing.Size(118, 64);
-            this.btnAra.TabIndex = 2;
-            this.btnAra.Text = "Ara";
-            this.btnAra.Click += new System.EventHandler(this.btnAra_Click);
-            // 
-            // btnGuncelle
-            // 
-            this.btnGuncelle.ImageOptions.ImageIndex = 0;
-            this.btnGuncelle.ImageOptions.ImageList = this.imgMenu;
-            this.btnGuncelle.Location = new System.Drawing.Point(642, 39);
-            this.btnGuncelle.Margin = new System.Windows.Forms.Padding(4);
-            this.btnGuncelle.Name = "btnGuncelle";
-            this.btnGuncelle.Size = new System.Drawing.Size(118, 64);
-            this.btnGuncelle.TabIndex = 2;
-            this.btnGuncelle.Text = "Güncelle";
-            this.btnGuncelle.Click += new System.EventHandler(this.btnGuncelle_Click);
-            // 
-            // btnKopyala
-            // 
-            this.btnKopyala.ImageOptions.ImageIndex = 3;
-            this.btnKopyala.ImageOptions.ImageList = this.imgMenu;
-            this.btnKopyala.Location = new System.Drawing.Point(390, 39);
-            this.btnKopyala.Margin = new System.Windows.Forms.Padding(4);
-            this.btnKopyala.Name = "btnKopyala";
-            this.btnKopyala.Size = new System.Drawing.Size(118, 64);
-            this.btnKopyala.TabIndex = 2;
-            this.btnKopyala.Text = "Kopyala";
-            this.btnKopyala.Click += new System.EventHandler(this.btnKopyala_Click);
-            // 
-            // btnSil
-            // 
-            this.btnSil.ImageOptions.ImageIndex = 4;
-            this.btnSil.ImageOptions.ImageList = this.imgMenu;
-            this.btnSil.Location = new System.Drawing.Point(265, 39);
-            this.btnSil.Margin = new System.Windows.Forms.Padding(4);
-            this.btnSil.Name = "btnSil";
-            this.btnSil.Size = new System.Drawing.Size(118, 64);
-            this.btnSil.TabIndex = 2;
-            this.btnSil.Text = "Sil";
-            this.btnSil.Click += new System.EventHandler(this.btnSil_Click);
-            // 
-            // btnDuzenle
-            // 
-            this.btnDuzenle.ImageOptions.ImageIndex = 1;
-            this.btnDuzenle.ImageOptions.ImageList = this.imgMenu;
-            this.btnDuzenle.Location = new System.Drawing.Point(140, 39);
-            this.btnDuzenle.Margin = new System.Windows.Forms.Padding(4);
-            this.btnDuzenle.Name = "btnDuzenle";
-            this.btnDuzenle.Size = new System.Drawing.Size(118, 64);
-            this.btnDuzenle.TabIndex = 2;
-            this.btnDuzenle.Text = "Düzenle";
-            this.btnDuzenle.Click += new System.EventHandler(this.btnDuzenle_Click);
-            // 
-            // btnEkle
-            // 
-            this.btnEkle.ImageOptions.ImageIndex = 2;
-            this.btnEkle.ImageOptions.ImageList = this.imgMenu;
-            this.btnEkle.Location = new System.Drawing.Point(15, 39);
-            this.btnEkle.Margin = new System.Windows.Forms.Padding(4);
-            this.btnEkle.Name = "btnEkle";
-            this.btnEkle.Size = new System.Drawing.Size(118, 64);
-            this.btnEkle.TabIndex = 2;
-            this.btnEkle.Text = "Ekle";
-            this.btnEkle.Click += new System.EventHandler(this.btnEkle_Click);
-            // 
-            // splitContainerControl1
-            // 
-            this.splitContainerControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.splitContainerControl1.Horizontal = false;
-            this.splitContainerControl1.Location = new System.Drawing.Point(0, 65);
-            this.splitContainerControl1.Margin = new System.Windows.Forms.Padding(4);
-            this.splitContainerControl1.Name = "splitContainerControl1";
-            // 
-            // splitContainerControl1.Panel1
-            // 
-            this.splitContainerControl1.Panel1.Controls.Add(this.btnFiltreKapat);
-            this.splitContainerControl1.Panel1.Controls.Add(this.btnFiltrele);
-            this.splitContainerControl1.Panel1.Controls.Add(this.btnFiltreleIptal);
-            this.splitContainerControl1.Panel1.Controls.Add(this.filterControl1);
-            this.splitContainerControl1.Panel1.Text = "Panel1";
-            // 
-            // splitContainerControl1.Panel2
-            // 
-            this.splitContainerControl1.Panel2.Controls.Add(this.gridSplitContainer1);
-            this.splitContainerControl1.Panel2.Text = "Panel2";
-            this.splitContainerControl1.Size = new System.Drawing.Size(1600, 496);
-            this.splitContainerControl1.SplitterPosition = 217;
-            this.splitContainerControl1.TabIndex = 2;
-            // 
-            // btnFiltreKapat
-            // 
-            this.btnFiltreKapat.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnFiltreKapat.ImageOptions.ImageIndex = 6;
-            this.btnFiltreKapat.ImageOptions.ImageList = this.imgMenu;
-            this.btnFiltreKapat.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleCenter;
-            this.btnFiltreKapat.Location = new System.Drawing.Point(1521, 147);
-            this.btnFiltreKapat.Margin = new System.Windows.Forms.Padding(4);
-            this.btnFiltreKapat.Name = "btnFiltreKapat";
-            this.btnFiltreKapat.Size = new System.Drawing.Size(66, 56);
-            this.btnFiltreKapat.TabIndex = 2;
-            this.btnFiltreKapat.Click += new System.EventHandler(this.btnFiltreKapat_Click);
-            // 
-            // btnFiltrele
-            // 
-            this.btnFiltrele.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnFiltrele.ImageOptions.ImageIndex = 7;
-            this.btnFiltrele.ImageOptions.ImageList = this.imgMenu;
-            this.btnFiltrele.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleCenter;
-            this.btnFiltrele.Location = new System.Drawing.Point(1374, 147);
-            this.btnFiltrele.Margin = new System.Windows.Forms.Padding(4);
-            this.btnFiltrele.Name = "btnFiltrele";
-            this.btnFiltrele.Size = new System.Drawing.Size(66, 56);
-            this.btnFiltrele.TabIndex = 2;
-            this.btnFiltrele.Click += new System.EventHandler(this.btnFiltrele_Click);
-            // 
-            // btnFiltreleIptal
-            // 
-            this.btnFiltreleIptal.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnFiltreleIptal.ImageOptions.ImageIndex = 8;
-            this.btnFiltreleIptal.ImageOptions.ImageList = this.imgMenu;
-            this.btnFiltreleIptal.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleCenter;
-            this.btnFiltreleIptal.Location = new System.Drawing.Point(1448, 147);
-            this.btnFiltreleIptal.Margin = new System.Windows.Forms.Padding(4);
-            this.btnFiltreleIptal.Name = "btnFiltreleIptal";
-            this.btnFiltreleIptal.Size = new System.Drawing.Size(66, 56);
-            this.btnFiltreleIptal.TabIndex = 2;
-            this.btnFiltreleIptal.Click += new System.EventHandler(this.btnFiltreleIptal_Click);
-            // 
-            // filterControl1
-            // 
-            this.filterControl1.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.filterControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.filterControl1.Location = new System.Drawing.Point(0, 0);
-            this.filterControl1.Margin = new System.Windows.Forms.Padding(4);
-            this.filterControl1.Name = "filterControl1";
-            this.filterControl1.NodeSeparatorHeight = 2;
-            this.filterControl1.Size = new System.Drawing.Size(1600, 217);
-            this.filterControl1.SourceControl = this.gridControl1;
-            this.filterControl1.TabIndex = 0;
-            this.filterControl1.Text = "s";
-            // 
-            // gridControl1
-            // 
-            this.gridControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gridControl1.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(4);
-            this.gridControl1.Location = new System.Drawing.Point(0, 0);
-            this.gridControl1.MainView = this.gridView1;
-            this.gridControl1.Margin = new System.Windows.Forms.Padding(4);
-            this.gridControl1.Name = "gridControl1";
-            this.gridControl1.Size = new System.Drawing.Size(1600, 267);
-            this.gridControl1.TabIndex = 0;
-            this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
-            this.gridView1});
-            // 
-            // gridView1
-            // 
-            this.gridView1.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
+            this.gridStoklar.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
             this.colDurumu,
             this.colStokKodu,
             this.colStokAdi,
@@ -369,17 +167,16 @@ namespace NetSatis.BackOffice.Stok
             this.gridColumn1,
             this.gridColumn2,
             this.gridColumn3});
-            this.gridView1.CustomizationFormBounds = new System.Drawing.Rectangle(782, 365, 392, 331);
-            this.gridView1.DetailHeight = 437;
-            this.gridView1.GridControl = this.gridControl1;
-            this.gridView1.Name = "gridView1";
-            this.gridView1.OptionsView.ShowGroupPanel = false;
+            this.gridStoklar.CustomizationFormBounds = new System.Drawing.Rectangle(1190, 336, 392, 331);
+            this.gridStoklar.DetailHeight = 437;
+            this.gridStoklar.GridControl = this.gridcontStoklar;
+            this.gridStoklar.Name = "gridStoklar";
+            this.gridStoklar.OptionsView.ShowAutoFilterRow = true;
+            this.gridStoklar.OptionsView.ShowGroupPanel = false;
             // 
             // colDurumu
             // 
             this.colDurumu.Caption = "Durumu";
-            this.colDurumu.DisplayFormat.FormatString = "C2";
-            this.colDurumu.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
             this.colDurumu.FieldName = "Durumu";
             this.colDurumu.MinWidth = 31;
             this.colDurumu.Name = "colDurumu";
@@ -387,7 +184,7 @@ namespace NetSatis.BackOffice.Stok
             this.colDurumu.OptionsColumn.AllowMove = false;
             this.colDurumu.Visible = true;
             this.colDurumu.VisibleIndex = 0;
-            this.colDurumu.Width = 58;
+            this.colDurumu.Width = 66;
             // 
             // colStokKodu
             // 
@@ -399,7 +196,7 @@ namespace NetSatis.BackOffice.Stok
             this.colStokKodu.OptionsColumn.AllowMove = false;
             this.colStokKodu.Visible = true;
             this.colStokKodu.VisibleIndex = 1;
-            this.colStokKodu.Width = 83;
+            this.colStokKodu.Width = 94;
             // 
             // colStokAdi
             // 
@@ -411,7 +208,7 @@ namespace NetSatis.BackOffice.Stok
             this.colStokAdi.OptionsColumn.AllowMove = false;
             this.colStokAdi.Visible = true;
             this.colStokAdi.VisibleIndex = 2;
-            this.colStokAdi.Width = 174;
+            this.colStokAdi.Width = 214;
             // 
             // colBarkod
             // 
@@ -423,7 +220,7 @@ namespace NetSatis.BackOffice.Stok
             this.colBarkod.OptionsColumn.AllowMove = false;
             this.colBarkod.Visible = true;
             this.colBarkod.VisibleIndex = 3;
-            this.colBarkod.Width = 66;
+            this.colBarkod.Width = 76;
             // 
             // colBarkodTuru
             // 
@@ -435,7 +232,7 @@ namespace NetSatis.BackOffice.Stok
             this.colBarkodTuru.OptionsColumn.AllowMove = false;
             this.colBarkodTuru.Visible = true;
             this.colBarkodTuru.VisibleIndex = 4;
-            this.colBarkodTuru.Width = 102;
+            this.colBarkodTuru.Width = 114;
             // 
             // colId
             // 
@@ -455,7 +252,7 @@ namespace NetSatis.BackOffice.Stok
             this.colBirimi.OptionsColumn.AllowMove = false;
             this.colBirimi.Visible = true;
             this.colBirimi.VisibleIndex = 5;
-            this.colBirimi.Width = 80;
+            this.colBirimi.Width = 91;
             // 
             // colStokGrubu
             // 
@@ -467,7 +264,7 @@ namespace NetSatis.BackOffice.Stok
             this.colStokGrubu.OptionsColumn.AllowMove = false;
             this.colStokGrubu.Visible = true;
             this.colStokGrubu.VisibleIndex = 6;
-            this.colStokGrubu.Width = 97;
+            this.colStokGrubu.Width = 109;
             // 
             // colStokAltGrubu
             // 
@@ -478,8 +275,8 @@ namespace NetSatis.BackOffice.Stok
             this.colStokAltGrubu.OptionsColumn.AllowEdit = false;
             this.colStokAltGrubu.OptionsColumn.AllowMove = false;
             this.colStokAltGrubu.Visible = true;
-            this.colStokAltGrubu.VisibleIndex = 7;
-            this.colStokAltGrubu.Width = 106;
+            this.colStokAltGrubu.VisibleIndex = 8;
+            this.colStokAltGrubu.Width = 89;
             // 
             // colMarka
             // 
@@ -570,8 +367,8 @@ namespace NetSatis.BackOffice.Stok
             this.colAlisKdv.OptionsColumn.AllowEdit = false;
             this.colAlisKdv.OptionsColumn.AllowMove = false;
             this.colAlisKdv.Visible = true;
-            this.colAlisKdv.VisibleIndex = 9;
-            this.colAlisKdv.Width = 78;
+            this.colAlisKdv.VisibleIndex = 7;
+            this.colAlisKdv.Width = 91;
             // 
             // colSatisKdv
             // 
@@ -586,46 +383,40 @@ namespace NetSatis.BackOffice.Stok
             // colAlisFiyati1
             // 
             this.colAlisFiyati1.Caption = "Alış Fiyatı-1";
-            this.colAlisFiyati1.DisplayFormat.FormatString = "C2";
-            this.colAlisFiyati1.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
             this.colAlisFiyati1.FieldName = "AlisFiyati1";
             this.colAlisFiyati1.MinWidth = 31;
             this.colAlisFiyati1.Name = "colAlisFiyati1";
             this.colAlisFiyati1.OptionsColumn.AllowEdit = false;
             this.colAlisFiyati1.OptionsColumn.AllowMove = false;
-            this.colAlisFiyati1.Visible = true;
-            this.colAlisFiyati1.VisibleIndex = 10;
-            this.colAlisFiyati1.Width = 121;
+            this.colAlisFiyati1.Width = 117;
             // 
             // colAlisFiyati2
             // 
             this.colAlisFiyati2.Caption = "Alış Fiyatı-2";
-            this.colAlisFiyati2.DisplayFormat.FormatString = "C2";
-            this.colAlisFiyati2.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
             this.colAlisFiyati2.FieldName = "AlisFiyati2";
             this.colAlisFiyati2.MinWidth = 31;
             this.colAlisFiyati2.Name = "colAlisFiyati2";
             this.colAlisFiyati2.OptionsColumn.AllowEdit = false;
             this.colAlisFiyati2.OptionsColumn.AllowMove = false;
-            this.colAlisFiyati2.Width = 104;
+            this.colAlisFiyati2.Visible = true;
+            this.colAlisFiyati2.VisibleIndex = 11;
+            this.colAlisFiyati2.Width = 105;
             // 
             // colAlisFiyati3
             // 
             this.colAlisFiyati3.Caption = "Alış Fiyatı-3";
-            this.colAlisFiyati3.DisplayFormat.FormatString = "C2";
-            this.colAlisFiyati3.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
             this.colAlisFiyati3.FieldName = "AlisFiyati3";
             this.colAlisFiyati3.MinWidth = 31;
             this.colAlisFiyati3.Name = "colAlisFiyati3";
             this.colAlisFiyati3.OptionsColumn.AllowEdit = false;
             this.colAlisFiyati3.OptionsColumn.AllowMove = false;
-            this.colAlisFiyati3.Width = 99;
+            this.colAlisFiyati3.Visible = true;
+            this.colAlisFiyati3.VisibleIndex = 9;
+            this.colAlisFiyati3.Width = 70;
             // 
             // colSatisFiyati1
             // 
             this.colSatisFiyati1.Caption = "Satış Fiyatı-1";
-            this.colSatisFiyati1.DisplayFormat.FormatString = "C2";
-            this.colSatisFiyati1.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
             this.colSatisFiyati1.FieldName = "SatisFiyati1";
             this.colSatisFiyati1.MinWidth = 31;
             this.colSatisFiyati1.Name = "colSatisFiyati1";
@@ -636,8 +427,6 @@ namespace NetSatis.BackOffice.Stok
             // colSatisFiyati2
             // 
             this.colSatisFiyati2.Caption = "Satış Fiyatı-2";
-            this.colSatisFiyati2.DisplayFormat.FormatString = "C2";
-            this.colSatisFiyati2.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
             this.colSatisFiyati2.FieldName = "SatisFiyati2";
             this.colSatisFiyati2.MinWidth = 31;
             this.colSatisFiyati2.Name = "colSatisFiyati2";
@@ -648,8 +437,6 @@ namespace NetSatis.BackOffice.Stok
             // colSatisFiyati3
             // 
             this.colSatisFiyati3.Caption = "Satış Fiyatı-3";
-            this.colSatisFiyati3.DisplayFormat.FormatString = "C2";
-            this.colSatisFiyati3.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
             this.colSatisFiyati3.FieldName = "SatisFiyati3";
             this.colSatisFiyati3.MinWidth = 31;
             this.colSatisFiyati3.Name = "colSatisFiyati3";
@@ -666,8 +453,8 @@ namespace NetSatis.BackOffice.Stok
             this.colMinStokMiktarı.OptionsColumn.AllowEdit = false;
             this.colMinStokMiktarı.OptionsColumn.AllowMove = false;
             this.colMinStokMiktarı.Visible = true;
-            this.colMinStokMiktarı.VisibleIndex = 8;
-            this.colMinStokMiktarı.Width = 129;
+            this.colMinStokMiktarı.VisibleIndex = 10;
+            this.colMinStokMiktarı.Width = 114;
             // 
             // colMaxStokMiktarı
             // 
@@ -678,8 +465,8 @@ namespace NetSatis.BackOffice.Stok
             this.colMaxStokMiktarı.OptionsColumn.AllowEdit = false;
             this.colMaxStokMiktarı.OptionsColumn.AllowMove = false;
             this.colMaxStokMiktarı.Visible = true;
-            this.colMaxStokMiktarı.VisibleIndex = 11;
-            this.colMaxStokMiktarı.Width = 98;
+            this.colMaxStokMiktarı.VisibleIndex = 12;
+            this.colMaxStokMiktarı.Width = 131;
             // 
             // colAciklama
             // 
@@ -690,8 +477,8 @@ namespace NetSatis.BackOffice.Stok
             this.colAciklama.OptionsColumn.AllowEdit = false;
             this.colAciklama.OptionsColumn.AllowMove = false;
             this.colAciklama.Visible = true;
-            this.colAciklama.VisibleIndex = 12;
-            this.colAciklama.Width = 108;
+            this.colAciklama.VisibleIndex = 13;
+            this.colAciklama.Width = 216;
             // 
             // gridColumn1
             // 
@@ -701,8 +488,8 @@ namespace NetSatis.BackOffice.Stok
             this.gridColumn1.Name = "gridColumn1";
             this.gridColumn1.OptionsColumn.AllowEdit = false;
             this.gridColumn1.Visible = true;
-            this.gridColumn1.VisibleIndex = 13;
-            this.gridColumn1.Width = 66;
+            this.gridColumn1.VisibleIndex = 14;
+            this.gridColumn1.Width = 81;
             // 
             // gridColumn2
             // 
@@ -712,8 +499,8 @@ namespace NetSatis.BackOffice.Stok
             this.gridColumn2.Name = "gridColumn2";
             this.gridColumn2.OptionsColumn.AllowEdit = false;
             this.gridColumn2.Visible = true;
-            this.gridColumn2.VisibleIndex = 14;
-            this.gridColumn2.Width = 72;
+            this.gridColumn2.VisibleIndex = 15;
+            this.gridColumn2.Width = 106;
             // 
             // gridColumn3
             // 
@@ -723,49 +510,63 @@ namespace NetSatis.BackOffice.Stok
             this.gridColumn3.Name = "gridColumn3";
             this.gridColumn3.OptionsColumn.AllowEdit = false;
             this.gridColumn3.Visible = true;
-            this.gridColumn3.VisibleIndex = 15;
-            this.gridColumn3.Width = 132;
+            this.gridColumn3.VisibleIndex = 16;
+            this.gridColumn3.Width = 101;
             // 
-            // gridSplitContainer1
+            // btnSec
             // 
-            this.gridSplitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gridSplitContainer1.Grid = this.gridControl1;
-            this.gridSplitContainer1.Location = new System.Drawing.Point(0, 0);
-            this.gridSplitContainer1.Margin = new System.Windows.Forms.Padding(4);
-            this.gridSplitContainer1.Name = "gridSplitContainer1";
+            this.btnSec.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnSec.ImageOptions.ImageIndex = 0;
+            this.btnSec.ImageOptions.ImageList = this.ımageList1;
+            this.btnSec.Location = new System.Drawing.Point(873, 40);
+            this.btnSec.Margin = new System.Windows.Forms.Padding(4);
+            this.btnSec.Name = "btnSec";
+            this.btnSec.Size = new System.Drawing.Size(117, 45);
+            this.btnSec.TabIndex = 2;
+            this.btnSec.Text = "Seç";
+            this.btnSec.Click += new System.EventHandler(this.btnSec_Click);
             // 
-            // gridSplitContainer1.Panel1
+            // ımageList1
             // 
-            this.gridSplitContainer1.Panel1.Controls.Add(this.gridControl1);
-            this.gridSplitContainer1.Size = new System.Drawing.Size(1600, 267);
-            this.gridSplitContainer1.TabIndex = 0;
+            this.ımageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("ımageList1.ImageStream")));
+            this.ımageList1.TransparentColor = System.Drawing.Color.Transparent;
+            this.ımageList1.Images.SetKeyName(0, "check.png");
+            this.ımageList1.Images.SetKeyName(1, "folder_out.png");
             // 
-            // FrmStok
+            // lnlUyari
+            // 
+            this.lnlUyari.Appearance.Font = new System.Drawing.Font("Tahoma", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lnlUyari.Appearance.Options.UseFont = true;
+            this.lnlUyari.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
+            this.lnlUyari.ImageAlignToText = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
+            this.lnlUyari.ImageOptions.Alignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lnlUyari.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("labelControl1.ImageOptions.Image")));
+            this.lnlUyari.Location = new System.Drawing.Point(0, 31);
+            this.lnlUyari.Name = "lnlUyari";
+            this.lnlUyari.Size = new System.Drawing.Size(498, 64);
+            this.lnlUyari.TabIndex = 3;
+            this.lnlUyari.Text = "Çoklu seçim yapabilmek için CTRL tuşuna basılı tutarak seçim yapınız.";
+            this.lnlUyari.Visible = false;
+            // 
+            // FrmStokSec
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1600, 679);
-            this.Controls.Add(this.splitContainerControl1);
+            this.ClientSize = new System.Drawing.Size(1121, 640);
+            this.Controls.Add(this.gridcontStoklar);
             this.Controls.Add(this.groupControl1);
             this.Controls.Add(this.lblBaslik);
-            this.Name = "FrmStok";
-            this.Text = "Stok Kartları";
-            this.Load += new System.EventHandler(this.FrmStok_Load);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
+            this.Name = "FrmStokSec";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Stok Seç";
+            this.Load += new System.EventHandler(this.FrmStokSec_Load);
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
             this.groupControl1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl1.Panel1)).EndInit();
-            this.splitContainerControl1.Panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl1.Panel2)).EndInit();
-            this.splitContainerControl1.Panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl1)).EndInit();
-            this.splitContainerControl1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridSplitContainer1.Panel1)).EndInit();
-            this.gridSplitContainer1.Panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.gridSplitContainer1.Panel2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridSplitContainer1)).EndInit();
-            this.gridSplitContainer1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.gridcontStoklar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridStoklar)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -773,23 +574,11 @@ namespace NetSatis.BackOffice.Stok
         #endregion
 
         private DevExpress.XtraEditors.LabelControl lblBaslik;
-        private DevExpress.XtraEditors.SimpleButton btnAra;
-        private DevExpress.XtraEditors.SimpleButton btnGuncelle;
-        private DevExpress.XtraEditors.SimpleButton btnKopyala;
-        private DevExpress.XtraEditors.SimpleButton btnSil;
-        private DevExpress.XtraEditors.SimpleButton btnDuzenle;
-        private DevExpress.XtraEditors.SimpleButton btnEkle;
-        private System.Windows.Forms.ImageList imgMenu;
         public DevExpress.XtraEditors.GroupControl groupControl1;
         private DevExpress.XtraEditors.SimpleButton btnKapat;
-        private DevExpress.XtraEditors.SplitContainerControl splitContainerControl1;
-        private DevExpress.XtraEditors.FilterControl filterControl1;
-        private DevExpress.XtraEditors.SimpleButton btnFiltreKapat;
-        private DevExpress.XtraEditors.SimpleButton btnFiltreleIptal;
-        private DevExpress.XtraEditors.SimpleButton btnFiltrele;
-        private DevExpress.XtraGrid.GridSplitContainer gridSplitContainer1;
-        private DevExpress.XtraGrid.GridControl gridControl1;
-        private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
+        private DevExpress.XtraEditors.SimpleButton btnSec;
+        private DevExpress.XtraGrid.GridControl gridcontStoklar;
+        private DevExpress.XtraGrid.Views.Grid.GridView gridStoklar;
         private DevExpress.XtraGrid.Columns.GridColumn colDurumu;
         private DevExpress.XtraGrid.Columns.GridColumn colStokKodu;
         private DevExpress.XtraGrid.Columns.GridColumn colStokAdi;
@@ -821,6 +610,7 @@ namespace NetSatis.BackOffice.Stok
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn1;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn2;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn3;
-        private DevExpress.XtraEditors.SimpleButton btnStokHareket;
+        private System.Windows.Forms.ImageList ımageList1;
+        private DevExpress.XtraEditors.LabelControl lnlUyari;
     }
 }
