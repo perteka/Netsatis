@@ -18,6 +18,7 @@ namespace NetSatis.BackOffice.Stok
         private Entities.Tables.Stok _entity;
         private StokDAL stokDal = new StokDAL();
         private NetSatisContext context = new NetSatisContext();
+        public bool saved = false;
         public FrmStokIslem(Entities.Tables.Stok entity)
         {
             InitializeComponent();
@@ -84,13 +85,10 @@ namespace NetSatis.BackOffice.Stok
             cmbBarkodTuru.DataBindings.Add("text", _entity, "BarkodTuru");
 
         }
-
-
         private void FrmStokIslem_Load(object sender, EventArgs e)
         {
 
         }
-
         private void btnKaydet_Click(object sender, EventArgs e)
         {
             if(stokDal.AddOrUpdate(context, _entity))

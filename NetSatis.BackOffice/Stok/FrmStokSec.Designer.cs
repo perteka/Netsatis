@@ -33,6 +33,9 @@ namespace NetSatis.BackOffice.Stok
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmStokSec));
             this.lblBaslik = new DevExpress.XtraEditors.LabelControl();
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
+            this.lnlUyari = new DevExpress.XtraEditors.LabelControl();
+            this.btnSec = new DevExpress.XtraEditors.SimpleButton();
+            this.ımageList1 = new System.Windows.Forms.ImageList(this.components);
             this.btnKapat = new DevExpress.XtraEditors.SimpleButton();
             this.gridcontStoklar = new DevExpress.XtraGrid.GridControl();
             this.gridStoklar = new DevExpress.XtraGrid.Views.Grid.GridView();
@@ -67,9 +70,6 @@ namespace NetSatis.BackOffice.Stok
             this.gridColumn1 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn2 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn3 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.btnSec = new DevExpress.XtraEditors.SimpleButton();
-            this.ımageList1 = new System.Windows.Forms.ImageList(this.components);
-            this.lnlUyari = new DevExpress.XtraEditors.LabelControl();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridcontStoklar)).BeginInit();
@@ -90,7 +90,7 @@ namespace NetSatis.BackOffice.Stok
             this.lblBaslik.Location = new System.Drawing.Point(0, 0);
             this.lblBaslik.Margin = new System.Windows.Forms.Padding(5);
             this.lblBaslik.Name = "lblBaslik";
-            this.lblBaslik.Size = new System.Drawing.Size(1121, 65);
+            this.lblBaslik.Size = new System.Drawing.Size(1145, 65);
             this.lblBaslik.TabIndex = 2;
             this.lblBaslik.Text = "Stok Seçim Ekranı";
             // 
@@ -103,16 +103,51 @@ namespace NetSatis.BackOffice.Stok
             this.groupControl1.Location = new System.Drawing.Point(0, 540);
             this.groupControl1.Margin = new System.Windows.Forms.Padding(4);
             this.groupControl1.Name = "groupControl1";
-            this.groupControl1.Size = new System.Drawing.Size(1121, 100);
+            this.groupControl1.Size = new System.Drawing.Size(1145, 100);
             this.groupControl1.TabIndex = 3;
             this.groupControl1.Text = "Menü";
+            // 
+            // lnlUyari
+            // 
+            this.lnlUyari.Appearance.Font = new System.Drawing.Font("Tahoma", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lnlUyari.Appearance.Options.UseFont = true;
+            this.lnlUyari.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
+            this.lnlUyari.ImageAlignToText = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
+            this.lnlUyari.ImageOptions.Alignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lnlUyari.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("lnlUyari.ImageOptions.Image")));
+            this.lnlUyari.Location = new System.Drawing.Point(0, 31);
+            this.lnlUyari.Name = "lnlUyari";
+            this.lnlUyari.Size = new System.Drawing.Size(498, 64);
+            this.lnlUyari.TabIndex = 3;
+            this.lnlUyari.Text = "Çoklu seçim yapabilmek için CTRL tuşuna basılı tutarak seçim yapınız.";
+            this.lnlUyari.Visible = false;
+            // 
+            // btnSec
+            // 
+            this.btnSec.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnSec.ImageOptions.ImageIndex = 0;
+            this.btnSec.ImageOptions.ImageList = this.ımageList1;
+            this.btnSec.Location = new System.Drawing.Point(897, 40);
+            this.btnSec.Margin = new System.Windows.Forms.Padding(4);
+            this.btnSec.Name = "btnSec";
+            this.btnSec.Size = new System.Drawing.Size(117, 45);
+            this.btnSec.TabIndex = 2;
+            this.btnSec.Text = "Seç";
+            this.btnSec.Click += new System.EventHandler(this.btnSec_Click);
+            // 
+            // ımageList1
+            // 
+            this.ımageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("ımageList1.ImageStream")));
+            this.ımageList1.TransparentColor = System.Drawing.Color.Transparent;
+            this.ımageList1.Images.SetKeyName(0, "check.png");
+            this.ımageList1.Images.SetKeyName(1, "folder_out.png");
             // 
             // btnKapat
             // 
             this.btnKapat.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnKapat.ImageOptions.ImageIndex = 1;
             this.btnKapat.ImageOptions.ImageList = this.ımageList1;
-            this.btnKapat.Location = new System.Drawing.Point(998, 40);
+            this.btnKapat.Location = new System.Drawing.Point(1022, 40);
             this.btnKapat.Margin = new System.Windows.Forms.Padding(4);
             this.btnKapat.Name = "btnKapat";
             this.btnKapat.Size = new System.Drawing.Size(117, 45);
@@ -128,7 +163,7 @@ namespace NetSatis.BackOffice.Stok
             this.gridcontStoklar.MainView = this.gridStoklar;
             this.gridcontStoklar.Margin = new System.Windows.Forms.Padding(4);
             this.gridcontStoklar.Name = "gridcontStoklar";
-            this.gridcontStoklar.Size = new System.Drawing.Size(1121, 475);
+            this.gridcontStoklar.Size = new System.Drawing.Size(1145, 475);
             this.gridcontStoklar.TabIndex = 4;
             this.gridcontStoklar.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridStoklar});
@@ -513,46 +548,11 @@ namespace NetSatis.BackOffice.Stok
             this.gridColumn3.VisibleIndex = 16;
             this.gridColumn3.Width = 101;
             // 
-            // btnSec
-            // 
-            this.btnSec.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnSec.ImageOptions.ImageIndex = 0;
-            this.btnSec.ImageOptions.ImageList = this.ımageList1;
-            this.btnSec.Location = new System.Drawing.Point(873, 40);
-            this.btnSec.Margin = new System.Windows.Forms.Padding(4);
-            this.btnSec.Name = "btnSec";
-            this.btnSec.Size = new System.Drawing.Size(117, 45);
-            this.btnSec.TabIndex = 2;
-            this.btnSec.Text = "Seç";
-            this.btnSec.Click += new System.EventHandler(this.btnSec_Click);
-            // 
-            // ımageList1
-            // 
-            this.ımageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("ımageList1.ImageStream")));
-            this.ımageList1.TransparentColor = System.Drawing.Color.Transparent;
-            this.ımageList1.Images.SetKeyName(0, "check.png");
-            this.ımageList1.Images.SetKeyName(1, "folder_out.png");
-            // 
-            // lnlUyari
-            // 
-            this.lnlUyari.Appearance.Font = new System.Drawing.Font("Tahoma", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lnlUyari.Appearance.Options.UseFont = true;
-            this.lnlUyari.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
-            this.lnlUyari.ImageAlignToText = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
-            this.lnlUyari.ImageOptions.Alignment = System.Drawing.ContentAlignment.MiddleLeft;
-            this.lnlUyari.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("labelControl1.ImageOptions.Image")));
-            this.lnlUyari.Location = new System.Drawing.Point(0, 31);
-            this.lnlUyari.Name = "lnlUyari";
-            this.lnlUyari.Size = new System.Drawing.Size(498, 64);
-            this.lnlUyari.TabIndex = 3;
-            this.lnlUyari.Text = "Çoklu seçim yapabilmek için CTRL tuşuna basılı tutarak seçim yapınız.";
-            this.lnlUyari.Visible = false;
-            // 
             // FrmStokSec
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1121, 640);
+            this.ClientSize = new System.Drawing.Size(1145, 640);
             this.Controls.Add(this.gridcontStoklar);
             this.Controls.Add(this.groupControl1);
             this.Controls.Add(this.lblBaslik);

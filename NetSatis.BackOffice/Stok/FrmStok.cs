@@ -77,6 +77,10 @@ namespace NetSatis.BackOffice.Stok
         {
             FrmStokIslem form = new FrmStokIslem(new Entities.Tables.Stok());
             form.ShowDialog();
+            if (form.saved = true)
+            {
+                GetAll();
+            }
         }
 
         private void btnDuzenle_Click(object sender, EventArgs e)
@@ -84,6 +88,10 @@ namespace NetSatis.BackOffice.Stok
             secilen = gridView1.GetFocusedRowCellValue(colStokKodu).ToString();
             FrmStokIslem form = new FrmStokIslem(stokDal.GetByFilter(context, c => c.StokKodu == secilen));
             form.ShowDialog();
+            if (form.saved = true)
+            {
+                GetAll();
+            }
         }
 
         private void btnKopyala_Click(object sender, EventArgs e)
@@ -95,6 +103,10 @@ namespace NetSatis.BackOffice.Stok
             stokEntity.StokKodu = null;
             FrmStokIslem form = new FrmStokIslem(stokEntity);
             form.ShowDialog();
+            if (form.saved = true)
+            {
+                GetAll();
+            }
         }
         private void btnStokHareket_Click(object sender, EventArgs e)
         {

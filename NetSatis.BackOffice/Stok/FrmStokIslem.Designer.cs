@@ -1,4 +1,5 @@
-﻿
+﻿using System;
+
 namespace NetSatis.BackOffice.Stok
 {
     partial class FrmStokIslem
@@ -255,10 +256,10 @@ namespace NetSatis.BackOffice.Stok
             this.groupMenu.Controls.Add(this.btnKaydet);
             this.groupMenu.Controls.Add(this.btnKapat);
             this.groupMenu.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.groupMenu.Location = new System.Drawing.Point(0, 714);
+            this.groupMenu.Location = new System.Drawing.Point(0, 707);
             this.groupMenu.Margin = new System.Windows.Forms.Padding(15);
             this.groupMenu.Name = "groupMenu";
-            this.groupMenu.Size = new System.Drawing.Size(784, 85);
+            this.groupMenu.Size = new System.Drawing.Size(784, 92);
             this.groupMenu.TabIndex = 5;
             this.groupMenu.Text = "Menü";
             // 
@@ -267,7 +268,7 @@ namespace NetSatis.BackOffice.Stok
             this.btnKaydet.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnKaydet.ImageOptions.ImageIndex = 0;
             this.btnKaydet.ImageOptions.ImageList = this.ımageList1;
-            this.btnKaydet.Location = new System.Drawing.Point(537, 31);
+            this.btnKaydet.Location = new System.Drawing.Point(537, 38);
             this.btnKaydet.Margin = new System.Windows.Forms.Padding(19);
             this.btnKaydet.Name = "btnKaydet";
             this.btnKaydet.Size = new System.Drawing.Size(110, 50);
@@ -287,7 +288,7 @@ namespace NetSatis.BackOffice.Stok
             this.btnKapat.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnKapat.ImageOptions.ImageIndex = 1;
             this.btnKapat.ImageOptions.ImageList = this.ımageList1;
-            this.btnKapat.Location = new System.Drawing.Point(657, 31);
+            this.btnKapat.Location = new System.Drawing.Point(657, 38);
             this.btnKapat.Margin = new System.Windows.Forms.Padding(15);
             this.btnKapat.Name = "btnKapat";
             this.btnKapat.Size = new System.Drawing.Size(110, 50);
@@ -1186,5 +1187,6 @@ namespace NetSatis.BackOffice.Stok
         private DevExpress.XtraEditors.ButtonEdit btnMarka;
         private System.Windows.Forms.ImageList ımageList2;
         private DevExpress.XtraEditors.ButtonEdit btnBirimi;
+        
     }
 }

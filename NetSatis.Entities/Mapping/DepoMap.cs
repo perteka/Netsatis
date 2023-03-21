@@ -1,4 +1,4 @@
-﻿using NetSatis.Entities.Tables;
+﻿     using NetSatis.Entities.Tables;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations.Schema;

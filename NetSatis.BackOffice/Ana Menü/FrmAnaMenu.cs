@@ -10,6 +10,7 @@ using System.Text;
 using System.Windows.Forms;
 using NetSatis.Entities.Tables;
 using NetSatis.BackOffice.Stok;
+using NetSatis.BackOffice.Cari;
 
 namespace NetSatis.BackOffice
 {
@@ -43,6 +44,13 @@ namespace NetSatis.BackOffice
         private void barButtonItem1_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             FrmStok form = new FrmStok();
+            form.MdiParent = this;
+            form.Show();
+        }
+
+        private void barButtonItem2_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            FrmCari form = new FrmCari();
             form.MdiParent = this;
             form.Show();
         }
