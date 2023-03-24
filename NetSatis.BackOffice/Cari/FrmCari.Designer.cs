@@ -714,6 +714,7 @@ namespace NetSatis.BackOffice.Cari
             this.Controls.Add(this.splitContainerControl1);
             this.Controls.Add(this.groupControl1);
             this.Controls.Add(this.lblBaslik);
+            this.IconOptions.ShowIcon = false;
             this.Name = "FrmCari";
             this.Text = "Cari Kartları";
             this.Load += new System.EventHandler(this.FrmCari_Load);

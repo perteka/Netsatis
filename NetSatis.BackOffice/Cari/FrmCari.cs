@@ -17,7 +17,7 @@ namespace NetSatis.BackOffice.Cari
     {
         NetSatisContext context = new NetSatisContext();
         CariDAL cariDal = new CariDAL();
-        string secilen=null;
+        string secilen = null;
         public FrmCari()
         {
             InitializeComponent();
@@ -68,7 +68,7 @@ namespace NetSatis.BackOffice.Cari
         {
             if (MessageBox.Show("Seçili olan veriyi silmek istediğinize emin misiniz?", "Uyarı", MessageBoxButtons.YesNo) == DialogResult.Yes)
             {
-                 string secilen = gridView1.GetFocusedRowCellValue(colCariKodu).ToString();
+                string secilen = gridView1.GetFocusedRowCellValue(colCariKodu).ToString();
                 cariDal.Delete(context, c => c.CariKodu == secilen);
                 cariDal.Save(context);
                 GetAll();
@@ -84,11 +84,11 @@ namespace NetSatis.BackOffice.Cari
         {
             FrmCariIslem form = new FrmCariIslem(new Entities.Tables.Cari());
             form.ShowDialog();
-            if(form.saved=true)
+            if (form.saved == true)
             {
                 GetAll();
             }
-            
+
         }
 
         private void btnDuzenle_Click(object sender, EventArgs e)
@@ -96,7 +96,7 @@ namespace NetSatis.BackOffice.Cari
             secilen = gridView1.GetFocusedRowCellValue(colCariKodu).ToString();
             FrmCariIslem form = new FrmCariIslem(cariDal.GetByFilter(context, c => c.CariKodu == secilen));
             form.ShowDialog();
-            if (form.saved = true)
+            if (form.saved == true)
             {
                 GetAll();
             }
@@ -111,7 +111,7 @@ namespace NetSatis.BackOffice.Cari
             cariEntity.CariKodu = null;
             FrmCariIslem form = new FrmCariIslem(cariEntity);
             form.ShowDialog();
-            if (form.saved = true)
+            if (form.saved == true)
             {
                 GetAll();
             }
@@ -124,5 +124,7 @@ namespace NetSatis.BackOffice.Cari
             FrmCariHareket form = new FrmCariHareket(secilen, secilenAd);
             form.ShowDialog();
         }
+
+
     }
 }

@@ -748,6 +748,7 @@ namespace NetSatis.BackOffice.Stok
             this.Controls.Add(this.splitContainerControl1);
             this.Controls.Add(this.groupControl1);
             this.Controls.Add(this.lblBaslik);
+            this.IconOptions.ShowIcon = false;
             this.Name = "FrmStok";
             this.Text = "Stok Kartları";
             this.Load += new System.EventHandler(this.FrmStok_Load);

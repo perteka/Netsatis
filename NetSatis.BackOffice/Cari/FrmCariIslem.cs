@@ -18,7 +18,7 @@ namespace NetSatis.BackOffice.Cari
         private Entities.Tables.Cari _entity;
         private CariDAL cariDal = new CariDAL();
         private NetSatisContext context = new NetSatisContext();
-        public bool saved=false;
+        public bool saved = false;
         public FrmCariIslem(Entities.Tables.Cari entity)
         {
             InitializeComponent();

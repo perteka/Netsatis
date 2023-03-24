@@ -733,6 +733,7 @@ namespace NetSatis.BackOffice.Stok
             this.Controls.Add(this.groupControl1);
             this.Controls.Add(this.lblBaslik);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.IconOptions.ShowIcon = false;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "FrmStokHareket";

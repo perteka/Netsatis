@@ -18,7 +18,7 @@ namespace NetSatis.BackOffice.Cari
         CariDAL cariDal = new CariDAL();
         NetSatisContext context = new NetSatisContext();
         private string _cariKodu = null;
-        public FrmCariHareket(string cariKodu,string cariAdi)
+        public FrmCariHareket(string cariKodu, string cariAdi)
         {
             InitializeComponent();
             _cariKodu = cariKodu;
