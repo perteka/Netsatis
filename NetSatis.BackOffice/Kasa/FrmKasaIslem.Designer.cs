@@ -263,7 +263,7 @@ namespace NetSatis.BackOffice.Kasa
             this.labelControl6.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.Simple;
             this.labelControl6.Location = new System.Drawing.Point(16, 31);
             this.labelControl6.Name = "labelControl6";
-            this.labelControl6.Size = new System.Drawing.Size(113, 24);
+            this.labelControl6.Size = new System.Drawing.Size(113, 90);
             this.labelControl6.TabIndex = 9;
             this.labelControl6.Text = "Açıklama :";
             // 

@@ -11,6 +11,8 @@ using System.Windows.Forms;
 using NetSatis.Entities.Tables;
 using NetSatis.BackOffice.Stok;
 using NetSatis.BackOffice.Cari;
+using NetSatis.BackOffice.Kasa;
+using NetSatis.BackOffice.Depo;
 
 namespace NetSatis.BackOffice
 {
@@ -51,6 +53,20 @@ namespace NetSatis.BackOffice
         private void barButtonItem2_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             FrmCari form = new FrmCari();
+            form.MdiParent = this;
+            form.Show();
+        }
+
+        private void barButtonItem3_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            FrmKasa form = new FrmKasa();
+            form.MdiParent = this;
+            form.Show();
+        }
+
+        private void barButtonItem4_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            FrmDepo form = new FrmDepo();
             form.MdiParent = this;
             form.Show();
         }

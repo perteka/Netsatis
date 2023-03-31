@@ -22,6 +22,7 @@ namespace NetSatis.BackOffice.Kasa
         {
             InitializeComponent();
             _kasaKodu = kasaKodu;
+            lblBaslik.Text = kasaKodu + " - " + kasaAdi + " Hareketleri ";
         }
 
         private void FrmKasaHareket_Load(object sender, EventArgs e)

@@ -103,6 +103,30 @@
     <Compile Include="Cari\FrmCariSec.Designer.cs">
       <DependentUpon>FrmCariSec.cs</DependentUpon>
     </Compile>
+    <Compile Include="Depo\FrmDepo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Depo\FrmDepo.Designer.cs">
+      <DependentUpon>FrmDepo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Depo\FrmDepoHareket.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Depo\FrmDepoHareket.Designer.cs">
+      <DependentUpon>FrmDepoHareket.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Depo\FrmDepoIslem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Depo\FrmDepoIslem.Designer.cs">
+      <DependentUpon>FrmDepoIslem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Depo\FrmDepoSec.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Depo\FrmDepoSec.Designer.cs">
+      <DependentUpon>FrmDepoSec.cs</DependentUpon>
+    </Compile>
     <Compile Include="Kasa\FrmKasa.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -168,6 +192,18 @@
     <EmbeddedResource Include="Cari\FrmCariSec.resx">
       <DependentUpon>FrmCariSec.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Depo\FrmDepo.resx">
+      <DependentUpon>FrmDepo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Depo\FrmDepoHareket.resx">
+      <DependentUpon>FrmDepoHareket.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Depo\FrmDepoIslem.resx">
+      <DependentUpon>FrmDepoIslem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Depo\FrmDepoSec.resx">
+      <DependentUpon>FrmDepoSec.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Kasa\FrmKasa.resx">
       <DependentUpon>FrmKasa.cs</DependentUpon>
     </EmbeddedResource>
@@ -189,6 +225,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="Stok\FrmStokHareket.resx">
       <DependentUpon>FrmStokHareket.cs</DependentUpon>
@@ -205,6 +242,7 @@
     <None Include="App.config" />
     <None Include="packages.config" />
     <None Include="Properties\DataSources\NetSatis.Entities.Tables.Cari.datasource" />
+    <None Include="Properties\DataSources\NetSatis.Entities.Tables.Depo.datasource" />
     <None Include="Properties\DataSources\NetSatis.Entities.Tables.Fis.datasource" />
     <None Include="Properties\DataSources\NetSatis.Entities.Tables.Stok.datasource" />
     <None Include="Properties\DataSources\NetSatis.Entities.Tables.StokHareket.datasource" />
@@ -224,7 +262,6 @@
       <Name>NetSatis.Entities</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
        Other similar extension points exist, see Microsoft.Common.targets.

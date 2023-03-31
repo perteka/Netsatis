@@ -120,7 +120,7 @@ namespace NetSatis.BackOffice.Cari
             this.splitContainerControl1.Panel2.Controls.Add(this.gridSplitContainer1);
             this.splitContainerControl1.Panel2.Text = "Panel2";
             this.splitContainerControl1.Size = new System.Drawing.Size(1269, 572);
-            this.splitContainerControl1.SplitterPosition = 217;
+            this.splitContainerControl1.SplitterPosition = 249;
             this.splitContainerControl1.TabIndex = 5;
             // 
             // btnFiltreKapat
@@ -129,7 +129,7 @@ namespace NetSatis.BackOffice.Cari
             this.btnFiltreKapat.ImageOptions.ImageIndex = 0;
             this.btnFiltreKapat.ImageOptions.ImageList = this.imgMenu;
             this.btnFiltreKapat.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleCenter;
-            this.btnFiltreKapat.Location = new System.Drawing.Point(1190, 147);
+            this.btnFiltreKapat.Location = new System.Drawing.Point(1190, 179);
             this.btnFiltreKapat.Margin = new System.Windows.Forms.Padding(4);
             this.btnFiltreKapat.Name = "btnFiltreKapat";
             this.btnFiltreKapat.Size = new System.Drawing.Size(66, 56);
@@ -157,7 +157,7 @@ namespace NetSatis.BackOffice.Cari
             this.btnFiltrele.ImageOptions.ImageIndex = 1;
             this.btnFiltrele.ImageOptions.ImageList = this.imgMenu;
             this.btnFiltrele.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleCenter;
-            this.btnFiltrele.Location = new System.Drawing.Point(1043, 147);
+            this.btnFiltrele.Location = new System.Drawing.Point(1043, 179);
             this.btnFiltrele.Margin = new System.Windows.Forms.Padding(4);
             this.btnFiltrele.Name = "btnFiltrele";
             this.btnFiltrele.Size = new System.Drawing.Size(66, 56);
@@ -170,7 +170,7 @@ namespace NetSatis.BackOffice.Cari
             this.btnFiltreleIptal.ImageOptions.ImageIndex = 2;
             this.btnFiltreleIptal.ImageOptions.ImageList = this.imgMenu;
             this.btnFiltreleIptal.ImageOptions.Location = DevExpress.XtraEditors.ImageLocation.MiddleCenter;
-            this.btnFiltreleIptal.Location = new System.Drawing.Point(1117, 147);
+            this.btnFiltreleIptal.Location = new System.Drawing.Point(1117, 179);
             this.btnFiltreleIptal.Margin = new System.Windows.Forms.Padding(4);
             this.btnFiltreleIptal.Name = "btnFiltreleIptal";
             this.btnFiltreleIptal.Size = new System.Drawing.Size(66, 56);
@@ -185,7 +185,7 @@ namespace NetSatis.BackOffice.Cari
             this.filterControl1.Margin = new System.Windows.Forms.Padding(4);
             this.filterControl1.Name = "filterControl1";
             this.filterControl1.NodeSeparatorHeight = 2;
-            this.filterControl1.Size = new System.Drawing.Size(1269, 217);
+            this.filterControl1.Size = new System.Drawing.Size(1269, 249);
             this.filterControl1.SortFilterColumns = false;
             this.filterControl1.SourceControl = this.gridControl1;
             this.filterControl1.TabIndex = 0;
@@ -199,7 +199,7 @@ namespace NetSatis.BackOffice.Cari
             this.gridControl1.MainView = this.gridView1;
             this.gridControl1.Margin = new System.Windows.Forms.Padding(4);
             this.gridControl1.Name = "gridControl1";
-            this.gridControl1.Size = new System.Drawing.Size(1269, 343);
+            this.gridControl1.Size = new System.Drawing.Size(1269, 311);
             this.gridControl1.TabIndex = 0;
             this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
@@ -570,7 +570,7 @@ namespace NetSatis.BackOffice.Cari
             // gridSplitContainer1.Panel1
             // 
             this.gridSplitContainer1.Panel1.Controls.Add(this.gridControl1);
-            this.gridSplitContainer1.Size = new System.Drawing.Size(1269, 343);
+            this.gridSplitContainer1.Size = new System.Drawing.Size(1269, 311);
             this.gridSplitContainer1.TabIndex = 0;
             // 
             // groupControl1

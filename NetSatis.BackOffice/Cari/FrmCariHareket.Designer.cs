@@ -60,7 +60,6 @@ namespace NetSatis.BackOffice.Cari
             this.gridFisToplam = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.colFisTuruBilgi = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colFisTuruKayitSayisi = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colFisTuruToplamTutar = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridControl2 = new DevExpress.XtraGrid.GridControl();
             this.gridView2 = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.groupControl3 = new DevExpress.XtraEditors.GroupControl();
@@ -70,6 +69,7 @@ namespace NetSatis.BackOffice.Cari
             this.colGenelToplam = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridControl3 = new DevExpress.XtraGrid.GridControl();
             this.gridView3 = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.colFisTuruToplamTutar = new DevExpress.XtraGrid.Columns.GridColumn();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl1)).BeginInit();
@@ -124,10 +124,10 @@ namespace NetSatis.BackOffice.Cari
             this.groupControl1.Controls.Add(this.btnAra);
             this.groupControl1.Controls.Add(this.btnGuncelle);
             this.groupControl1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.groupControl1.Location = new System.Drawing.Point(0, 663);
+            this.groupControl1.Location = new System.Drawing.Point(0, 691);
             this.groupControl1.Margin = new System.Windows.Forms.Padding(4);
             this.groupControl1.Name = "groupControl1";
-            this.groupControl1.Size = new System.Drawing.Size(1227, 144);
+            this.groupControl1.Size = new System.Drawing.Size(1227, 116);
             this.groupControl1.TabIndex = 5;
             this.groupControl1.Text = "Menü";
             // 
@@ -192,7 +192,7 @@ namespace NetSatis.BackOffice.Cari
             // 
             this.splitContainerControl1.Panel2.Controls.Add(this.splitContainerControl2);
             this.splitContainerControl1.Panel2.Text = "Panel2";
-            this.splitContainerControl1.Size = new System.Drawing.Size(1227, 586);
+            this.splitContainerControl1.Size = new System.Drawing.Size(1227, 614);
             this.splitContainerControl1.SplitterPosition = 373;
             this.splitContainerControl1.TabIndex = 6;
             // 
@@ -419,8 +419,8 @@ namespace NetSatis.BackOffice.Cari
             // 
             this.splitContainerControl2.Panel2.Controls.Add(this.groupControl3);
             this.splitContainerControl2.Panel2.Text = "Panel2";
-            this.splitContainerControl2.Size = new System.Drawing.Size(1227, 201);
-            this.splitContainerControl2.SplitterPosition = 680;
+            this.splitContainerControl2.Size = new System.Drawing.Size(1227, 229);
+            this.splitContainerControl2.SplitterPosition = 636;
             this.splitContainerControl2.TabIndex = 0;
             // 
             // groupControl2
@@ -430,7 +430,7 @@ namespace NetSatis.BackOffice.Cari
             this.groupControl2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupControl2.Location = new System.Drawing.Point(0, 0);
             this.groupControl2.Name = "groupControl2";
-            this.groupControl2.Size = new System.Drawing.Size(680, 201);
+            this.groupControl2.Size = new System.Drawing.Size(636, 229);
             this.groupControl2.TabIndex = 0;
             this.groupControl2.Text = "Fiş Türlerine Göre Toplamlar";
             // 
@@ -442,7 +442,7 @@ namespace NetSatis.BackOffice.Cari
             this.gridcontFisToplam.MainView = this.gridFisToplam;
             this.gridcontFisToplam.Margin = new System.Windows.Forms.Padding(4);
             this.gridcontFisToplam.Name = "gridcontFisToplam";
-            this.gridcontFisToplam.Size = new System.Drawing.Size(676, 171);
+            this.gridcontFisToplam.Size = new System.Drawing.Size(632, 199);
             this.gridcontFisToplam.TabIndex = 3;
             this.gridcontFisToplam.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridFisToplam});
@@ -481,19 +481,6 @@ namespace NetSatis.BackOffice.Cari
             this.colFisTuruKayitSayisi.VisibleIndex = 1;
             this.colFisTuruKayitSayisi.Width = 94;
             // 
-            // colFisTuruToplamTutar
-            // 
-            this.colFisTuruToplamTutar.Caption = "Toplam Tutar";
-            this.colFisTuruToplamTutar.DisplayFormat.FormatString = "C2";
-            this.colFisTuruToplamTutar.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
-            this.colFisTuruToplamTutar.FieldName = "Tutar";
-            this.colFisTuruToplamTutar.MinWidth = 25;
-            this.colFisTuruToplamTutar.Name = "colFisTuruToplamTutar";
-            this.colFisTuruToplamTutar.OptionsColumn.AllowEdit = false;
-            this.colFisTuruToplamTutar.Visible = true;
-            this.colFisTuruToplamTutar.VisibleIndex = 2;
-            this.colFisTuruToplamTutar.Width = 113;
-            // 
             // gridControl2
             // 
             this.gridControl2.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -502,7 +489,7 @@ namespace NetSatis.BackOffice.Cari
             this.gridControl2.MainView = this.gridView2;
             this.gridControl2.Margin = new System.Windows.Forms.Padding(4);
             this.gridControl2.Name = "gridControl2";
-            this.gridControl2.Size = new System.Drawing.Size(676, 171);
+            this.gridControl2.Size = new System.Drawing.Size(632, 199);
             this.gridControl2.TabIndex = 1;
             this.gridControl2.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView2});
@@ -522,7 +509,7 @@ namespace NetSatis.BackOffice.Cari
             this.groupControl3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupControl3.Location = new System.Drawing.Point(0, 0);
             this.groupControl3.Name = "groupControl3";
-            this.groupControl3.Size = new System.Drawing.Size(535, 201);
+            this.groupControl3.Size = new System.Drawing.Size(579, 229);
             this.groupControl3.TabIndex = 1;
             this.groupControl3.Text = "Cari Ekstresi";
             // 
@@ -534,7 +521,7 @@ namespace NetSatis.BackOffice.Cari
             this.gridcontBakiye.MainView = this.gridBakiye;
             this.gridcontBakiye.Margin = new System.Windows.Forms.Padding(4);
             this.gridcontBakiye.Name = "gridcontBakiye";
-            this.gridcontBakiye.Size = new System.Drawing.Size(531, 171);
+            this.gridcontBakiye.Size = new System.Drawing.Size(575, 199);
             this.gridcontBakiye.TabIndex = 3;
             this.gridcontBakiye.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridBakiye});
@@ -582,7 +569,7 @@ namespace NetSatis.BackOffice.Cari
             this.gridControl3.MainView = this.gridView3;
             this.gridControl3.Margin = new System.Windows.Forms.Padding(4);
             this.gridControl3.Name = "gridControl3";
-            this.gridControl3.Size = new System.Drawing.Size(531, 171);
+            this.gridControl3.Size = new System.Drawing.Size(575, 199);
             this.gridControl3.TabIndex = 1;
             this.gridControl3.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView3});
@@ -594,6 +581,16 @@ namespace NetSatis.BackOffice.Cari
             this.gridView3.GridControl = this.gridControl3;
             this.gridView3.Name = "gridView3";
             this.gridView3.OptionsView.ShowGroupPanel = false;
+            // 
+            // colFisTuruToplamTutar
+            // 
+            this.colFisTuruToplamTutar.Caption = "Toplam Tutar";
+            this.colFisTuruToplamTutar.FieldName = "Tutar";
+            this.colFisTuruToplamTutar.MinWidth = 25;
+            this.colFisTuruToplamTutar.Name = "colFisTuruToplamTutar";
+            this.colFisTuruToplamTutar.Visible = true;
+            this.colFisTuruToplamTutar.VisibleIndex = 2;
+            this.colFisTuruToplamTutar.Width = 94;
             // 
             // FrmCariHareket
             // 
@@ -660,9 +657,6 @@ namespace NetSatis.BackOffice.Cari
         private DevExpress.XtraGrid.Views.Grid.GridView gridView3;
         private DevExpress.XtraGrid.GridControl gridcontFisToplam;
         private DevExpress.XtraGrid.Views.Grid.GridView gridFisToplam;
-        private DevExpress.XtraGrid.Columns.GridColumn colFisTuruBilgi;
-        private DevExpress.XtraGrid.Columns.GridColumn colFisTuruKayitSayisi;
-        private DevExpress.XtraGrid.Columns.GridColumn colFisTuruToplamTutar;
         private System.Windows.Forms.ImageList ımageList1;
         private DevExpress.XtraGrid.GridControl gridcontBakiye;
         private DevExpress.XtraGrid.Views.Grid.GridView gridBakiye;
@@ -682,5 +676,8 @@ namespace NetSatis.BackOffice.Cari
         private DevExpress.XtraGrid.Columns.GridColumn colAciklama;
         private DevExpress.XtraGrid.Columns.GridColumn colOdenen;
         private DevExpress.XtraGrid.Columns.GridColumn colKalanTutar;
+        internal DevExpress.XtraGrid.Columns.GridColumn colFisTuruBilgi;
+        internal DevExpress.XtraGrid.Columns.GridColumn colFisTuruKayitSayisi;
+        private DevExpress.XtraGrid.Columns.GridColumn colFisTuruToplamTutar;
     }
 }
