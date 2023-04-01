@@ -22,7 +22,7 @@ namespace NetSatis.BackOffice.Ödeme_Türü
         {
             InitializeComponent();
             _odemeTuruKodu = odemeTuruKodu;
-            lblBaslik.Text = odemeTuruKodu + " - " + odemeTuruAdi;
+            lblBaslik.Text = odemeTuruKodu + " - " + odemeTuruAdi + "Hareketleri";
         }
 
         private void FrmOdemeTuruHareket_Load(object sender, EventArgs e)
