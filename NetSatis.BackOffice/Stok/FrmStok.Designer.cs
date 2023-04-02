@@ -74,8 +74,8 @@ namespace NetSatis.BackOffice.Stok
             this.colSatisFiyati1 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colSatisFiyati2 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colSatisFiyati3 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colMinStokMiktarı = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.colMaxStokMiktarı = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colMinStokMiktari = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colMaxStokMiktari = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colAciklama = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn1 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn2 = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -363,8 +363,8 @@ namespace NetSatis.BackOffice.Stok
             this.colSatisFiyati1,
             this.colSatisFiyati2,
             this.colSatisFiyati3,
-            this.colMinStokMiktarı,
-            this.colMaxStokMiktarı,
+            this.colMinStokMiktari,
+            this.colMaxStokMiktari,
             this.colAciklama,
             this.gridColumn1,
             this.gridColumn2,
@@ -657,29 +657,29 @@ namespace NetSatis.BackOffice.Stok
             this.colSatisFiyati3.OptionsColumn.AllowMove = false;
             this.colSatisFiyati3.Width = 117;
             // 
-            // colMinStokMiktarı
+            // colMinStokMiktari
             // 
-            this.colMinStokMiktarı.Caption = "Min. Stok Miktari";
-            this.colMinStokMiktarı.FieldName = "MinStokMiktarı";
-            this.colMinStokMiktarı.MinWidth = 31;
-            this.colMinStokMiktarı.Name = "colMinStokMiktarı";
-            this.colMinStokMiktarı.OptionsColumn.AllowEdit = false;
-            this.colMinStokMiktarı.OptionsColumn.AllowMove = false;
-            this.colMinStokMiktarı.Visible = true;
-            this.colMinStokMiktarı.VisibleIndex = 8;
-            this.colMinStokMiktarı.Width = 129;
+            this.colMinStokMiktari.Caption = "Min. Stok Miktari";
+            this.colMinStokMiktari.FieldName = "MinStokMiktari";
+            this.colMinStokMiktari.MinWidth = 31;
+            this.colMinStokMiktari.Name = "colMinStokMiktari";
+            this.colMinStokMiktari.OptionsColumn.AllowEdit = false;
+            this.colMinStokMiktari.OptionsColumn.AllowMove = false;
+            this.colMinStokMiktari.Visible = true;
+            this.colMinStokMiktari.VisibleIndex = 8;
+            this.colMinStokMiktari.Width = 129;
             // 
-            // colMaxStokMiktarı
+            // colMaxStokMiktari
             // 
-            this.colMaxStokMiktarı.Caption = "Max. Stok Miktari";
-            this.colMaxStokMiktarı.FieldName = "MaxStokMiktarı";
-            this.colMaxStokMiktarı.MinWidth = 31;
-            this.colMaxStokMiktarı.Name = "colMaxStokMiktarı";
-            this.colMaxStokMiktarı.OptionsColumn.AllowEdit = false;
-            this.colMaxStokMiktarı.OptionsColumn.AllowMove = false;
-            this.colMaxStokMiktarı.Visible = true;
-            this.colMaxStokMiktarı.VisibleIndex = 11;
-            this.colMaxStokMiktarı.Width = 98;
+            this.colMaxStokMiktari.Caption = "Max. Stok Miktari";
+            this.colMaxStokMiktari.FieldName = "MaxStokMiktari";
+            this.colMaxStokMiktari.MinWidth = 31;
+            this.colMaxStokMiktari.Name = "colMaxStokMiktari";
+            this.colMaxStokMiktari.OptionsColumn.AllowEdit = false;
+            this.colMaxStokMiktari.OptionsColumn.AllowMove = false;
+            this.colMaxStokMiktari.Visible = true;
+            this.colMaxStokMiktari.VisibleIndex = 11;
+            this.colMaxStokMiktari.Width = 98;
             // 
             // colAciklama
             // 
@@ -816,8 +816,8 @@ namespace NetSatis.BackOffice.Stok
         private DevExpress.XtraGrid.Columns.GridColumn colSatisFiyati1;
         private DevExpress.XtraGrid.Columns.GridColumn colSatisFiyati2;
         private DevExpress.XtraGrid.Columns.GridColumn colSatisFiyati3;
-        private DevExpress.XtraGrid.Columns.GridColumn colMinStokMiktarı;
-        private DevExpress.XtraGrid.Columns.GridColumn colMaxStokMiktarı;
+        private DevExpress.XtraGrid.Columns.GridColumn colMinStokMiktari;
+        private DevExpress.XtraGrid.Columns.GridColumn colMaxStokMiktari;
         private DevExpress.XtraGrid.Columns.GridColumn colAciklama;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn1;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn2;

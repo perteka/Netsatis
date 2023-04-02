@@ -742,6 +742,7 @@ namespace NetSatis.BackOffice.Cari
             this.btnOzelKod4.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
             this.btnOzelKod4.Size = new System.Drawing.Size(319, 26);
             this.btnOzelKod4.TabIndex = 32;
+            this.btnOzelKod4.ButtonClick += new DevExpress.XtraEditors.Controls.ButtonPressedEventHandler(this.btnOzelKod4_ButtonClick);
             // 
             // btnOzelKod2
             // 
@@ -758,6 +759,7 @@ namespace NetSatis.BackOffice.Cari
             this.btnOzelKod2.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
             this.btnOzelKod2.Size = new System.Drawing.Size(319, 26);
             this.btnOzelKod2.TabIndex = 31;
+            this.btnOzelKod2.ButtonClick += new DevExpress.XtraEditors.Controls.ButtonPressedEventHandler(this.btnOzelKod2_ButtonClick);
             // 
             // btnCariAltGrubu
             // 
@@ -774,6 +776,7 @@ namespace NetSatis.BackOffice.Cari
             this.btnCariAltGrubu.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
             this.btnCariAltGrubu.Size = new System.Drawing.Size(319, 26);
             this.btnCariAltGrubu.TabIndex = 30;
+            this.btnCariAltGrubu.ButtonClick += new DevExpress.XtraEditors.Controls.ButtonPressedEventHandler(this.btnCariAltGrubu_ButtonClick);
             // 
             // btnOzelKod3
             // 
@@ -790,6 +793,7 @@ namespace NetSatis.BackOffice.Cari
             this.btnOzelKod3.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
             this.btnOzelKod3.Size = new System.Drawing.Size(322, 26);
             this.btnOzelKod3.TabIndex = 29;
+            this.btnOzelKod3.ButtonClick += new DevExpress.XtraEditors.Controls.ButtonPressedEventHandler(this.btnOzelKod3_ButtonClick);
             // 
             // btnOzelKod1
             // 
@@ -806,6 +810,7 @@ namespace NetSatis.BackOffice.Cari
             this.btnOzelKod1.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
             this.btnOzelKod1.Size = new System.Drawing.Size(322, 26);
             this.btnOzelKod1.TabIndex = 28;
+            this.btnOzelKod1.ButtonClick += new DevExpress.XtraEditors.Controls.ButtonPressedEventHandler(this.btnOzelKod1_ButtonClick);
             // 
             // btnCariGrubu
             // 
@@ -822,6 +827,7 @@ namespace NetSatis.BackOffice.Cari
             this.btnCariGrubu.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
             this.btnCariGrubu.Size = new System.Drawing.Size(322, 26);
             this.btnCariGrubu.TabIndex = 27;
+            this.btnCariGrubu.ButtonClick += new DevExpress.XtraEditors.Controls.ButtonPressedEventHandler(this.btnCariGrubu_ButtonClick);
             // 
             // labelControl24
             // 

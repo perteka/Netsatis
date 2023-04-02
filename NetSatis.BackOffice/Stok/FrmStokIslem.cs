@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using NetSatis.BackOffice.Tanım;
 using NetSatis.Entities.Context;
 using NetSatis.Entities.Data_Access;
 
@@ -101,6 +102,177 @@ namespace NetSatis.BackOffice.Stok
         private void btnKapat_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void btnBirimi_ButtonClick(object sender, DevExpress.XtraEditors.Controls.ButtonPressedEventArgs e)
+        {
+            switch (e.Button.Index)
+            {
+                case 0:
+                    FrmTanim form = new FrmTanim(FrmTanim.TanimTuru.StokBirimi);
+                    form.ShowDialog();
+                    if (form.secildi)
+                    {
+                        btnBirimi.Text = form._entity.Tanimi;
+                    }
+                    break;
+                case 1:
+                    btnBirimi.Text = null;
+                    break;
+
+            }
+        }
+
+        private void btnStokGrubu_ButtonClick(object sender, DevExpress.XtraEditors.Controls.ButtonPressedEventArgs e)
+        {
+            switch (e.Button.Index)
+            {
+                case 0:
+                    FrmTanim form = new FrmTanim(FrmTanim.TanimTuru.StokGrubu);
+                    form.ShowDialog();
+                    if (form.secildi)
+                    {
+                        btnStokGrubu.Text = form._entity.Tanimi;
+                    }
+                    break;
+                case 1:
+                    btnStokGrubu.Text = null;
+                    break;
+
+            }
+        }
+
+        private void btnMarka_ButtonClick(object sender, DevExpress.XtraEditors.Controls.ButtonPressedEventArgs e)
+        {
+            switch (e.Button.Index)
+            {
+                case 0:
+                    FrmTanim form = new FrmTanim(FrmTanim.TanimTuru.StokMarka);
+                    form.ShowDialog();
+                    if (form.secildi)
+                    {
+                        btnMarka.Text = form._entity.Tanimi;
+                    }
+                    break;
+                case 1:
+                    btnMarka.Text = null;
+                    break;
+
+            }
+        }
+
+        private void btnOzelKod1_ButtonClick(object sender, DevExpress.XtraEditors.Controls.ButtonPressedEventArgs e)
+        {
+            switch (e.Button.Index)
+            {
+                case 0:
+                    FrmTanim form = new FrmTanim(FrmTanim.TanimTuru.StokOzelKod1);
+                    form.ShowDialog();
+                    if (form.secildi)
+                    {
+                        btnOzelKod1.Text = form._entity.Tanimi;
+                    }
+                    break;
+                case 1:
+                    btnOzelKod1.Text = null;
+                    break;
+
+            }
+        }
+
+        private void btnOzelKod3_ButtonClick(object sender, DevExpress.XtraEditors.Controls.ButtonPressedEventArgs e)
+        {
+            switch (e.Button.Index)
+            {
+                case 0:
+                    FrmTanim form = new FrmTanim(FrmTanim.TanimTuru.StokOzelKod3);
+                    form.ShowDialog();
+                    if (form.secildi)
+                    {
+                        btnOzelKod3.Text = form._entity.Tanimi;
+                    }
+                    break;
+                case 1:
+                    btnOzelKod3.Text = null;
+                    break;
+
+            }
+        }
+
+        private void btnStokAltGrubu_ButtonClick(object sender, DevExpress.XtraEditors.Controls.ButtonPressedEventArgs e)
+        {
+            switch (e.Button.Index)
+            {
+                case 0:
+                    FrmTanim form = new FrmTanim(FrmTanim.TanimTuru.StokAltGrubu);
+                    form.ShowDialog();
+                    if (form.secildi)
+                    {
+                        btnStokAltGrubu.Text = form._entity.Tanimi;
+                    }
+                    break;
+                case 1:
+                    btnStokAltGrubu.Text = null;
+                    break;
+
+            }
+        }
+
+        private void btnModel_ButtonClick(object sender, DevExpress.XtraEditors.Controls.ButtonPressedEventArgs e)
+        {
+            switch (e.Button.Index)
+            {
+                case 0:
+                    FrmTanim form = new FrmTanim(FrmTanim.TanimTuru.StokModel);
+                    form.ShowDialog();
+                    if (form.secildi)
+                    {
+                        btnModel.Text = form._entity.Tanimi;
+                    }
+                    break;
+                case 1:
+                    btnModel.Text = null;
+                    break;
+
+            }
+        }
+
+        private void btnOzelKod2_ButtonClick(object sender, DevExpress.XtraEditors.Controls.ButtonPressedEventArgs e)
+        {
+            switch (e.Button.Index)
+            {
+                case 0:
+                    FrmTanim form = new FrmTanim(FrmTanim.TanimTuru.StokOzelKod2);
+                    form.ShowDialog();
+                    if (form.secildi)
+                    {
+                        btnOzelKod2.Text = form._entity.Tanimi;
+                    }
+                    break;
+                case 1:
+                    btnOzelKod2.Text = null;
+                    break;
+
+            }
+        }
+
+        private void btnOzelKod4_ButtonClick(object sender, DevExpress.XtraEditors.Controls.ButtonPressedEventArgs e)
+        {
+            switch (e.Button.Index)
+            {
+                case 0:
+                    FrmTanim form = new FrmTanim(FrmTanim.TanimTuru.StokOzelKod4);
+                    form.ShowDialog();
+                    if (form.secildi)
+                    {
+                        btnOzelKod4.Text = form._entity.Tanimi;
+                    }
+                    break;
+                case 1:
+                    btnOzelKod4.Text = null;
+                    break;
+
+            }
         }
     }
 }

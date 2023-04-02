@@ -393,6 +393,7 @@ namespace NetSatis.BackOffice.Stok
             this.btnBirimi.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
             this.btnBirimi.Size = new System.Drawing.Size(250, 26);
             this.btnBirimi.TabIndex = 8;
+            this.btnBirimi.ButtonClick += new DevExpress.XtraEditors.Controls.ButtonPressedEventHandler(this.btnBirimi_ButtonClick);
             // 
             // txtUreticiKodu
             // 
@@ -618,6 +619,7 @@ namespace NetSatis.BackOffice.Stok
             this.btnOzelKod2.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
             this.btnOzelKod2.Size = new System.Drawing.Size(250, 26);
             this.btnOzelKod2.TabIndex = 8;
+            this.btnOzelKod2.ButtonClick += new DevExpress.XtraEditors.Controls.ButtonPressedEventHandler(this.btnOzelKod2_ButtonClick);
             // 
             // btnOzelKod1
             // 
@@ -634,6 +636,7 @@ namespace NetSatis.BackOffice.Stok
             this.btnOzelKod1.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
             this.btnOzelKod1.Size = new System.Drawing.Size(250, 26);
             this.btnOzelKod1.TabIndex = 8;
+            this.btnOzelKod1.ButtonClick += new DevExpress.XtraEditors.Controls.ButtonPressedEventHandler(this.btnOzelKod1_ButtonClick);
             // 
             // btnOzelKod4
             // 
@@ -650,6 +653,7 @@ namespace NetSatis.BackOffice.Stok
             this.btnOzelKod4.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
             this.btnOzelKod4.Size = new System.Drawing.Size(250, 26);
             this.btnOzelKod4.TabIndex = 8;
+            this.btnOzelKod4.ButtonClick += new DevExpress.XtraEditors.Controls.ButtonPressedEventHandler(this.btnOzelKod4_ButtonClick);
             // 
             // btnStokAltGrubu
             // 
@@ -666,6 +670,7 @@ namespace NetSatis.BackOffice.Stok
             this.btnStokAltGrubu.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
             this.btnStokAltGrubu.Size = new System.Drawing.Size(250, 26);
             this.btnStokAltGrubu.TabIndex = 8;
+            this.btnStokAltGrubu.ButtonClick += new DevExpress.XtraEditors.Controls.ButtonPressedEventHandler(this.btnStokAltGrubu_ButtonClick);
             // 
             // btnOzelKod3
             // 
@@ -682,6 +687,7 @@ namespace NetSatis.BackOffice.Stok
             this.btnOzelKod3.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
             this.btnOzelKod3.Size = new System.Drawing.Size(250, 26);
             this.btnOzelKod3.TabIndex = 8;
+            this.btnOzelKod3.ButtonClick += new DevExpress.XtraEditors.Controls.ButtonPressedEventHandler(this.btnOzelKod3_ButtonClick);
             // 
             // btnModel
             // 
@@ -698,6 +704,7 @@ namespace NetSatis.BackOffice.Stok
             this.btnModel.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
             this.btnModel.Size = new System.Drawing.Size(250, 26);
             this.btnModel.TabIndex = 8;
+            this.btnModel.ButtonClick += new DevExpress.XtraEditors.Controls.ButtonPressedEventHandler(this.btnModel_ButtonClick);
             // 
             // btnMarka
             // 
@@ -714,6 +721,7 @@ namespace NetSatis.BackOffice.Stok
             this.btnMarka.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
             this.btnMarka.Size = new System.Drawing.Size(250, 26);
             this.btnMarka.TabIndex = 8;
+            this.btnMarka.ButtonClick += new DevExpress.XtraEditors.Controls.ButtonPressedEventHandler(this.btnMarka_ButtonClick);
             // 
             // btnStokGrubu
             // 
@@ -730,6 +738,7 @@ namespace NetSatis.BackOffice.Stok
             this.btnStokGrubu.Properties.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.DisableTextEditor;
             this.btnStokGrubu.Size = new System.Drawing.Size(250, 26);
             this.btnStokGrubu.TabIndex = 8;
+            this.btnStokGrubu.ButtonClick += new DevExpress.XtraEditors.Controls.ButtonPressedEventHandler(this.btnStokGrubu_ButtonClick);
             // 
             // labelControl19
             // 

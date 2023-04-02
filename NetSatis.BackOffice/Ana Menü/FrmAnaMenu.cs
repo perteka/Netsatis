@@ -13,6 +13,8 @@ using NetSatis.BackOffice.Stok;
 using NetSatis.BackOffice.Cari;
 using NetSatis.BackOffice.Kasa;
 using NetSatis.BackOffice.Depo;
+using NetSatis.BackOffice.Tanım;
+
 
 namespace NetSatis.BackOffice
 {
@@ -69,6 +71,21 @@ namespace NetSatis.BackOffice
             FrmDepo form = new FrmDepo();
             form.MdiParent = this;
             form.Show();
+        }
+
+        private void barButtonItem5_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+           
+        }
+
+        private void ribbonControl1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
