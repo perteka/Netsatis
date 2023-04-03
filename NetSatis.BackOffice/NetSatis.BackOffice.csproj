@@ -183,22 +183,22 @@
     <Compile Include="Tanım\FrmTanim.Designer.cs">
       <DependentUpon>FrmTanim.cs</DependentUpon>
     </Compile>
-    <Compile Include="Ödeme Türü\FrmOdemeTuru.cs">
+    <Compile Include="ÖdemeTürü\FrmOdemeTuru.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Ödeme Türü\FrmOdemeTuru.Designer.cs">
+    <Compile Include="ÖdemeTürü\FrmOdemeTuru.Designer.cs">
       <DependentUpon>FrmOdemeTuru.cs</DependentUpon>
     </Compile>
-    <Compile Include="Ödeme Türü\FrmOdemeTuruHareket.cs">
+    <Compile Include="ÖdemeTürü\FrmOdemeTuruHareket.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Ödeme Türü\FrmOdemeTuruHareket.Designer.cs">
+    <Compile Include="ÖdemeTürü\FrmOdemeTuruHareket.Designer.cs">
       <DependentUpon>FrmOdemeTuruHareket.cs</DependentUpon>
     </Compile>
-    <Compile Include="Ödeme Türü\FrmOdemeTuruIslem.cs">
+    <Compile Include="ÖdemeTürü\FrmOdemeTuruIslem.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Ödeme Türü\FrmOdemeTuruIslem.Designer.cs">
+    <Compile Include="ÖdemeTürü\FrmOdemeTuruIslem.Designer.cs">
       <DependentUpon>FrmOdemeTuruIslem.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Ana Menü\FrmAnaMenu.resx">
@@ -259,6 +259,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Stok\FrmStokIslem.resx">
       <DependentUpon>FrmStokIslem.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Stok\FrmStokSec.resx">
       <DependentUpon>FrmStokSec.cs</DependentUpon>
@@ -266,13 +267,13 @@
     <EmbeddedResource Include="Tanım\FrmTanim.resx">
       <DependentUpon>FrmTanim.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Ödeme Türü\FrmOdemeTuru.resx">
+    <EmbeddedResource Include="ÖdemeTürü\FrmOdemeTuru.resx">
       <DependentUpon>FrmOdemeTuru.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Ödeme Türü\FrmOdemeTuruHareket.resx">
+    <EmbeddedResource Include="ÖdemeTürü\FrmOdemeTuruHareket.resx">
       <DependentUpon>FrmOdemeTuruHareket.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Ödeme Türü\FrmOdemeTuruIslem.resx">
+    <EmbeddedResource Include="ÖdemeTürü\FrmOdemeTuruIslem.resx">
       <DependentUpon>FrmOdemeTuruIslem.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="App.config" />

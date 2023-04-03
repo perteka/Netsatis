@@ -14,7 +14,7 @@ using NetSatis.BackOffice.Cari;
 using NetSatis.BackOffice.Kasa;
 using NetSatis.BackOffice.Depo;
 using NetSatis.BackOffice.Tanım;
-
+using NetSatis.BackOffice.ÖdemeTürü;
 
 namespace NetSatis.BackOffice
 {
@@ -30,20 +30,6 @@ namespace NetSatis.BackOffice
             }
         }
 
-        //private void Form1_Load(object sender, EventArgs e) 
-        //{
-        //    NetSatisContext context = new NetSatisContext();
-        //    CariDAL cariDAL = new CariDAL();
-        //    Cari entity = new Cari
-        //    {
-        //        CariKodu = "123456789",
-        //        CariAdi = "Ali Han Pertek",
-        //        YetkiliKisi = "Ali Han",
-        //        FaturaUnvani = "Pertek"
-        //    };
-        //    cariDAL.AddOrUpdate(context, entity);
-        //    cariDAL.Save(context);
-        //}
 
         private void barButtonItem1_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
@@ -75,7 +61,9 @@ namespace NetSatis.BackOffice
 
         private void barButtonItem5_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-           
+            FrmOdemeTuru form = new FrmOdemeTuru();
+            form.MdiParent = this;
+            form.Show();
         }
 
         private void ribbonControl1_Click(object sender, EventArgs e)

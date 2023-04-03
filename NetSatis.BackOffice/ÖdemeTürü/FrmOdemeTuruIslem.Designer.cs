@@ -1,5 +1,5 @@
 ﻿
-namespace NetSatis.BackOffice.Ödeme_Türü
+namespace NetSatis.BackOffice.ÖdemeTürü
 {
     partial class FrmOdemeTuruIslem
     {

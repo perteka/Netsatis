@@ -12,7 +12,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace NetSatis.BackOffice.Ödeme_Türü
+namespace NetSatis.BackOffice.ÖdemeTürü
 {
     public partial class FrmOdemeTuruIslem : DevExpress.XtraEditors.XtraForm
     {
