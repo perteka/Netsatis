@@ -1,4 +1,5 @@
 ﻿using DevExpress.XtraEditors;
+using NetSatis.BackOffice.RaporOlustur;
 using NetSatis.Entities.Context;
 using NetSatis.Entities.Data_Access;
 using System;
@@ -92,6 +93,12 @@ namespace NetSatis.BackOffice.Personel
             {
                 Listele();
             }
+        }
+
+        private void btnRapor_Click(object sender, EventArgs e)
+        {
+            FrmRaporlar form = new FrmRaporlar();
+            form.Show();
         }
     }
 }

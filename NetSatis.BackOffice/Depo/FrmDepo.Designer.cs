@@ -60,6 +60,7 @@ namespace NetSatis.BackOffice.Depo
             this.colTelefon = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colAciklama = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridSplitContainer1 = new DevExpress.XtraGrid.GridSplitContainer();
+            this.btnRapor = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl1)).BeginInit();
@@ -97,6 +98,7 @@ namespace NetSatis.BackOffice.Depo
             // 
             // groupControl1
             // 
+            this.groupControl1.Controls.Add(this.btnRapor);
             this.groupControl1.Controls.Add(this.btnKapat);
             this.groupControl1.Controls.Add(this.btnDepoHareket);
             this.groupControl1.Controls.Add(this.btnAra);
@@ -138,6 +140,7 @@ namespace NetSatis.BackOffice.Depo
             this.ımageList1.Images.SetKeyName(6, "refresh.png");
             this.ımageList1.Images.SetKeyName(7, "sil.png");
             this.ımageList1.Images.SetKeyName(8, "view.png");
+            this.ımageList1.Images.SetKeyName(9, "note_pinned.png");
             // 
             // btnDepoHareket
             // 
@@ -440,6 +443,18 @@ namespace NetSatis.BackOffice.Depo
             this.gridSplitContainer1.Size = new System.Drawing.Size(1214, 406);
             this.gridSplitContainer1.TabIndex = 0;
             // 
+            // btnRapor
+            // 
+            this.btnRapor.ImageOptions.ImageIndex = 9;
+            this.btnRapor.ImageOptions.ImageList = this.ımageList1;
+            this.btnRapor.Location = new System.Drawing.Point(769, 39);
+            this.btnRapor.Margin = new System.Windows.Forms.Padding(4);
+            this.btnRapor.Name = "btnRapor";
+            this.btnRapor.Size = new System.Drawing.Size(119, 64);
+            this.btnRapor.TabIndex = 4;
+            this.btnRapor.Text = "Rapor\r\nOluştur\r\n";
+            this.btnRapor.Click += new System.EventHandler(this.btnRapor_Click);
+            // 
             // FrmDepo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
@@ -486,7 +501,6 @@ namespace NetSatis.BackOffice.Depo
         private DevExpress.XtraEditors.SimpleButton btnFiltreleIptal;
         private DevExpress.XtraEditors.FilterControl filterControl1;
         private DevExpress.XtraGrid.GridControl gridcontDepolar;
-        private DevExpress.XtraGrid.Views.Grid.GridView gridDepolar;
         private DevExpress.XtraGrid.GridSplitContainer gridSplitContainer1;
         private System.Windows.Forms.ImageList ımageList1;
         private DevExpress.XtraEditors.SimpleButton simpleButton1;
@@ -501,5 +515,7 @@ namespace NetSatis.BackOffice.Depo
         private DevExpress.XtraGrid.Columns.GridColumn colAdres;
         private DevExpress.XtraGrid.Columns.GridColumn colTelefon;
         private DevExpress.XtraGrid.Columns.GridColumn colAciklama;
+        public DevExpress.XtraGrid.Views.Grid.GridView gridDepolar;
+        private DevExpress.XtraEditors.SimpleButton btnRapor;
     }
 }

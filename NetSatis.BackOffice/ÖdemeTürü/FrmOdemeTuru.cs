@@ -1,4 +1,5 @@
 ﻿using DevExpress.XtraEditors;
+using NetSatis.BackOffice.RaporOlustur;
 using NetSatis.Entities.Context;
 using NetSatis.Entities.Data_Access;
 using NetSatis.Entities.Tables;
@@ -87,6 +88,12 @@ namespace NetSatis.BackOffice.ÖdemeTürü
             string secilen = gridOdemeTuru.GetFocusedRowCellValue(colOdemeKodu).ToString();
             FrmOdemeTuruIslem form = new FrmOdemeTuruIslem(odemeTuruDal.GetByFilter(context, c => c.OdemeTuruKodu == secilen));
             form.ShowDialog();
+        }
+
+        private void btnRapor_Click(object sender, EventArgs e)
+        {
+            FrmOdemeTuruRapor form = new FrmOdemeTuruRapor();
+            form.Show();
         }
     }
 }

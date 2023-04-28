@@ -33,8 +33,9 @@ namespace NetSatis.BackOffice.ÖdemeTürü
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmOdemeTuru));
             this.lblBaslik = new DevExpress.XtraEditors.LabelControl();
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
-            this.btnKapat = new DevExpress.XtraEditors.SimpleButton();
+            this.btnRapor = new DevExpress.XtraEditors.SimpleButton();
             this.imgMenu = new System.Windows.Forms.ImageList(this.components);
+            this.btnKapat = new DevExpress.XtraEditors.SimpleButton();
             this.btnStokHareket = new DevExpress.XtraEditors.SimpleButton();
             this.btnAra = new DevExpress.XtraEditors.SimpleButton();
             this.btnGuncelle = new DevExpress.XtraEditors.SimpleButton();
@@ -95,6 +96,7 @@ namespace NetSatis.BackOffice.ÖdemeTürü
             // 
             // groupControl1
             // 
+            this.groupControl1.Controls.Add(this.btnRapor);
             this.groupControl1.Controls.Add(this.btnKapat);
             this.groupControl1.Controls.Add(this.btnStokHareket);
             this.groupControl1.Controls.Add(this.btnAra);
@@ -110,18 +112,17 @@ namespace NetSatis.BackOffice.ÖdemeTürü
             this.groupControl1.TabIndex = 6;
             this.groupControl1.Text = "Menü";
             // 
-            // btnKapat
+            // btnRapor
             // 
-            this.btnKapat.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnKapat.ImageOptions.ImageIndex = 2;
-            this.btnKapat.ImageOptions.ImageList = this.imgMenu;
-            this.btnKapat.Location = new System.Drawing.Point(1112, 35);
-            this.btnKapat.Margin = new System.Windows.Forms.Padding(4);
-            this.btnKapat.Name = "btnKapat";
-            this.btnKapat.Size = new System.Drawing.Size(118, 64);
-            this.btnKapat.TabIndex = 3;
-            this.btnKapat.Text = "Kapat";
-            this.btnKapat.Click += new System.EventHandler(this.btnKapat_Click);
+            this.btnRapor.ImageOptions.ImageIndex = 11;
+            this.btnRapor.ImageOptions.ImageList = this.imgMenu;
+            this.btnRapor.Location = new System.Drawing.Point(767, 35);
+            this.btnRapor.Margin = new System.Windows.Forms.Padding(4);
+            this.btnRapor.Name = "btnRapor";
+            this.btnRapor.Size = new System.Drawing.Size(119, 64);
+            this.btnRapor.TabIndex = 11;
+            this.btnRapor.Text = "Rapor\r\nOluştur\r\n";
+            this.btnRapor.Click += new System.EventHandler(this.btnRapor_Click);
             // 
             // imgMenu
             // 
@@ -138,6 +139,20 @@ namespace NetSatis.BackOffice.ÖdemeTürü
             this.imgMenu.Images.SetKeyName(8, "wallet_closed_add.png");
             this.imgMenu.Images.SetKeyName(9, "wallet_closed_delete.png");
             this.imgMenu.Images.SetKeyName(10, "wallet_closed_edit.png");
+            this.imgMenu.Images.SetKeyName(11, "note_pinned.png");
+            // 
+            // btnKapat
+            // 
+            this.btnKapat.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnKapat.ImageOptions.ImageIndex = 2;
+            this.btnKapat.ImageOptions.ImageList = this.imgMenu;
+            this.btnKapat.Location = new System.Drawing.Point(1112, 35);
+            this.btnKapat.Margin = new System.Windows.Forms.Padding(4);
+            this.btnKapat.Name = "btnKapat";
+            this.btnKapat.Size = new System.Drawing.Size(118, 64);
+            this.btnKapat.TabIndex = 3;
+            this.btnKapat.Text = "Kapat";
+            this.btnKapat.Click += new System.EventHandler(this.btnKapat_Click);
             // 
             // btnStokHareket
             // 
@@ -469,7 +484,6 @@ namespace NetSatis.BackOffice.ÖdemeTürü
         private DevExpress.XtraEditors.SimpleButton btnFiltreleIptal;
         private DevExpress.XtraEditors.FilterControl filterControl1;
         private DevExpress.XtraGrid.GridControl gridcontOdemeTuru;
-        private DevExpress.XtraGrid.Views.Grid.GridView gridOdemeTuru;
         private DevExpress.XtraGrid.Columns.GridColumn colId;
         private DevExpress.XtraGrid.Columns.GridColumn colAciklama;
         private DevExpress.XtraGrid.GridSplitContainer gridSplitContainer1;
@@ -478,5 +492,7 @@ namespace NetSatis.BackOffice.ÖdemeTürü
         private DevExpress.XtraGrid.Columns.GridColumn colOdemeAdi;
         private DevExpress.XtraGrid.Columns.GridColumn colKasaGiris;
         private DevExpress.XtraGrid.Columns.GridColumn colKasaCikis;
+        private DevExpress.XtraEditors.SimpleButton btnRapor;
+        public DevExpress.XtraGrid.Views.Grid.GridView gridOdemeTuru;
     }
 }

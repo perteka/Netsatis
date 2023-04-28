@@ -33,8 +33,9 @@ namespace NetSatis.BackOffice.Personel
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmPersonel));
             this.lblBaslik = new DevExpress.XtraEditors.LabelControl();
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
-            this.btnKapat = new DevExpress.XtraEditors.SimpleButton();
+            this.btnRapor = new DevExpress.XtraEditors.SimpleButton();
             this.imgMenu = new System.Windows.Forms.ImageList(this.components);
+            this.btnKapat = new DevExpress.XtraEditors.SimpleButton();
             this.btnPersonelHareket = new DevExpress.XtraEditors.SimpleButton();
             this.btnAra = new DevExpress.XtraEditors.SimpleButton();
             this.btnGuncelle = new DevExpress.XtraEditors.SimpleButton();
@@ -109,6 +110,7 @@ namespace NetSatis.BackOffice.Personel
             // 
             // groupControl1
             // 
+            this.groupControl1.Controls.Add(this.btnRapor);
             this.groupControl1.Controls.Add(this.btnKapat);
             this.groupControl1.Controls.Add(this.btnPersonelHareket);
             this.groupControl1.Controls.Add(this.btnAra);
@@ -124,18 +126,17 @@ namespace NetSatis.BackOffice.Personel
             this.groupControl1.TabIndex = 5;
             this.groupControl1.Text = "Menü";
             // 
-            // btnKapat
+            // btnRapor
             // 
-            this.btnKapat.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnKapat.ImageOptions.ImageIndex = 0;
-            this.btnKapat.ImageOptions.ImageList = this.imgMenu;
-            this.btnKapat.Location = new System.Drawing.Point(1157, 40);
-            this.btnKapat.Margin = new System.Windows.Forms.Padding(4);
-            this.btnKapat.Name = "btnKapat";
-            this.btnKapat.Size = new System.Drawing.Size(118, 57);
-            this.btnKapat.TabIndex = 2;
-            this.btnKapat.Text = "Kapat";
-            this.btnKapat.Click += new System.EventHandler(this.btnKapat_Click);
+            this.btnRapor.ImageOptions.ImageIndex = 11;
+            this.btnRapor.ImageOptions.ImageList = this.imgMenu;
+            this.btnRapor.Location = new System.Drawing.Point(769, 39);
+            this.btnRapor.Margin = new System.Windows.Forms.Padding(4);
+            this.btnRapor.Name = "btnRapor";
+            this.btnRapor.Size = new System.Drawing.Size(119, 58);
+            this.btnRapor.TabIndex = 3;
+            this.btnRapor.Text = "Rapor\r\nOluştur\r\n";
+            this.btnRapor.Click += new System.EventHandler(this.btnRapor_Click);
             // 
             // imgMenu
             // 
@@ -152,6 +153,20 @@ namespace NetSatis.BackOffice.Personel
             this.imgMenu.Images.SetKeyName(8, "hareket.png");
             this.imgMenu.Images.SetKeyName(9, "sil.png");
             this.imgMenu.Images.SetKeyName(10, "user_headset.png");
+            this.imgMenu.Images.SetKeyName(11, "note_pinned.png");
+            // 
+            // btnKapat
+            // 
+            this.btnKapat.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnKapat.ImageOptions.ImageIndex = 0;
+            this.btnKapat.ImageOptions.ImageList = this.imgMenu;
+            this.btnKapat.Location = new System.Drawing.Point(1157, 40);
+            this.btnKapat.Margin = new System.Windows.Forms.Padding(4);
+            this.btnKapat.Name = "btnKapat";
+            this.btnKapat.Size = new System.Drawing.Size(118, 57);
+            this.btnKapat.TabIndex = 2;
+            this.btnKapat.Text = "Kapat";
+            this.btnKapat.Click += new System.EventHandler(this.btnKapat_Click);
             // 
             // btnPersonelHareket
             // 
@@ -652,7 +667,6 @@ namespace NetSatis.BackOffice.Personel
         private DevExpress.XtraEditors.SimpleButton btnFiltreleIptal;
         private DevExpress.XtraEditors.FilterControl filterControl1;
         private DevExpress.XtraGrid.GridControl gridcontPersonel;
-        private DevExpress.XtraGrid.Views.Grid.GridView gridPersonel;
         private DevExpress.XtraGrid.GridSplitContainer gridSplitContainer1;
         private System.Windows.Forms.ImageList imgMenu;
         private DevExpress.XtraGrid.Columns.GridColumn colId;
@@ -677,5 +691,7 @@ namespace NetSatis.BackOffice.Personel
         private System.Windows.Forms.BindingSource personelBindingSource;
         private DevExpress.XtraGrid.Columns.GridColumn colToplamSatis;
         private DevExpress.XtraGrid.Columns.GridColumn colPrimTutar;
+        private DevExpress.XtraEditors.SimpleButton btnRapor;
+        public DevExpress.XtraGrid.Views.Grid.GridView gridPersonel;
     }
 }

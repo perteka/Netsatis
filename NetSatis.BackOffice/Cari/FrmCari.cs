@@ -1,4 +1,5 @@
 ﻿using DevExpress.XtraEditors;
+using NetSatis.BackOffice.RaporOlustur;
 using NetSatis.Entities.Context;
 using NetSatis.Entities.Data_Access;
 using System;
@@ -125,6 +126,10 @@ namespace NetSatis.BackOffice.Cari
             form.ShowDialog();
         }
 
-
+        private void btnRapor_Click(object sender, EventArgs e)
+        {
+            FrmCariRapor form = new FrmCariRapor();
+            form.Show();
+        }
     }
 }

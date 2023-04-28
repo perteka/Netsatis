@@ -15,8 +15,8 @@ namespace NetSatis.Entities.Tables
         public string PersonelKodu { get; set; }
         public string PersonelAdi { get; set; }
         public string TcKimlikNo { get; set; }
-        public Nullable<DateTime> IseGirisTarihi { get; set; }
-        public Nullable<DateTime> IstenCikisTarihi { get; set; }
+        public Nullable<DateTimeOffset> IseGirisTarihi { get; set; }
+        public Nullable<DateTimeOffset> IstenCikisTarihi { get; set; }
         public string VergiDairesi { get; set; }
         public string VergiNo { get; set; }
         public string CepTelefonu { get; set; }

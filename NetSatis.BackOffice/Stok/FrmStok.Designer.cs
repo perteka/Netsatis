@@ -81,6 +81,7 @@ namespace NetSatis.BackOffice.Stok
             this.gridColumn2 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn3 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridSplitContainer1 = new DevExpress.XtraGrid.GridSplitContainer();
+            this.btnRapor = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl1)).BeginInit();
@@ -118,6 +119,7 @@ namespace NetSatis.BackOffice.Stok
             // 
             // groupControl1
             // 
+            this.groupControl1.Controls.Add(this.btnRapor);
             this.groupControl1.Controls.Add(this.btnKapat);
             this.groupControl1.Controls.Add(this.btnStokHareket);
             this.groupControl1.Controls.Add(this.btnAra);
@@ -161,6 +163,7 @@ namespace NetSatis.BackOffice.Stok
             this.imgMenu.Images.SetKeyName(7, "funnel.png");
             this.imgMenu.Images.SetKeyName(8, "funnel_delete.png");
             this.imgMenu.Images.SetKeyName(9, "StokHareket.png");
+            this.imgMenu.Images.SetKeyName(10, "note_pinned.png");
             // 
             // btnStokHareket
             // 
@@ -740,6 +743,18 @@ namespace NetSatis.BackOffice.Stok
             this.gridSplitContainer1.Size = new System.Drawing.Size(1196, 280);
             this.gridSplitContainer1.TabIndex = 0;
             // 
+            // btnRapor
+            // 
+            this.btnRapor.ImageOptions.ImageIndex = 10;
+            this.btnRapor.ImageOptions.ImageList = this.imgMenu;
+            this.btnRapor.Location = new System.Drawing.Point(894, 39);
+            this.btnRapor.Margin = new System.Windows.Forms.Padding(4);
+            this.btnRapor.Name = "btnRapor";
+            this.btnRapor.Size = new System.Drawing.Size(119, 65);
+            this.btnRapor.TabIndex = 4;
+            this.btnRapor.Text = "Rapor\r\nOluştur\r\n";
+            this.btnRapor.Click += new System.EventHandler(this.btnRapor_Click);
+            // 
             // FrmStok
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
@@ -790,7 +805,6 @@ namespace NetSatis.BackOffice.Stok
         private DevExpress.XtraEditors.SimpleButton btnFiltrele;
         private DevExpress.XtraGrid.GridSplitContainer gridSplitContainer1;
         private DevExpress.XtraGrid.GridControl gridControl1;
-        private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
         private DevExpress.XtraGrid.Columns.GridColumn colDurumu;
         private DevExpress.XtraGrid.Columns.GridColumn colStokKodu;
         private DevExpress.XtraGrid.Columns.GridColumn colStokAdi;
@@ -823,5 +837,7 @@ namespace NetSatis.BackOffice.Stok
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn2;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn3;
         private DevExpress.XtraEditors.SimpleButton btnStokHareket;
+        private DevExpress.XtraEditors.SimpleButton btnRapor;
+        public DevExpress.XtraGrid.Views.Grid.GridView gridView1;
     }
 }

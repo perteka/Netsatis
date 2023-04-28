@@ -167,6 +167,36 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RaporOlustur\FrmCariRapor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RaporOlustur\FrmCariRapor.Designer.cs">
+      <DependentUpon>FrmCariRapor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RaporOlustur\FrmDepoRapor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RaporOlustur\FrmDepoRapor.Designer.cs">
+      <DependentUpon>FrmDepoRapor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RaporOlustur\FrmOdemeTuruRapor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RaporOlustur\FrmOdemeTuruRapor.Designer.cs">
+      <DependentUpon>FrmOdemeTuruRapor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RaporOlustur\FrmRaporlar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RaporOlustur\FrmRaporlar.Designer.cs">
+      <DependentUpon>FrmRaporlar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RaporOlustur\FrmStokRapor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RaporOlustur\FrmStokRapor.Designer.cs">
+      <DependentUpon>FrmStokRapor.cs</DependentUpon>
+    </Compile>
     <Compile Include="Stok\FrmStokHareket.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -271,6 +301,21 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="RaporOlustur\FrmCariRapor.resx">
+      <DependentUpon>FrmCariRapor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RaporOlustur\FrmDepoRapor.resx">
+      <DependentUpon>FrmDepoRapor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RaporOlustur\FrmOdemeTuruRapor.resx">
+      <DependentUpon>FrmOdemeTuruRapor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RaporOlustur\FrmRaporlar.resx">
+      <DependentUpon>FrmRaporlar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RaporOlustur\FrmStokRapor.resx">
+      <DependentUpon>FrmStokRapor.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Stok\FrmStokHareket.resx">
       <DependentUpon>FrmStokHareket.cs</DependentUpon>
     </EmbeddedResource>

@@ -34,7 +34,6 @@ namespace NetSatis.BackOffice.Personel
             this.lblBaslik = new DevExpress.XtraEditors.LabelControl();
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
             this.cmbIstenCikisTarihi = new DevExpress.XtraEditors.DateTimeOffsetEdit();
-            this.cmbIseGirisTarihi = new DevExpress.XtraEditors.DateTimeOffsetEdit();
             this.labelControl10 = new DevExpress.XtraEditors.LabelControl();
             this.txtAciklama = new DevExpress.XtraEditors.MemoEdit();
             this.btnUnvani = new DevExpress.XtraEditors.ComboBoxEdit();
@@ -81,10 +80,10 @@ namespace NetSatis.BackOffice.Personel
             this.btnKapat = new DevExpress.XtraEditors.SimpleButton();
             this.ımageList1 = new System.Windows.Forms.ImageList(this.components);
             this.btnKaydet = new DevExpress.XtraEditors.SimpleButton();
+            this.cmbIseGirisTarihi = new DevExpress.XtraEditors.DateTimeOffsetEdit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.cmbIstenCikisTarihi.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cmbIseGirisTarihi.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtAciklama.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnUnvani.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtVergiNo.Properties)).BeginInit();
@@ -110,6 +109,7 @@ namespace NetSatis.BackOffice.Personel
             ((System.ComponentModel.ISupportInitialize)(this.calcPrimOrani.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl3)).BeginInit();
             this.groupControl3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.cmbIseGirisTarihi.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // lblBaslik
@@ -132,8 +132,8 @@ namespace NetSatis.BackOffice.Personel
             // 
             // groupControl1
             // 
-            this.groupControl1.Controls.Add(this.cmbIstenCikisTarihi);
             this.groupControl1.Controls.Add(this.cmbIseGirisTarihi);
+            this.groupControl1.Controls.Add(this.cmbIstenCikisTarihi);
             this.groupControl1.Controls.Add(this.labelControl10);
             this.groupControl1.Controls.Add(this.txtAciklama);
             this.groupControl1.Controls.Add(this.btnUnvani);
@@ -168,16 +168,6 @@ namespace NetSatis.BackOffice.Personel
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.cmbIstenCikisTarihi.Size = new System.Drawing.Size(322, 22);
             this.cmbIstenCikisTarihi.TabIndex = 31;
-            // 
-            // cmbIseGirisTarihi
-            // 
-            this.cmbIseGirisTarihi.EditValue = null;
-            this.cmbIseGirisTarihi.Location = new System.Drawing.Point(131, 156);
-            this.cmbIseGirisTarihi.Name = "cmbIseGirisTarihi";
-            this.cmbIseGirisTarihi.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.cmbIseGirisTarihi.Size = new System.Drawing.Size(322, 22);
-            this.cmbIseGirisTarihi.TabIndex = 30;
             // 
             // labelControl10
             // 
@@ -704,6 +694,16 @@ namespace NetSatis.BackOffice.Personel
             this.btnKaydet.Text = "Kaydet";
             this.btnKaydet.Click += new System.EventHandler(this.btnKaydet_Click);
             // 
+            // cmbIseGirisTarihi
+            // 
+            this.cmbIseGirisTarihi.EditValue = null;
+            this.cmbIseGirisTarihi.Location = new System.Drawing.Point(131, 157);
+            this.cmbIseGirisTarihi.Name = "cmbIseGirisTarihi";
+            this.cmbIseGirisTarihi.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.cmbIseGirisTarihi.Size = new System.Drawing.Size(322, 22);
+            this.cmbIseGirisTarihi.TabIndex = 32;
+            // 
             // FrmPersonelIslem
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
@@ -721,7 +721,6 @@ namespace NetSatis.BackOffice.Personel
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
             this.groupControl1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.cmbIstenCikisTarihi.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.cmbIseGirisTarihi.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtAciklama.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnUnvani.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtVergiNo.Properties)).EndInit();
@@ -747,6 +746,7 @@ namespace NetSatis.BackOffice.Personel
             ((System.ComponentModel.ISupportInitialize)(this.calcPrimOrani.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl3)).EndInit();
             this.groupControl3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.cmbIseGirisTarihi.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -798,10 +798,10 @@ namespace NetSatis.BackOffice.Personel
         private DevExpress.XtraEditors.SimpleButton btnKapat;
         private DevExpress.XtraEditors.SimpleButton btnKaydet;
         private System.Windows.Forms.ImageList ımageList1;
-        private DevExpress.XtraEditors.DateTimeOffsetEdit cmbIseGirisTarihi;
         private DevExpress.XtraEditors.DateTimeOffsetEdit cmbIstenCikisTarihi;
         private DevExpress.XtraEditors.ComboBoxEdit btnUnvani;
         private DevExpress.XtraEditors.CalcEdit calcMaasi;
         private DevExpress.XtraEditors.CalcEdit calcPrimOrani;
+        private DevExpress.XtraEditors.DateTimeOffsetEdit cmbIseGirisTarihi;
     }
 }
