@@ -15,6 +15,7 @@ using NetSatis.BackOffice.Kasa;
 using NetSatis.BackOffice.Depo;
 using NetSatis.BackOffice.Tanım;
 using NetSatis.BackOffice.ÖdemeTürü;
+using NetSatis.BackOffice.Personel;
 
 namespace NetSatis.BackOffice
 {
@@ -74,6 +75,13 @@ namespace NetSatis.BackOffice
         private void Form1_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void barButtonItem6_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            FrmPersonel form = new FrmPersonel();
+            form.MdiParent = this;
+            form.Show();
         }
     }
 }

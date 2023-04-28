@@ -43,7 +43,8 @@ namespace NetSatis.BackOffice.Tanım
             StokOzelKod3,
             StokOzelKod4,
             StokModel,
-            StokAltGrubu
+            StokAltGrubu,
+            PersonelUnvan
 
         }
         private void FrmTanim_Load(object sender, EventArgs e)

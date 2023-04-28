@@ -129,7 +129,7 @@ namespace NetSatis.BackOffice.Cari
             this.labelControl15 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl14 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl13 = new DevExpress.XtraEditors.LabelControl();
-            this.txtAdress = new DevExpress.XtraEditors.MemoEdit();
+            this.txtAdres = new DevExpress.XtraEditors.MemoEdit();
             this.txtFax = new DevExpress.XtraEditors.TextEdit();
             this.txtCepTelefon = new DevExpress.XtraEditors.TextEdit();
             this.labelControl12 = new DevExpress.XtraEditors.LabelControl();
@@ -151,8 +151,8 @@ namespace NetSatis.BackOffice.Cari
             this.groupControl4 = new DevExpress.XtraEditors.GroupControl();
             this.cmbSatisOzelFiyati = new DevExpress.XtraEditors.ComboBoxEdit();
             this.cmbAlisOzelFiyati = new DevExpress.XtraEditors.ComboBoxEdit();
-            this.calcRiskLimiti = new DevExpress.XtraEditors.CalcEdit();
-            this.calciskontoOrani = new DevExpress.XtraEditors.CalcEdit();
+            this.txtRiskLimiti = new DevExpress.XtraEditors.CalcEdit();
+            this.txtIskontoOrani = new DevExpress.XtraEditors.CalcEdit();
             this.labelControl28 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl27 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl26 = new DevExpress.XtraEditors.LabelControl();
@@ -178,7 +178,7 @@ namespace NetSatis.BackOffice.Cari
             ((System.ComponentModel.ISupportInitialize)(this.txtWeb.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtEmail.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtSabitTelefon.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtAdress.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtAdres.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtFax.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtCepTelefon.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl3)).BeginInit();
@@ -193,8 +193,8 @@ namespace NetSatis.BackOffice.Cari
             this.groupControl4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.cmbSatisOzelFiyati.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cmbAlisOzelFiyati.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.calcRiskLimiti.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.calciskontoOrani.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtRiskLimiti.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtIskontoOrani.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // ımageList1
@@ -504,7 +504,7 @@ namespace NetSatis.BackOffice.Cari
             this.groupControl2.Controls.Add(this.labelControl15);
             this.groupControl2.Controls.Add(this.labelControl14);
             this.groupControl2.Controls.Add(this.labelControl13);
-            this.groupControl2.Controls.Add(this.txtAdress);
+            this.groupControl2.Controls.Add(this.txtAdres);
             this.groupControl2.Controls.Add(this.txtFax);
             this.groupControl2.Controls.Add(this.txtCepTelefon);
             this.groupControl2.Controls.Add(this.labelControl12);
@@ -643,12 +643,12 @@ namespace NetSatis.BackOffice.Cari
             this.labelControl13.TabIndex = 28;
             this.labelControl13.Text = "Sabit Telefon :";
             // 
-            // txtAdress
+            // txtAdres
             // 
-            this.txtAdress.Location = new System.Drawing.Point(131, 95);
-            this.txtAdress.Name = "txtAdress";
-            this.txtAdress.Size = new System.Drawing.Size(322, 115);
-            this.txtAdress.TabIndex = 27;
+            this.txtAdres.Location = new System.Drawing.Point(131, 95);
+            this.txtAdres.Name = "txtAdres";
+            this.txtAdres.Size = new System.Drawing.Size(322, 115);
+            this.txtAdres.TabIndex = 27;
             // 
             // txtFax
             // 
@@ -918,8 +918,8 @@ namespace NetSatis.BackOffice.Cari
             // 
             this.groupControl4.Controls.Add(this.cmbSatisOzelFiyati);
             this.groupControl4.Controls.Add(this.cmbAlisOzelFiyati);
-            this.groupControl4.Controls.Add(this.calcRiskLimiti);
-            this.groupControl4.Controls.Add(this.calciskontoOrani);
+            this.groupControl4.Controls.Add(this.txtRiskLimiti);
+            this.groupControl4.Controls.Add(this.txtIskontoOrani);
             this.groupControl4.Controls.Add(this.labelControl28);
             this.groupControl4.Controls.Add(this.labelControl27);
             this.groupControl4.Controls.Add(this.labelControl26);
@@ -951,23 +951,23 @@ namespace NetSatis.BackOffice.Cari
             this.cmbAlisOzelFiyati.Size = new System.Drawing.Size(322, 22);
             this.cmbAlisOzelFiyati.TabIndex = 41;
             // 
-            // calcRiskLimiti
+            // txtRiskLimiti
             // 
-            this.calcRiskLimiti.Location = new System.Drawing.Point(578, 72);
-            this.calcRiskLimiti.Name = "calcRiskLimiti";
-            this.calcRiskLimiti.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            this.txtRiskLimiti.Location = new System.Drawing.Point(578, 72);
+            this.txtRiskLimiti.Name = "txtRiskLimiti";
+            this.txtRiskLimiti.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.calcRiskLimiti.Size = new System.Drawing.Size(319, 22);
-            this.calcRiskLimiti.TabIndex = 40;
+            this.txtRiskLimiti.Size = new System.Drawing.Size(319, 22);
+            this.txtRiskLimiti.TabIndex = 40;
             // 
-            // calciskontoOrani
+            // txtIskontoOrani
             // 
-            this.calciskontoOrani.Location = new System.Drawing.Point(578, 42);
-            this.calciskontoOrani.Name = "calciskontoOrani";
-            this.calciskontoOrani.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            this.txtIskontoOrani.Location = new System.Drawing.Point(578, 42);
+            this.txtIskontoOrani.Name = "txtIskontoOrani";
+            this.txtIskontoOrani.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.calciskontoOrani.Size = new System.Drawing.Size(319, 22);
-            this.calciskontoOrani.TabIndex = 39;
+            this.txtIskontoOrani.Size = new System.Drawing.Size(319, 22);
+            this.txtIskontoOrani.TabIndex = 39;
             // 
             // labelControl28
             // 
@@ -1063,7 +1063,7 @@ namespace NetSatis.BackOffice.Cari
             ((System.ComponentModel.ISupportInitialize)(this.txtWeb.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtEmail.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtSabitTelefon.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtAdress.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtAdres.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtFax.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtCepTelefon.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl3)).EndInit();
@@ -1078,8 +1078,8 @@ namespace NetSatis.BackOffice.Cari
             this.groupControl4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.cmbSatisOzelFiyati.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cmbAlisOzelFiyati.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.calcRiskLimiti.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.calciskontoOrani.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtRiskLimiti.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtIskontoOrani.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1122,7 +1122,7 @@ namespace NetSatis.BackOffice.Cari
         private DevExpress.XtraEditors.LabelControl labelControl15;
         private DevExpress.XtraEditors.LabelControl labelControl14;
         private DevExpress.XtraEditors.LabelControl labelControl13;
-        private DevExpress.XtraEditors.MemoEdit txtAdress;
+        private DevExpress.XtraEditors.MemoEdit txtAdres;
         private DevExpress.XtraEditors.TextEdit txtFax;
         private DevExpress.XtraEditors.TextEdit txtCepTelefon;
         private DevExpress.XtraEditors.LabelControl labelControl12;
@@ -1148,8 +1148,8 @@ namespace NetSatis.BackOffice.Cari
         private DevExpress.XtraEditors.LabelControl labelControl27;
         private DevExpress.XtraEditors.LabelControl labelControl26;
         private DevExpress.XtraEditors.LabelControl labelControl25;
-        private DevExpress.XtraEditors.CalcEdit calcRiskLimiti;
-        private DevExpress.XtraEditors.CalcEdit calciskontoOrani;
+        private DevExpress.XtraEditors.CalcEdit txtRiskLimiti;
+        private DevExpress.XtraEditors.CalcEdit txtIskontoOrani;
         private DevExpress.XtraEditors.ComboBoxEdit cmbSatisOzelFiyati;
         private DevExpress.XtraEditors.ComboBoxEdit cmbAlisOzelFiyati;
     }

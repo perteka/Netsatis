@@ -11,7 +11,7 @@ namespace NetSatis.Entities.Context
 {
     public class NetSatisContext : DbContext
     {
-        
+
         public DbSet<Cari> Cariler { get; set; }
         public DbSet<Depo> Depolar { get; set; }
         public DbSet<Fis> Fisler { get; set; }
@@ -21,6 +21,7 @@ namespace NetSatis.Entities.Context
         public DbSet<Stok> Stoklar { get; set; }
         public DbSet<StokHareket> StokHareketleri { get; set; }
         public DbSet<Tanim> Tanimlar { get; set; }
+        public DbSet<Personel> Personeller { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
@@ -33,6 +34,7 @@ namespace NetSatis.Entities.Context
             modelBuilder.Configurations.Add(new OdemeTuruMap());
             modelBuilder.Configurations.Add(new StokHareketMap());
             modelBuilder.Configurations.Add(new TanimMap());
+            modelBuilder.Configurations.Add(new PersonelMap());
         }
     }
 }
