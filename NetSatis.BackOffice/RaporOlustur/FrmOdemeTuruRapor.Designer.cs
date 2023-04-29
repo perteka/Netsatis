@@ -104,6 +104,9 @@ namespace NetSatis.BackOffice.RaporOlustur
             this.Controls.Add(this.btnPdf);
             this.Controls.Add(this.btnWord);
             this.Controls.Add(this.btnExcel);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "FrmOdemeTuruRapor";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Ödeme Türü Rapor Oluştur";

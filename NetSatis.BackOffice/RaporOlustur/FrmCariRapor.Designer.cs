@@ -32,10 +32,10 @@ namespace NetSatis.BackOffice.RaporOlustur
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmCariRapor));
             this.btnExcel = new DevExpress.XtraEditors.SimpleButton();
+            this.ımageList1 = new System.Windows.Forms.ImageList(this.components);
             this.btnWord = new DevExpress.XtraEditors.SimpleButton();
             this.btnPdf = new DevExpress.XtraEditors.SimpleButton();
             this.btnKapat = new DevExpress.XtraEditors.SimpleButton();
-            this.ımageList1 = new System.Windows.Forms.ImageList(this.components);
             this.SuspendLayout();
             // 
             // btnExcel
@@ -49,6 +49,15 @@ namespace NetSatis.BackOffice.RaporOlustur
             this.btnExcel.TabIndex = 5;
             this.btnExcel.Text = "Excel Olarak \r\nRapor Oluştur\r\n";
             this.btnExcel.Click += new System.EventHandler(this.btnExcel_Click);
+            // 
+            // ımageList1
+            // 
+            this.ımageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("ımageList1.ImageStream")));
+            this.ımageList1.TransparentColor = System.Drawing.Color.Transparent;
+            this.ımageList1.Images.SetKeyName(0, "folder_out.png");
+            this.ımageList1.Images.SetKeyName(1, "word.png");
+            this.ımageList1.Images.SetKeyName(2, "excel.png");
+            this.ımageList1.Images.SetKeyName(3, "pdf.png");
             // 
             // btnWord
             // 
@@ -86,15 +95,6 @@ namespace NetSatis.BackOffice.RaporOlustur
             this.btnKapat.Text = "Kapat";
             this.btnKapat.Click += new System.EventHandler(this.btnKapat_Click);
             // 
-            // ımageList1
-            // 
-            this.ımageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("ımageList1.ImageStream")));
-            this.ımageList1.TransparentColor = System.Drawing.Color.Transparent;
-            this.ımageList1.Images.SetKeyName(0, "folder_out.png");
-            this.ımageList1.Images.SetKeyName(1, "word.png");
-            this.ımageList1.Images.SetKeyName(2, "excel.png");
-            this.ımageList1.Images.SetKeyName(3, "pdf.png");
-            // 
             // FrmCariRapor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
@@ -104,6 +104,9 @@ namespace NetSatis.BackOffice.RaporOlustur
             this.Controls.Add(this.btnPdf);
             this.Controls.Add(this.btnWord);
             this.Controls.Add(this.btnExcel);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "FrmCariRapor";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Cari Rapor Oluştur";
