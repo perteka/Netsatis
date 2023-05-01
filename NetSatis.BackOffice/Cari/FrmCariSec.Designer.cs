@@ -69,8 +69,8 @@ namespace NetSatis.BackOffice.Cari
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
             this.lnlUyari = new DevExpress.XtraEditors.LabelControl();
             this.btnSec = new DevExpress.XtraEditors.SimpleButton();
-            this.btnKapat = new DevExpress.XtraEditors.SimpleButton();
             this.ımageList1 = new System.Windows.Forms.ImageList(this.components);
+            this.btnKapat = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
@@ -502,6 +502,14 @@ namespace NetSatis.BackOffice.Cari
             this.btnSec.Text = "Seç";
             this.btnSec.Click += new System.EventHandler(this.btnSec_Click);
             // 
+            // ımageList1
+            // 
+            this.ımageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("ımageList1.ImageStream")));
+            this.ımageList1.TransparentColor = System.Drawing.Color.Transparent;
+            this.ımageList1.Images.SetKeyName(0, "check.png");
+            this.ımageList1.Images.SetKeyName(1, "folder_out.png");
+            this.ımageList1.Images.SetKeyName(2, "information.png");
+            // 
             // btnKapat
             // 
             this.btnKapat.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
@@ -514,14 +522,6 @@ namespace NetSatis.BackOffice.Cari
             this.btnKapat.TabIndex = 2;
             this.btnKapat.Text = "Kapat";
             this.btnKapat.Click += new System.EventHandler(this.btnKapat_Click);
-            // 
-            // ımageList1
-            // 
-            this.ımageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("ımageList1.ImageStream")));
-            this.ımageList1.TransparentColor = System.Drawing.Color.Transparent;
-            this.ımageList1.Images.SetKeyName(0, "check.png");
-            this.ımageList1.Images.SetKeyName(1, "folder_out.png");
-            this.ımageList1.Images.SetKeyName(2, "information.png");
             // 
             // FrmCariSec
             // 

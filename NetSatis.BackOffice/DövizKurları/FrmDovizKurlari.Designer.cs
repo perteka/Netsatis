@@ -44,6 +44,7 @@ namespace NetSatis.BackOffice.DövizKurları
             this.colForexSelling = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colBankNoteBuying = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colBankNoteSelling = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.lnlUyari = new DevExpress.XtraEditors.LabelControl();
             ((System.ComponentModel.ISupportInitialize)(this.groupMenu)).BeginInit();
             this.groupMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
@@ -71,6 +72,7 @@ namespace NetSatis.BackOffice.DövizKurları
             // groupMenu
             // 
             this.groupMenu.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.UltraFlat;
+            this.groupMenu.Controls.Add(this.lnlUyari);
             this.groupMenu.Controls.Add(this.btnGuncelle);
             this.groupMenu.Controls.Add(this.btnKapat);
             this.groupMenu.Dock = System.Windows.Forms.DockStyle.Bottom;
@@ -203,6 +205,19 @@ namespace NetSatis.BackOffice.DövizKurları
             this.colBankNoteSelling.VisibleIndex = 5;
             this.colBankNoteSelling.Width = 94;
             // 
+            // lnlUyari
+            // 
+            this.lnlUyari.Appearance.Font = new System.Drawing.Font("Tahoma", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lnlUyari.Appearance.Options.UseFont = true;
+            this.lnlUyari.AutoSizeMode = DevExpress.XtraEditors.LabelAutoSizeMode.None;
+            this.lnlUyari.ImageAlignToText = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
+            this.lnlUyari.ImageOptions.Alignment = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lnlUyari.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("lnlUyari.ImageOptions.Image")));
+            this.lnlUyari.Location = new System.Drawing.Point(0, 24);
+            this.lnlUyari.Name = "lnlUyari";
+            this.lnlUyari.Size = new System.Drawing.Size(498, 64);
+            this.lnlUyari.TabIndex = 4;
+            // 
             // FrmDovizKurlari
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
@@ -241,5 +256,6 @@ namespace NetSatis.BackOffice.DövizKurları
         private DevExpress.XtraGrid.Columns.GridColumn colForexSelling;
         private DevExpress.XtraGrid.Columns.GridColumn colBankNoteBuying;
         private DevExpress.XtraGrid.Columns.GridColumn colBankNoteSelling;
+        private DevExpress.XtraEditors.LabelControl lnlUyari;
     }
 }

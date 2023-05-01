@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -18,18 +19,44 @@ namespace NetSatis.BackOffice.DövizKurları
         public FrmDovizKurlari()
         {
             InitializeComponent();
+            FileInfo info = new FileInfo(Application.StartupPath + "\\kurlar.xml");
+            lnlUyari.Text = "Son Güncelleme Tarihi : " + info.LastWriteTime.ToString();
         }
 
         private void FrmDovizKurlari_Load(object sender, EventArgs e)
         {
-            Guncelle();
+            Guncelle(false);
         }
 
-        private void Guncelle()
+        private void Guncelle(bool İndir=true)
         {
+            if(İndir)
+            {
+                /*using (System.Net.WebClient kurİndir = new System.Net.WebClient())
+                {
+                    kurİndir.DownloadFile("https://www.tcmb.gov.tr/kurlar/today.xml", Application.StartupPath + "\\kurlar.xml");
+                }
+                lnlUyari.Text = "Son Güncelleme Tarihi : " + DateTime.Now.ToString();*/
+                if (System.Net.NetworkInformation.NetworkInterface.GetIsNetworkAvailable())
+                {
+                    // İnternet bağlantısı var, XML dosyasını indir ve işle
+                    using (System.Net.WebClient kurİndir = new System.Net.WebClient())
+                    {
+                        kurİndir.DownloadFile("https://www.tcmb.gov.tr/kurlar/today.xml", Application.StartupPath + "\\kurlar.xml");
+                    }
+                    lnlUyari.Text = "Son Güncelleme Tarihi : " + DateTime.Now.ToString();
+                }
+                else
+                {
+                    // İnternet bağlantısı yok, kullanıcıya mesaj göster
+                    MessageBox.Show("Lütfen internet bağlantınızı kontrol ediniz.");
+                }
+                
+            }
+
             /*xml formatındaki veriyi okumak için*/
             /*xml formatındaki veriyi okumak için xelement oluşturuyorum*/
-            XElement kurlar = XElement.Load("https://www.tcmb.gov.tr/kurlar/today.xml");
+            XElement kurlar = XElement.Load(Application.StartupPath + "\\kurlar.xml");
 
             /*Xelementi direk listeliyemiyoruz çünkü içinde birçok veri var.Listeyebilmem için parçalara ayırmam lazım */
             /*Entity mizi liste tipinde çağırıp kurlarıdaki bilgiiyi liste tipindeki döviz kurlarına akatarıcam*/
@@ -53,6 +80,7 @@ namespace NetSatis.BackOffice.DövizKurları
                         BanknoteSelling = itemElement.Element("BanknoteSelling").Value == "" ? 0 : Convert.ToDecimal(itemElement.Element("BanknoteSelling").Value.Replace(".", ondalikKarakter))
                     });/*Bunu Artık gridview e atabilirim*/
             }
+            
             gridControl1.DataSource = listKurlar;
 
         }
