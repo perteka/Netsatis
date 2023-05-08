@@ -22,6 +22,9 @@ namespace NetSatis.Entities.Context
         public DbSet<StokHareket> StokHareketleri { get; set; }
         public DbSet<Tanim> Tanimlar { get; set; }
         public DbSet<Personel> Personeller { get; set; }
+        public DbSet<EFAppointment> EFAppointments { get; set; }
+        public DbSet<EFResource> EFResources { get; set; }
+
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {

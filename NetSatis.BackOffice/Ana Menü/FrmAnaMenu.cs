@@ -17,6 +17,7 @@ using NetSatis.BackOffice.Tanım;
 using NetSatis.BackOffice.ÖdemeTürü;
 using NetSatis.BackOffice.Personel;
 using NetSatis.BackOffice.DövizKurları;
+using NetSatis.BackOffice.Ajanda;
 
 namespace NetSatis.BackOffice
 {
@@ -89,6 +90,13 @@ namespace NetSatis.BackOffice
         {
             FrmDovizKurlari form = new FrmDovizKurlari();
             form.ShowDialog();
+        }
+
+        private void barButtonItem8_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            FrmAjanda form = new FrmAjanda();
+            form.WindowState = FormWindowState.Maximized;
+            form.Show();
         }
     }
 }

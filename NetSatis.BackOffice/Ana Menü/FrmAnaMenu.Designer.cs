@@ -43,6 +43,7 @@ namespace NetSatis.BackOffice
             this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup2 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.xtraTabbedMdiManager1 = new DevExpress.XtraTabbedMdi.XtraTabbedMdiManager(this.components);
+            this.barButtonItem8 = new DevExpress.XtraBars.BarButtonItem();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabbedMdiManager1)).BeginInit();
             this.SuspendLayout();
@@ -60,10 +61,11 @@ namespace NetSatis.BackOffice
             this.barButtonItem4,
             this.barButtonItem5,
             this.barButtonItem6,
-            this.barButtonItem7});
+            this.barButtonItem7,
+            this.barButtonItem8});
             this.ribbonControl1.Location = new System.Drawing.Point(0, 0);
             this.ribbonControl1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.ribbonControl1.MaxItemId = 8;
+            this.ribbonControl1.MaxItemId = 9;
             this.ribbonControl1.Name = "ribbonControl1";
             this.ribbonControl1.OptionsMenuMinWidth = 481;
             this.ribbonControl1.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
@@ -152,6 +154,7 @@ namespace NetSatis.BackOffice
             this.ribbonPageGroup1.ItemLinks.Add(this.barButtonItem5);
             this.ribbonPageGroup1.ItemLinks.Add(this.barButtonItem6);
             this.ribbonPageGroup1.ItemLinks.Add(this.barButtonItem7);
+            this.ribbonPageGroup1.ItemLinks.Add(this.barButtonItem8);
             this.ribbonPageGroup1.Name = "ribbonPageGroup1";
             this.ribbonPageGroup1.Text = "ribbonPageGroup1";
             // 
@@ -163,6 +166,15 @@ namespace NetSatis.BackOffice
             // xtraTabbedMdiManager1
             // 
             this.xtraTabbedMdiManager1.MdiParent = this;
+            // 
+            // barButtonItem8
+            // 
+            this.barButtonItem8.Caption = "Ajanda";
+            this.barButtonItem8.Id = 8;
+            this.barButtonItem8.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem8.ImageOptions.Image")));
+            this.barButtonItem8.Name = "barButtonItem8";
+            this.barButtonItem8.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.barButtonItem8.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem8_ItemClick);
             // 
             // Form1
             // 
@@ -196,6 +208,7 @@ namespace NetSatis.BackOffice
         private DevExpress.XtraBars.BarButtonItem barButtonItem6;
         private DevExpress.XtraBars.BarButtonItem barButtonItem7;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup2;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem8;
     }
 }
 
