@@ -100,11 +100,17 @@
     <Compile Include="Ajanda\FrmAjanda.Designer.cs">
       <DependentUpon>FrmAjanda.cs</DependentUpon>
     </Compile>
-    <Compile Include="Ana Menü\FrmAnaMenu.cs">
+    <Compile Include="AnaMenü\FrmAnaMenu.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Ana Menü\FrmAnaMenu.Designer.cs">
+    <Compile Include="AnaMenü\FrmAnaMenu.Designer.cs">
       <DependentUpon>FrmAnaMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AnaMenü\FrmAnaMenuBilgi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AnaMenü\FrmAnaMenuBilgi.Designer.cs">
+      <DependentUpon>FrmAnaMenuBilgi.cs</DependentUpon>
     </Compile>
     <Compile Include="Cari\FrmCari.cs">
       <SubType>Form</SubType>
@@ -279,8 +285,11 @@
     <EmbeddedResource Include="Ajanda\FrmAjanda.resx">
       <DependentUpon>FrmAjanda.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Ana Menü\FrmAnaMenu.resx">
+    <EmbeddedResource Include="AnaMenü\FrmAnaMenu.resx">
       <DependentUpon>FrmAnaMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AnaMenü\FrmAnaMenuBilgi.resx">
+      <DependentUpon>FrmAnaMenuBilgi.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Cari\FrmCari.resx">
       <DependentUpon>FrmCari.cs</DependentUpon>

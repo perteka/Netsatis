@@ -18,12 +18,13 @@ using NetSatis.BackOffice.ÖdemeTürü;
 using NetSatis.BackOffice.Personel;
 using NetSatis.BackOffice.DövizKurları;
 using NetSatis.BackOffice.Ajanda;
+using NetSatis.BackOffice.Ana_Menü;
 
 namespace NetSatis.BackOffice
 {
     public partial class Form1 : DevExpress.XtraBars.Ribbon.RibbonForm
     {
-     
+        
         public Form1()
         {
             InitializeComponent();
@@ -76,6 +77,9 @@ namespace NetSatis.BackOffice
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            FrmAnaMenuBilgi form = new FrmAnaMenuBilgi();
+            form.MdiParent = this;
+            form.Show();
 
         }
 
@@ -97,6 +101,16 @@ namespace NetSatis.BackOffice
             FrmAjanda form = new FrmAjanda();
             form.WindowState = FormWindowState.Maximized;
             form.Show();
+        }
+
+        private void barButtonItem11_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+           
+        }
+
+        private void barButtonItem20_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+
         }
     }
 }
