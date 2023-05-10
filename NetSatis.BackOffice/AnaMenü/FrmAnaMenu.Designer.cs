@@ -79,6 +79,7 @@ namespace NetSatis.BackOffice
             this.ribbonPageGroup9 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup10 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.xtraTabbedMdiManager1 = new DevExpress.XtraTabbedMdi.XtraTabbedMdiManager(this.components);
+            this.barButtonItem34 = new DevExpress.XtraBars.BarButtonItem();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabbedMdiManager1)).BeginInit();
             this.SuspendLayout();
@@ -123,10 +124,11 @@ namespace NetSatis.BackOffice
             this.barButtonItem30,
             this.barButtonItem31,
             this.barButtonItem32,
-            this.barButtonItem33});
+            this.barButtonItem33,
+            this.barButtonItem34});
             this.ribbonControl1.Location = new System.Drawing.Point(0, 0);
             this.ribbonControl1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.ribbonControl1.MaxItemId = 35;
+            this.ribbonControl1.MaxItemId = 36;
             this.ribbonControl1.Name = "ribbonControl1";
             this.ribbonControl1.OptionsMenuMinWidth = 481;
             this.ribbonControl1.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
@@ -490,19 +492,27 @@ namespace NetSatis.BackOffice
             // 
             this.ribbonPageGroup9.ItemLinks.Add(this.barButtonItem29);
             this.ribbonPageGroup9.ItemLinks.Add(this.barButtonItem30);
-            this.ribbonPageGroup9.ItemLinks.Add(this.barButtonItem31);
             this.ribbonPageGroup9.Name = "ribbonPageGroup9";
             this.ribbonPageGroup9.Text = "Yardım";
             // 
             // ribbonPageGroup10
             // 
             this.ribbonPageGroup10.ItemLinks.Add(this.barButtonItem32);
+            this.ribbonPageGroup10.ItemLinks.Add(this.barButtonItem34);
             this.ribbonPageGroup10.Name = "ribbonPageGroup10";
             this.ribbonPageGroup10.Text = "Bize Ulaşın";
             // 
             // xtraTabbedMdiManager1
             // 
             this.xtraTabbedMdiManager1.MdiParent = this;
+            // 
+            // barButtonItem34
+            // 
+            this.barButtonItem34.Caption = "Web Sitemiz";
+            this.barButtonItem34.Id = 35;
+            this.barButtonItem34.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem34.ImageOptions.Image")));
+            this.barButtonItem34.Name = "barButtonItem34";
+            this.barButtonItem34.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             // 
             // Form1
             // 
@@ -573,6 +583,7 @@ namespace NetSatis.BackOffice
         private DevExpress.XtraBars.BarButtonItem barButtonItem32;
         private DevExpress.XtraBars.BarButtonItem barButtonItem33;
         private DevExpress.XtraBars.Ribbon.RibbonPageGroup ribbonPageGroup10;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem34;
     }
 }
 
