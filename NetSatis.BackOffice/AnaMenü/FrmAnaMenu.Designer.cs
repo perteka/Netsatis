@@ -66,6 +66,7 @@ namespace NetSatis.BackOffice
             this.barButtonItem31 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem32 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem33 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem34 = new DevExpress.XtraBars.BarButtonItem();
             this.ribbonPage1 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup3 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
@@ -79,7 +80,6 @@ namespace NetSatis.BackOffice
             this.ribbonPageGroup9 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonPageGroup10 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.xtraTabbedMdiManager1 = new DevExpress.XtraTabbedMdi.XtraTabbedMdiManager(this.components);
-            this.barButtonItem34 = new DevExpress.XtraBars.BarButtonItem();
             ((System.ComponentModel.ISupportInitialize)(this.ribbonControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabbedMdiManager1)).BeginInit();
             this.SuspendLayout();
@@ -363,6 +363,7 @@ namespace NetSatis.BackOffice
             this.barButtonItem28.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem28.ImageOptions.Image")));
             this.barButtonItem28.Name = "barButtonItem28";
             this.barButtonItem28.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.barButtonItem28.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem28_ItemClick);
             // 
             // barButtonItem29
             // 
@@ -404,6 +405,14 @@ namespace NetSatis.BackOffice
             this.barButtonItem33.Name = "barButtonItem33";
             this.barButtonItem33.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             // 
+            // barButtonItem34
+            // 
+            this.barButtonItem34.Caption = "Web Sitemiz";
+            this.barButtonItem34.Id = 35;
+            this.barButtonItem34.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem34.ImageOptions.Image")));
+            this.barButtonItem34.Name = "barButtonItem34";
+            this.barButtonItem34.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            // 
             // ribbonPage1
             // 
             this.ribbonPage1.Groups.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPageGroup[] {
@@ -432,10 +441,8 @@ namespace NetSatis.BackOffice
             // 
             // ribbonPageGroup2
             // 
-            this.ribbonPageGroup2.ItemLinks.Add(this.barButtonItem13);
             this.ribbonPageGroup2.ItemLinks.Add(this.barButtonItem14);
             this.ribbonPageGroup2.ItemLinks.Add(this.barButtonItem15);
-            this.ribbonPageGroup2.ItemLinks.Add(this.barButtonItem16);
             this.ribbonPageGroup2.Name = "ribbonPageGroup2";
             this.ribbonPageGroup2.Text = "Satış İşlemleri";
             // 
@@ -450,9 +457,6 @@ namespace NetSatis.BackOffice
             // 
             // ribbonPageGroup5
             // 
-            this.ribbonPageGroup5.ItemLinks.Add(this.barButtonItem20);
-            this.ribbonPageGroup5.ItemLinks.Add(this.barButtonItem21);
-            this.ribbonPageGroup5.ItemLinks.Add(this.barButtonItem22);
             this.ribbonPageGroup5.ItemLinks.Add(this.barButtonItem23);
             this.ribbonPageGroup5.Name = "ribbonPageGroup5";
             this.ribbonPageGroup5.Text = "Raporlar";
@@ -505,14 +509,6 @@ namespace NetSatis.BackOffice
             // xtraTabbedMdiManager1
             // 
             this.xtraTabbedMdiManager1.MdiParent = this;
-            // 
-            // barButtonItem34
-            // 
-            this.barButtonItem34.Caption = "Web Sitemiz";
-            this.barButtonItem34.Id = 35;
-            this.barButtonItem34.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem34.ImageOptions.Image")));
-            this.barButtonItem34.Name = "barButtonItem34";
-            this.barButtonItem34.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
             // 
             // Form1
             // 

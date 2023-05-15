@@ -408,6 +408,10 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\NetSatis.Backup\NetSatis.Backup.csproj">
+      <Project>{4C6732AB-6F1A-4570-949A-C927FA604A11}</Project>
+      <Name>NetSatis.Backup</Name>
+    </ProjectReference>
     <ProjectReference Include="..\NetSatis.Entities\NetSatis.Entities.csproj">
       <Project>{c44dca00-7517-45dd-8840-99c1ebeb6b00}</Project>
       <Name>NetSatis.Entities</Name>

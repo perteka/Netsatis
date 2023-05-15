@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetSatis.Entities", "NetSat
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetSatis.BackOffice", "NetSatis.BackOffice\NetSatis.BackOffice.csproj", "{D94E96B6-AA94-4774-BACB-32E887839F9C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetSatis.Backup", "NetSatis.Backup\NetSatis.Backup.csproj", "{4C6732AB-6F1A-4570-949A-C927FA604A11}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{D94E96B6-AA94-4774-BACB-32E887839F9C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D94E96B6-AA94-4774-BACB-32E887839F9C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D94E96B6-AA94-4774-BACB-32E887839F9C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4C6732AB-6F1A-4570-949A-C927FA604A11}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C6732AB-6F1A-4570-949A-C927FA604A11}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C6732AB-6F1A-4570-949A-C927FA604A11}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C6732AB-6F1A-4570-949A-C927FA604A11}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

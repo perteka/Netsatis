@@ -19,16 +19,17 @@ using NetSatis.BackOffice.Personel;
 using NetSatis.BackOffice.DövizKurları;
 using NetSatis.BackOffice.Ajanda;
 using NetSatis.BackOffice.Ana_Menü;
+using NetSatis.Backup;
 
 namespace NetSatis.BackOffice
 {
     public partial class Form1 : DevExpress.XtraBars.Ribbon.RibbonForm
     {
-        
+
         public Form1()
         {
             InitializeComponent();
-            using (var context = new NetSatisContext()) 
+            using (var context = new NetSatisContext())
             {
                 context.Database.CreateIfNotExists();
             }
@@ -105,12 +106,18 @@ namespace NetSatis.BackOffice
 
         private void barButtonItem11_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-           
+
         }
 
         private void barButtonItem20_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
 
+        }
+
+        private void barButtonItem28_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            FrmBackup form = new FrmBackup();
+            form.ShowDialog();
         }
     }
 }

@@ -6,7 +6,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Windows.Forms;
 
-namespace NetSatis.FrontOffice
+namespace NetSatis.Backup
 {
     static class Program
     {
@@ -18,7 +18,7 @@ namespace NetSatis.FrontOffice
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new FrmBackup());
         }
     }
 }
