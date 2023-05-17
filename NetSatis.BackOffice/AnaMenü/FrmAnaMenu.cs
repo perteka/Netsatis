@@ -21,6 +21,7 @@ using NetSatis.BackOffice.Ajanda;
 using NetSatis.BackOffice.Ana_Menü;
 using NetSatis.Backup;
 using NetSatis.BackOffice.FiyatDegistir;
+using NetSatis.BackOffice.İndirim;
 
 namespace NetSatis.BackOffice
 {
@@ -124,6 +125,13 @@ namespace NetSatis.BackOffice
         private void barButtonItem15_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
             FrmTopluFiyat form = new FrmTopluFiyat();
+            form.MdiParent = this;
+            form.Show();
+        }
+
+        private void barButtonItem14_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            FrmIndirim form = new FrmIndirim();
             form.MdiParent = this;
             form.Show();
         }

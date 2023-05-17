@@ -24,6 +24,7 @@ namespace NetSatis.Entities.Context
         public DbSet<Personel> Personeller { get; set; }
         public DbSet<EFAppointment> EFAppointments { get; set; }
         public DbSet<EFResource> EFResources { get; set; }
+        public DbSet<Indirim> Indirimler { get; set; }
 
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
@@ -38,6 +39,7 @@ namespace NetSatis.Entities.Context
             modelBuilder.Configurations.Add(new StokHareketMap());
             modelBuilder.Configurations.Add(new TanimMap());
             modelBuilder.Configurations.Add(new PersonelMap());
+            modelBuilder.Configurations.Add(new IndirimMap());
         }
     }
 }

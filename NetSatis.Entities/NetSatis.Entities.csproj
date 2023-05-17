@@ -73,6 +73,7 @@
     <Compile Include="Data Access\CariDAL.cs" />
     <Compile Include="Data Access\DepoDAL.cs" />
     <Compile Include="Data Access\FisDAL.cs" />
+    <Compile Include="Data Access\IndirimDAL.cs" />
     <Compile Include="Data Access\KasaDAL.cs" />
     <Compile Include="Data Access\KasaHareketDAL.cs" />
     <Compile Include="Data Access\OdemeTuruDAL.cs" />
@@ -83,6 +84,7 @@
     <Compile Include="Mapping\CariMap.cs" />
     <Compile Include="Mapping\DepoMap.cs" />
     <Compile Include="Mapping\FisMap.cs" />
+    <Compile Include="Mapping\IndirimMap.cs" />
     <Compile Include="Mapping\KasaHareketMap.cs" />
     <Compile Include="Mapping\KasaMap.cs" />
     <Compile Include="Mapping\OdemeTuruMap.cs" />
@@ -104,6 +106,7 @@
     <Compile Include="Tables\EFResource.cs" />
     <Compile Include="Tables\Fis.cs" />
     <Compile Include="Tables\GenelToplam.cs" />
+    <Compile Include="Tables\Indirim.cs" />
     <Compile Include="Tables\Kasa.cs" />
     <Compile Include="Tables\KasaHareket.cs" />
     <Compile Include="Tables\OdemeTuru.cs" />
@@ -117,6 +120,7 @@
     <Compile Include="Validations\CariValidator.cs" />
     <Compile Include="Validations\DepoValidator.cs" />
     <Compile Include="Validations\FisValidator.cs" />
+    <Compile Include="Validations\IndirimValidator.cs" />
     <Compile Include="Validations\KasaHareketValidator.cs" />
     <Compile Include="Validations\KasaValidator.cs" />
     <Compile Include="Validations\OdemeTuruValidator.cs" />
