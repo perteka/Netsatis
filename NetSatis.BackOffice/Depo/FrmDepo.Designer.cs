@@ -33,8 +33,9 @@ namespace NetSatis.BackOffice.Depo
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmDepo));
             this.lblBaslik = new DevExpress.XtraEditors.LabelControl();
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
-            this.btnKapat = new DevExpress.XtraEditors.SimpleButton();
+            this.btnRapor = new DevExpress.XtraEditors.SimpleButton();
             this.ımageList1 = new System.Windows.Forms.ImageList(this.components);
+            this.btnKapat = new DevExpress.XtraEditors.SimpleButton();
             this.btnDepoHareket = new DevExpress.XtraEditors.SimpleButton();
             this.btnAra = new DevExpress.XtraEditors.SimpleButton();
             this.btnGuncelle = new DevExpress.XtraEditors.SimpleButton();
@@ -60,7 +61,6 @@ namespace NetSatis.BackOffice.Depo
             this.colTelefon = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colAciklama = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridSplitContainer1 = new DevExpress.XtraGrid.GridSplitContainer();
-            this.btnRapor = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
             this.groupControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl1)).BeginInit();
@@ -114,18 +114,17 @@ namespace NetSatis.BackOffice.Depo
             this.groupControl1.TabIndex = 5;
             this.groupControl1.Text = "Menü";
             // 
-            // btnKapat
+            // btnRapor
             // 
-            this.btnKapat.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnKapat.ImageOptions.ImageIndex = 2;
-            this.btnKapat.ImageOptions.ImageList = this.ımageList1;
-            this.btnKapat.Location = new System.Drawing.Point(1083, 39);
-            this.btnKapat.Margin = new System.Windows.Forms.Padding(4);
-            this.btnKapat.Name = "btnKapat";
-            this.btnKapat.Size = new System.Drawing.Size(118, 64);
-            this.btnKapat.TabIndex = 2;
-            this.btnKapat.Text = "Kapat";
-            this.btnKapat.Click += new System.EventHandler(this.btnKapat_Click);
+            this.btnRapor.ImageOptions.ImageIndex = 9;
+            this.btnRapor.ImageOptions.ImageList = this.ımageList1;
+            this.btnRapor.Location = new System.Drawing.Point(769, 39);
+            this.btnRapor.Margin = new System.Windows.Forms.Padding(4);
+            this.btnRapor.Name = "btnRapor";
+            this.btnRapor.Size = new System.Drawing.Size(119, 64);
+            this.btnRapor.TabIndex = 4;
+            this.btnRapor.Text = "Rapor\r\nOluştur\r\n";
+            this.btnRapor.Click += new System.EventHandler(this.btnRapor_Click);
             // 
             // ımageList1
             // 
@@ -141,6 +140,19 @@ namespace NetSatis.BackOffice.Depo
             this.ımageList1.Images.SetKeyName(7, "sil.png");
             this.ımageList1.Images.SetKeyName(8, "view.png");
             this.ımageList1.Images.SetKeyName(9, "note_pinned.png");
+            // 
+            // btnKapat
+            // 
+            this.btnKapat.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnKapat.ImageOptions.ImageIndex = 2;
+            this.btnKapat.ImageOptions.ImageList = this.ımageList1;
+            this.btnKapat.Location = new System.Drawing.Point(1083, 39);
+            this.btnKapat.Margin = new System.Windows.Forms.Padding(4);
+            this.btnKapat.Name = "btnKapat";
+            this.btnKapat.Size = new System.Drawing.Size(118, 64);
+            this.btnKapat.TabIndex = 2;
+            this.btnKapat.Text = "Kapat";
+            this.btnKapat.Click += new System.EventHandler(this.btnKapat_Click);
             // 
             // btnDepoHareket
             // 
@@ -442,18 +454,6 @@ namespace NetSatis.BackOffice.Depo
             this.gridSplitContainer1.Panel1.Controls.Add(this.gridcontDepolar);
             this.gridSplitContainer1.Size = new System.Drawing.Size(1214, 406);
             this.gridSplitContainer1.TabIndex = 0;
-            // 
-            // btnRapor
-            // 
-            this.btnRapor.ImageOptions.ImageIndex = 9;
-            this.btnRapor.ImageOptions.ImageList = this.ımageList1;
-            this.btnRapor.Location = new System.Drawing.Point(769, 39);
-            this.btnRapor.Margin = new System.Windows.Forms.Padding(4);
-            this.btnRapor.Name = "btnRapor";
-            this.btnRapor.Size = new System.Drawing.Size(119, 64);
-            this.btnRapor.TabIndex = 4;
-            this.btnRapor.Text = "Rapor\r\nOluştur\r\n";
-            this.btnRapor.Click += new System.EventHandler(this.btnRapor_Click);
             // 
             // FrmDepo
             // 

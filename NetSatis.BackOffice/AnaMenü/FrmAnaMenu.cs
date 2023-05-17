@@ -20,6 +20,7 @@ using NetSatis.BackOffice.DövizKurları;
 using NetSatis.BackOffice.Ajanda;
 using NetSatis.BackOffice.Ana_Menü;
 using NetSatis.Backup;
+using NetSatis.BackOffice.FiyatDegistir;
 
 namespace NetSatis.BackOffice
 {
@@ -118,6 +119,13 @@ namespace NetSatis.BackOffice
         {
             FrmBackup form = new FrmBackup();
             form.ShowDialog();
+        }
+
+        private void barButtonItem15_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            FrmTopluFiyat form = new FrmTopluFiyat();
+            form.MdiParent = this;
+            form.Show();
         }
     }
 }

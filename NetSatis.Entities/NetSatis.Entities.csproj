@@ -108,6 +108,7 @@
     <Compile Include="Tables\KasaHareket.cs" />
     <Compile Include="Tables\OdemeTuru.cs" />
     <Compile Include="Tables\OtherTables\DövizKurlari.cs" />
+    <Compile Include="Tables\OtherTables\FiyatDegistir.cs" />
     <Compile Include="Tables\Personel.cs" />
     <Compile Include="Tables\Stok.cs" />
     <Compile Include="Tables\StokHareket.cs" />

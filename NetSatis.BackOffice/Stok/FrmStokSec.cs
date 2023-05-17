@@ -18,6 +18,7 @@ namespace NetSatis.BackOffice.Stok
         StokDAL stokDAL = new StokDAL();
         NetSatisContext context = new NetSatisContext();
         public List<Entities.Tables.Stok> secilen = new List<Entities.Tables.Stok>();
+        public bool secildi = false;
         public FrmStokSec(bool cokluSecim = false)
         {
             InitializeComponent();
@@ -40,12 +41,21 @@ namespace NetSatis.BackOffice.Stok
 
         private void btnSec_Click(object sender, EventArgs e)
         {
-            foreach (var row in gridStoklar.GetSelectedRows())
+            if(gridStoklar.GetSelectedRows().Length!=0)
             {
-                string stokkodu = gridStoklar.GetRowCellValue(row, colStokKodu).ToString();
-                secilen.Add(context.Stoklar.SingleOrDefault(c => c.StokKodu == stokkodu));
+                foreach (var row in gridStoklar.GetSelectedRows())
+                {
+                    string stokkodu = gridStoklar.GetRowCellValue(row, colStokKodu).ToString();
+                    secilen.Add(context.Stoklar.SingleOrDefault(c => c.StokKodu == stokkodu));
+                }
+                secildi = true;
+                this.Close();
             }
-            this.Close();   
+            else
+            {
+                MessageBox.Show("Seçilen Bir Ürün Bulunamadı. ");
+            }
         }
+            
     }
 }
