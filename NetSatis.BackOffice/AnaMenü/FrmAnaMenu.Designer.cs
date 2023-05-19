@@ -357,6 +357,7 @@ namespace NetSatis.BackOffice
             this.barButtonItem27.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem27.ImageOptions.Image")));
             this.barButtonItem27.Name = "barButtonItem27";
             this.barButtonItem27.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
+            this.barButtonItem27.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem27_ItemClick);
             // 
             // barButtonItem28
             // 
@@ -489,7 +490,6 @@ namespace NetSatis.BackOffice
             // ribbonPageGroup8
             // 
             this.ribbonPageGroup8.ItemLinks.Add(this.barButtonItem7);
-            this.ribbonPageGroup8.ItemLinks.Add(this.barButtonItem27);
             this.ribbonPageGroup8.ItemLinks.Add(this.barButtonItem28);
             this.ribbonPageGroup8.Name = "ribbonPageGroup8";
             this.ribbonPageGroup8.Text = "Ayarlar";

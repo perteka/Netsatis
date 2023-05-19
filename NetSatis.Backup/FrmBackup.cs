@@ -45,14 +45,37 @@ namespace NetSatis.Backup
         private void simpleButton2_Click(object sender, EventArgs e)
         {
             OpenFileDialog dialog = new OpenFileDialog();
-            dialog.Filter = "NetSatış Yedekleme Dosyası *.nsy|*.nsy";
+            dialog.Filter = "NetSatış Yedekleme Dosyası (*.nsy)|*.nsy";
+
             if (dialog.ShowDialog() == DialogResult.OK)
             {
                 string sqlCumle =
-                    $"USE master;ALTER DATABASE Netsatis SET SINGLE_USER WITH ROLLBACK IMMEDIATE;ALTER DATABASE NetSatis SET READ_ONLY;RESTORE DATABASE NetSatis FROM DISK='{dialog.FileName}';ALTER DATABASE NetSatis SET MULTI_USER;";
-                context.Database.ExecuteSqlCommand(TransactionalBehavior.DoNotEnsureTransaction, sqlCumle);
+                    $"USE master; ALTER DATABASE NetSatis SET SINGLE_USER WITH ROLLBACK IMMEDIATE; ALTER DATABASE NetSatis SET READ_WRITE; RESTORE DATABASE NetSatis FROM DISK='{dialog.FileName}' WITH REPLACE; ALTER DATABASE NetSatis SET MULTI_USER;";
+
+                string baglantiStringi = "Data Source=OMEN;Initial Catalog=NetSatis;Integrated Security=True;";
+
+                using (SqlConnection baglanti = new SqlConnection(baglantiStringi))
+                {
+                    try
+                    {
+                        baglanti.Open();
+
+                        using (SqlCommand komut = new SqlCommand(sqlCumle, baglanti))
+                        {
+                            komut.ExecuteNonQuery();
+                        }
+
+                        MessageBox.Show("Geri yükleme işlemi başarıyla tamamlandı.");
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show("Geri yükleme işlemi sırasında bir hata oluştu: " + ex.Message);
+                    }
+                }
             }
         }
+
+
 
     }
 }
