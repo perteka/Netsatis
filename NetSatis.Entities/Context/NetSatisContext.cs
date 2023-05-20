@@ -25,8 +25,7 @@ namespace NetSatis.Entities.Context
         public DbSet<EFAppointment> EFAppointments { get; set; }
         public DbSet<EFResource> EFResources { get; set; }
         public DbSet<Indirim> Indirimler { get; set; }
-
-
+        public DbSet<Kullanici> Kullanicilar { get; set; }
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             modelBuilder.Configurations.Add(new StokMap());

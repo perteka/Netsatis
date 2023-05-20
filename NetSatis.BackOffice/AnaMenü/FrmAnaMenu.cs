@@ -23,7 +23,7 @@ using NetSatis.Backup;
 using NetSatis.BackOffice.FiyatDegistir;
 using NetSatis.BackOffice.İndirim;
 using NetSatis.Entities.Tools;
-using NetSatis.BackOffice.Ayarlar;
+
 
 namespace NetSatis.BackOffice
 {
@@ -140,8 +140,7 @@ namespace NetSatis.BackOffice
 
         private void barButtonItem27_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            FrmAyarlar form = new FrmAyarlar();
-            form.ShowDialog();
+            
         }
     }
 }
