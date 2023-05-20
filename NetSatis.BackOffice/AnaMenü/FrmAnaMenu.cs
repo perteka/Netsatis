@@ -138,10 +138,6 @@ namespace NetSatis.BackOffice
             form.Show();
         }
 
-        private void barButtonItem27_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
-        {
-            FrmAyarlar form = new FrmAyarlar();
-            form.ShowDialog();
-        }
+        
     }
 }
