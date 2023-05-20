@@ -112,6 +112,7 @@
     <Compile Include="Tables\Indirim.cs" />
     <Compile Include="Tables\Kasa.cs" />
     <Compile Include="Tables\KasaHareket.cs" />
+    <Compile Include="Tables\Kullanici.cs" />
     <Compile Include="Tables\OdemeTuru.cs" />
     <Compile Include="Tables\OtherTables\DövizKurlari.cs" />
     <Compile Include="Tables\OtherTables\FiyatDegistir.cs" />

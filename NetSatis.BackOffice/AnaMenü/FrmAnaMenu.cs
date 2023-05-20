@@ -24,6 +24,7 @@ using NetSatis.BackOffice.FiyatDegistir;
 using NetSatis.BackOffice.İndirim;
 using NetSatis.Entities.Tools;
 
+
 namespace NetSatis.BackOffice
 {
     public partial class Form1 : DevExpress.XtraBars.Ribbon.RibbonForm
@@ -137,6 +138,10 @@ namespace NetSatis.BackOffice
             form.Show();
         }
 
-        
+        private void barButtonItem27_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            FrmAyarlar form = new FrmAyarlar();
+            form.ShowDialog();
+        }
     }
 }

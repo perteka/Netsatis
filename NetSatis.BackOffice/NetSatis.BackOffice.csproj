@@ -179,6 +179,18 @@
     <Compile Include="FiyatDegistir\FrmTopluFiyat.Designer.cs">
       <DependentUpon>FrmTopluFiyat.cs</DependentUpon>
     </Compile>
+    <Compile Include="Giris\FrmGiris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Giris\FrmGiris.Designer.cs">
+      <DependentUpon>FrmGiris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Giris\FrmYeniKayit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Giris\FrmYeniKayit.Designer.cs">
+      <DependentUpon>FrmYeniKayit.cs</DependentUpon>
+    </Compile>
     <Compile Include="Kasa\FrmKasa.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -348,6 +360,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FiyatDegistir\FrmTopluFiyat.resx">
       <DependentUpon>FrmTopluFiyat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Giris\FrmGiris.resx">
+      <DependentUpon>FrmGiris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Giris\FrmYeniKayit.resx">
+      <DependentUpon>FrmYeniKayit.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Kasa\FrmKasa.resx">
       <DependentUpon>FrmKasa.cs</DependentUpon>
