@@ -350,15 +350,7 @@ namespace NetSatis.BackOffice
             this.barButtonItem26.Id = 27;
             this.barButtonItem26.Name = "barButtonItem26";
             // 
-            // barButtonItem27
-            // 
-            this.barButtonItem27.Caption = "Ayarlar";
-            this.barButtonItem27.Id = 28;
-            this.barButtonItem27.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem27.ImageOptions.Image")));
-            this.barButtonItem27.Name = "barButtonItem27";
-            this.barButtonItem27.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonItemStyles.Large;
-            this.barButtonItem27.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem27_ItemClick);
-            // 
+             
             // barButtonItem28
             // 
             this.barButtonItem28.Caption = "Yedekleme";
