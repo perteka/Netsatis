@@ -176,5 +176,13 @@ namespace NetSatis.BackOffice.Ana_Menü
             yapaysinirağı form = new yapaysinirağı();
             form.ShowDialog();
         }
+
+        private void tileItem2_ItemClick_1(object sender, TileItemEventArgs e)
+        {
+            string websiteUrl = @"http://127.0.0.1:5500/B%C4%B0T%C4%B0RME%20WEB/BitirmeWeb/index.html";
+
+            // Default web tarayıcısı ile web sitesini aç
+            System.Diagnostics.Process.Start(websiteUrl);
+        }
     }
 }

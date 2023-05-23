@@ -313,6 +313,7 @@ namespace NetSatis.BackOffice.Ana_Menü
             this.tileItem2.Id = 37;
             this.tileItem2.ItemSize = DevExpress.XtraEditors.TileItemSize.Wide;
             this.tileItem2.Name = "tileItem2";
+            this.tileItem2.ItemClick += new DevExpress.XtraEditors.TileItemClickEventHandler(this.tileItem2_ItemClick_1);
             // 
             // tileItem1
             // 
