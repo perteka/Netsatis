@@ -112,7 +112,7 @@ namespace NetSatis.BackOffice.Stok
             this.lblBaslik.Location = new System.Drawing.Point(0, 0);
             this.lblBaslik.Margin = new System.Windows.Forms.Padding(5);
             this.lblBaslik.Name = "lblBaslik";
-            this.lblBaslik.Size = new System.Drawing.Size(1196, 65);
+            this.lblBaslik.Size = new System.Drawing.Size(1196, 66);
             this.lblBaslik.TabIndex = 0;
             this.lblBaslik.Text = "Stok Kartları";
             // 
@@ -127,10 +127,10 @@ namespace NetSatis.BackOffice.Stok
             this.groupControl1.Controls.Add(this.btnDuzenle);
             this.groupControl1.Controls.Add(this.btnEkle);
             this.groupControl1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.groupControl1.Location = new System.Drawing.Point(0, 574);
+            this.groupControl1.Location = new System.Drawing.Point(0, 571);
             this.groupControl1.Margin = new System.Windows.Forms.Padding(4);
             this.groupControl1.Name = "groupControl1";
-            this.groupControl1.Size = new System.Drawing.Size(1196, 110);
+            this.groupControl1.Size = new System.Drawing.Size(1196, 113);
             this.groupControl1.TabIndex = 1;
             this.groupControl1.Text = "Menü";
             // 
@@ -167,7 +167,7 @@ namespace NetSatis.BackOffice.Stok
             this.btnKapat.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnKapat.ImageOptions.ImageIndex = 6;
             this.btnKapat.ImageOptions.ImageList = this.imgMenu;
-            this.btnKapat.Location = new System.Drawing.Point(1072, 40);
+            this.btnKapat.Location = new System.Drawing.Point(1072, 43);
             this.btnKapat.Margin = new System.Windows.Forms.Padding(4);
             this.btnKapat.Name = "btnKapat";
             this.btnKapat.Size = new System.Drawing.Size(118, 64);
@@ -251,7 +251,7 @@ namespace NetSatis.BackOffice.Stok
             // 
             this.splitContainerControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.splitContainerControl1.Horizontal = false;
-            this.splitContainerControl1.Location = new System.Drawing.Point(0, 65);
+            this.splitContainerControl1.Location = new System.Drawing.Point(0, 66);
             this.splitContainerControl1.Margin = new System.Windows.Forms.Padding(4);
             this.splitContainerControl1.Name = "splitContainerControl1";
             // 
@@ -267,7 +267,7 @@ namespace NetSatis.BackOffice.Stok
             // 
             this.splitContainerControl1.Panel2.Controls.Add(this.gridSplitContainer1);
             this.splitContainerControl1.Panel2.Text = "Panel2";
-            this.splitContainerControl1.Size = new System.Drawing.Size(1196, 509);
+            this.splitContainerControl1.Size = new System.Drawing.Size(1196, 505);
             this.splitContainerControl1.SplitterPosition = 217;
             this.splitContainerControl1.TabIndex = 2;
             // 
@@ -331,7 +331,7 @@ namespace NetSatis.BackOffice.Stok
             this.gridControl1.MainView = this.gridView1;
             this.gridControl1.Margin = new System.Windows.Forms.Padding(4);
             this.gridControl1.Name = "gridControl1";
-            this.gridControl1.Size = new System.Drawing.Size(1196, 280);
+            this.gridControl1.Size = new System.Drawing.Size(1196, 276);
             this.gridControl1.TabIndex = 0;
             this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
@@ -434,8 +434,6 @@ namespace NetSatis.BackOffice.Stok
             this.colBarkodTuru.Name = "colBarkodTuru";
             this.colBarkodTuru.OptionsColumn.AllowEdit = false;
             this.colBarkodTuru.OptionsColumn.AllowMove = false;
-            this.colBarkodTuru.Visible = true;
-            this.colBarkodTuru.VisibleIndex = 4;
             this.colBarkodTuru.Width = 102;
             // 
             // colId
@@ -454,8 +452,6 @@ namespace NetSatis.BackOffice.Stok
             this.colBirimi.Name = "colBirimi";
             this.colBirimi.OptionsColumn.AllowEdit = false;
             this.colBirimi.OptionsColumn.AllowMove = false;
-            this.colBirimi.Visible = true;
-            this.colBirimi.VisibleIndex = 5;
             this.colBirimi.Width = 80;
             // 
             // colStokGrubu
@@ -467,7 +463,7 @@ namespace NetSatis.BackOffice.Stok
             this.colStokGrubu.OptionsColumn.AllowEdit = false;
             this.colStokGrubu.OptionsColumn.AllowMove = false;
             this.colStokGrubu.Visible = true;
-            this.colStokGrubu.VisibleIndex = 6;
+            this.colStokGrubu.VisibleIndex = 4;
             this.colStokGrubu.Width = 97;
             // 
             // colStokAltGrubu
@@ -478,8 +474,6 @@ namespace NetSatis.BackOffice.Stok
             this.colStokAltGrubu.Name = "colStokAltGrubu";
             this.colStokAltGrubu.OptionsColumn.AllowEdit = false;
             this.colStokAltGrubu.OptionsColumn.AllowMove = false;
-            this.colStokAltGrubu.Visible = true;
-            this.colStokAltGrubu.VisibleIndex = 7;
             this.colStokAltGrubu.Width = 106;
             // 
             // colMarka
@@ -570,8 +564,6 @@ namespace NetSatis.BackOffice.Stok
             this.colAlisKdv.Name = "colAlisKdv";
             this.colAlisKdv.OptionsColumn.AllowEdit = false;
             this.colAlisKdv.OptionsColumn.AllowMove = false;
-            this.colAlisKdv.Visible = true;
-            this.colAlisKdv.VisibleIndex = 9;
             this.colAlisKdv.Width = 78;
             // 
             // colSatisKdv
@@ -595,7 +587,7 @@ namespace NetSatis.BackOffice.Stok
             this.colAlisFiyati1.OptionsColumn.AllowEdit = false;
             this.colAlisFiyati1.OptionsColumn.AllowMove = false;
             this.colAlisFiyati1.Visible = true;
-            this.colAlisFiyati1.VisibleIndex = 10;
+            this.colAlisFiyati1.VisibleIndex = 7;
             this.colAlisFiyati1.Width = 121;
             // 
             // colAlisFiyati2
@@ -667,7 +659,7 @@ namespace NetSatis.BackOffice.Stok
             this.colMinStokMiktari.OptionsColumn.AllowEdit = false;
             this.colMinStokMiktari.OptionsColumn.AllowMove = false;
             this.colMinStokMiktari.Visible = true;
-            this.colMinStokMiktari.VisibleIndex = 8;
+            this.colMinStokMiktari.VisibleIndex = 5;
             this.colMinStokMiktari.Width = 129;
             // 
             // colMaxStokMiktari
@@ -679,7 +671,7 @@ namespace NetSatis.BackOffice.Stok
             this.colMaxStokMiktari.OptionsColumn.AllowEdit = false;
             this.colMaxStokMiktari.OptionsColumn.AllowMove = false;
             this.colMaxStokMiktari.Visible = true;
-            this.colMaxStokMiktari.VisibleIndex = 11;
+            this.colMaxStokMiktari.VisibleIndex = 6;
             this.colMaxStokMiktari.Width = 98;
             // 
             // colAciklama
@@ -691,7 +683,7 @@ namespace NetSatis.BackOffice.Stok
             this.colAciklama.OptionsColumn.AllowEdit = false;
             this.colAciklama.OptionsColumn.AllowMove = false;
             this.colAciklama.Visible = true;
-            this.colAciklama.VisibleIndex = 12;
+            this.colAciklama.VisibleIndex = 8;
             this.colAciklama.Width = 108;
             // 
             // gridColumn1
@@ -701,8 +693,6 @@ namespace NetSatis.BackOffice.Stok
             this.gridColumn1.MinWidth = 31;
             this.gridColumn1.Name = "gridColumn1";
             this.gridColumn1.OptionsColumn.AllowEdit = false;
-            this.gridColumn1.Visible = true;
-            this.gridColumn1.VisibleIndex = 13;
             this.gridColumn1.Width = 66;
             // 
             // gridColumn2
@@ -712,8 +702,6 @@ namespace NetSatis.BackOffice.Stok
             this.gridColumn2.MinWidth = 31;
             this.gridColumn2.Name = "gridColumn2";
             this.gridColumn2.OptionsColumn.AllowEdit = false;
-            this.gridColumn2.Visible = true;
-            this.gridColumn2.VisibleIndex = 14;
             this.gridColumn2.Width = 72;
             // 
             // gridColumn3
@@ -723,8 +711,6 @@ namespace NetSatis.BackOffice.Stok
             this.gridColumn3.MinWidth = 31;
             this.gridColumn3.Name = "gridColumn3";
             this.gridColumn3.OptionsColumn.AllowEdit = false;
-            this.gridColumn3.Visible = true;
-            this.gridColumn3.VisibleIndex = 15;
             this.gridColumn3.Width = 132;
             // 
             // gridSplitContainer1
@@ -738,7 +724,7 @@ namespace NetSatis.BackOffice.Stok
             // gridSplitContainer1.Panel1
             // 
             this.gridSplitContainer1.Panel1.Controls.Add(this.gridControl1);
-            this.gridSplitContainer1.Size = new System.Drawing.Size(1196, 280);
+            this.gridSplitContainer1.Size = new System.Drawing.Size(1196, 276);
             this.gridSplitContainer1.TabIndex = 0;
             // 
             // FrmStok
