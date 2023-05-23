@@ -9,6 +9,7 @@ using NetSatis.BackOffice.Kasa;
 using NetSatis.BackOffice.ÖdemeTürü;
 using NetSatis.BackOffice.Personel;
 using NetSatis.BackOffice.Stok;
+using NetSatis.BackOffice.YapaySinirAğıMaaşTahmin;
 using NetSatis.Backup;
 using System;
 using System.Collections.Generic;
@@ -168,6 +169,12 @@ namespace NetSatis.BackOffice.Ana_Menü
         private void tileItem25_ItemClick(object sender, TileItemEventArgs e)
         {
 
+        }
+
+        private void tileItem25_ItemClick_1(object sender, TileItemEventArgs e)
+        {
+            yapaysinirağı form = new yapaysinirağı();
+            form.ShowDialog();
         }
     }
 }

@@ -52,7 +52,7 @@ namespace NetSatis.Backup
                 string sqlCumle =
                     $"USE master; ALTER DATABASE NetSatis SET SINGLE_USER WITH ROLLBACK IMMEDIATE; ALTER DATABASE NetSatis SET READ_WRITE; RESTORE DATABASE NetSatis FROM DISK='{dialog.FileName}' WITH REPLACE; ALTER DATABASE NetSatis SET MULTI_USER;";
 
-                string baglantiStringi = "Data Source=OMEN;Initial Catalog=NetSatis;Integrated Security=True;";
+                string baglantiStringi = "Data Source=DESKTOP-CQHA9P0\\SQLEXPRESS;Initial Catalog=NetSatis;Integrated Security=True;";
 
                 using (SqlConnection baglanti = new SqlConnection(baglantiStringi))
                 {

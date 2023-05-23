@@ -247,6 +247,12 @@
     <Compile Include="Tanım\FrmTanim.Designer.cs">
       <DependentUpon>FrmTanim.cs</DependentUpon>
     </Compile>
+    <Compile Include="YapaySinirAğıMaaşTahmin\yapaysinirağı.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="YapaySinirAğıMaaşTahmin\yapaysinirağı.Designer.cs">
+      <DependentUpon>yapaysinirağı.cs</DependentUpon>
+    </Compile>
     <Compile Include="ÖdemeTürü\FrmOdemeTuru.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -357,6 +363,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Tanım\FrmTanim.resx">
       <DependentUpon>FrmTanim.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="YapaySinirAğıMaaşTahmin\yapaysinirağı.resx">
+      <DependentUpon>yapaysinirağı.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ÖdemeTürü\FrmOdemeTuru.resx">
       <DependentUpon>FrmOdemeTuru.cs</DependentUpon>

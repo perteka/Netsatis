@@ -103,7 +103,7 @@ namespace NetSatis.BackOffice.Personel
             this.lblBaslik.Location = new System.Drawing.Point(0, 0);
             this.lblBaslik.Margin = new System.Windows.Forms.Padding(5);
             this.lblBaslik.Name = "lblBaslik";
-            this.lblBaslik.Size = new System.Drawing.Size(1288, 59);
+            this.lblBaslik.Size = new System.Drawing.Size(1288, 93);
             this.lblBaslik.TabIndex = 4;
             this.lblBaslik.Text = "Personel Kartları";
             // 
@@ -117,10 +117,10 @@ namespace NetSatis.BackOffice.Personel
             this.groupControl1.Controls.Add(this.btnDuzenle);
             this.groupControl1.Controls.Add(this.btnEkle);
             this.groupControl1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.groupControl1.Location = new System.Drawing.Point(0, 586);
+            this.groupControl1.Location = new System.Drawing.Point(0, 589);
             this.groupControl1.Margin = new System.Windows.Forms.Padding(4);
             this.groupControl1.Name = "groupControl1";
-            this.groupControl1.Size = new System.Drawing.Size(1288, 110);
+            this.groupControl1.Size = new System.Drawing.Size(1288, 107);
             this.groupControl1.TabIndex = 5;
             this.groupControl1.Text = "Menü";
             // 
@@ -158,7 +158,7 @@ namespace NetSatis.BackOffice.Personel
             this.btnKapat.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnKapat.ImageOptions.ImageIndex = 0;
             this.btnKapat.ImageOptions.ImageList = this.imgMenu;
-            this.btnKapat.Location = new System.Drawing.Point(1157, 40);
+            this.btnKapat.Location = new System.Drawing.Point(1157, 37);
             this.btnKapat.Margin = new System.Windows.Forms.Padding(4);
             this.btnKapat.Name = "btnKapat";
             this.btnKapat.Size = new System.Drawing.Size(118, 57);
@@ -230,7 +230,7 @@ namespace NetSatis.BackOffice.Personel
             // 
             this.splitContainerControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.splitContainerControl1.Horizontal = false;
-            this.splitContainerControl1.Location = new System.Drawing.Point(0, 59);
+            this.splitContainerControl1.Location = new System.Drawing.Point(0, 93);
             this.splitContainerControl1.Margin = new System.Windows.Forms.Padding(4);
             this.splitContainerControl1.Name = "splitContainerControl1";
             // 
@@ -246,7 +246,7 @@ namespace NetSatis.BackOffice.Personel
             // 
             this.splitContainerControl1.Panel2.Controls.Add(this.gridSplitContainer1);
             this.splitContainerControl1.Panel2.Text = "Panel2";
-            this.splitContainerControl1.Size = new System.Drawing.Size(1288, 527);
+            this.splitContainerControl1.Size = new System.Drawing.Size(1288, 496);
             this.splitContainerControl1.SplitterPosition = 208;
             this.splitContainerControl1.TabIndex = 6;
             // 
@@ -312,7 +312,7 @@ namespace NetSatis.BackOffice.Personel
             this.gridcontPersonel.MainView = this.gridPersonel;
             this.gridcontPersonel.Margin = new System.Windows.Forms.Padding(4);
             this.gridcontPersonel.Name = "gridcontPersonel";
-            this.gridcontPersonel.Size = new System.Drawing.Size(1288, 307);
+            this.gridcontPersonel.Size = new System.Drawing.Size(1288, 276);
             this.gridcontPersonel.TabIndex = 0;
             this.gridcontPersonel.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridPersonel});
@@ -601,7 +601,7 @@ namespace NetSatis.BackOffice.Personel
             // gridSplitContainer1.Panel1
             // 
             this.gridSplitContainer1.Panel1.Controls.Add(this.gridcontPersonel);
-            this.gridSplitContainer1.Size = new System.Drawing.Size(1288, 307);
+            this.gridSplitContainer1.Size = new System.Drawing.Size(1288, 276);
             this.gridSplitContainer1.TabIndex = 0;
             // 
             // FrmPersonel
