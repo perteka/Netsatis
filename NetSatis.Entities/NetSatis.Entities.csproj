@@ -75,14 +75,11 @@
     <Compile Include="Context\NetSatisContext.cs" />
     <Compile Include="Data Access\CariDAL.cs" />
     <Compile Include="Data Access\DepoDAL.cs" />
-    <Compile Include="Data Access\FisDAL.cs" />
     <Compile Include="Data Access\IndirimDAL.cs" />
     <Compile Include="Data Access\KasaDAL.cs" />
-    <Compile Include="Data Access\KasaHareketDAL.cs" />
     <Compile Include="Data Access\OdemeTuruDAL.cs" />
     <Compile Include="Data Access\PersonelDAL.cs" />
     <Compile Include="Data Access\StokDAL.cs" />
-    <Compile Include="Data Access\StokHareketDAL.cs" />
     <Compile Include="Data Access\TanimDAL.cs" />
     <Compile Include="Mapping\CariMap.cs" />
     <Compile Include="Mapping\DepoMap.cs" />
