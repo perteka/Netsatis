@@ -25,7 +25,7 @@ namespace NetSatis.Backup
             string sqlCumle =
               $"USE NetSatis;BACKUP DATABASE NetSatis TO DISK='{txtYedekKonum.Text + "\\NetSatisYedek.nsy"}'";
             context.Database.ExecuteSqlCommand(TransactionalBehavior.DoNotEnsureTransaction, sqlCumle);
-
+            MessageBox.Show("Yedekleme işlemi tamamlandı.");
         }
 
         private void FrmBackup_Load(object sender, EventArgs e)
