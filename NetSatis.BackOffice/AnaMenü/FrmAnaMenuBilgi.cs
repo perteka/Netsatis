@@ -9,6 +9,7 @@ using NetSatis.BackOffice.Kasa;
 using NetSatis.BackOffice.ÖdemeTürü;
 using NetSatis.BackOffice.Personel;
 using NetSatis.BackOffice.Stok;
+using NetSatis.Backup;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -113,7 +114,8 @@ namespace NetSatis.BackOffice.Ana_Menü
 
         private void tileItem4_ItemClick(object sender, TileItemEventArgs e)
         {
-
+            FrmBackup form = new FrmBackup();
+            form.ShowDialog();
         }
 
         private void tileItem5_ItemClick(object sender, TileItemEventArgs e)
