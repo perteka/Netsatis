@@ -64,7 +64,6 @@ namespace NetSatis.BackOffice.Kasa
             this.filterControl1 = new DevExpress.XtraEditors.FilterControl();
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
             this.btnKapat = new DevExpress.XtraEditors.SimpleButton();
-            this.btnKasaHareket = new DevExpress.XtraEditors.SimpleButton();
             this.btnAra = new DevExpress.XtraEditors.SimpleButton();
             this.btnGuncelle = new DevExpress.XtraEditors.SimpleButton();
             this.btnSil = new DevExpress.XtraEditors.SimpleButton();
@@ -461,7 +460,6 @@ namespace NetSatis.BackOffice.Kasa
             // groupControl1
             // 
             this.groupControl1.Controls.Add(this.btnKapat);
-            this.groupControl1.Controls.Add(this.btnKasaHareket);
             this.groupControl1.Controls.Add(this.btnAra);
             this.groupControl1.Controls.Add(this.btnGuncelle);
             this.groupControl1.Controls.Add(this.btnSil);
@@ -488,24 +486,11 @@ namespace NetSatis.BackOffice.Kasa
             this.btnKapat.Text = "Kapat";
             this.btnKapat.Click += new System.EventHandler(this.btnKapat_Click);
             // 
-            // btnKasaHareket
-            // 
-            this.btnKasaHareket.ImageOptions.ImageIndex = 10;
-            this.btnKasaHareket.ImageOptions.ImageList = this.ımageList1;
-            this.btnKasaHareket.ImageOptions.ImageToTextAlignment = DevExpress.XtraEditors.ImageAlignToText.LeftCenter;
-            this.btnKasaHareket.Location = new System.Drawing.Point(391, 39);
-            this.btnKasaHareket.Margin = new System.Windows.Forms.Padding(4);
-            this.btnKasaHareket.Name = "btnKasaHareket";
-            this.btnKasaHareket.Size = new System.Drawing.Size(118, 64);
-            this.btnKasaHareket.TabIndex = 2;
-            this.btnKasaHareket.Text = "Kasa Hareket";
-            this.btnKasaHareket.Click += new System.EventHandler(this.btnKasaHareket_Click);
-            // 
             // btnAra
             // 
             this.btnAra.ImageOptions.ImageIndex = 16;
             this.btnAra.ImageOptions.ImageList = this.ımageList1;
-            this.btnAra.Location = new System.Drawing.Point(643, 39);
+            this.btnAra.Location = new System.Drawing.Point(517, 42);
             this.btnAra.Margin = new System.Windows.Forms.Padding(4);
             this.btnAra.Name = "btnAra";
             this.btnAra.Size = new System.Drawing.Size(118, 64);
@@ -517,7 +502,7 @@ namespace NetSatis.BackOffice.Kasa
             // 
             this.btnGuncelle.ImageOptions.ImageIndex = 13;
             this.btnGuncelle.ImageOptions.ImageList = this.ımageList1;
-            this.btnGuncelle.Location = new System.Drawing.Point(517, 39);
+            this.btnGuncelle.Location = new System.Drawing.Point(391, 42);
             this.btnGuncelle.Margin = new System.Windows.Forms.Padding(4);
             this.btnGuncelle.Name = "btnGuncelle";
             this.btnGuncelle.Size = new System.Drawing.Size(118, 64);
@@ -604,7 +589,6 @@ namespace NetSatis.BackOffice.Kasa
         private DevExpress.XtraEditors.FilterControl filterControl1;
         public DevExpress.XtraEditors.GroupControl groupControl1;
         private DevExpress.XtraEditors.SimpleButton btnKapat;
-        private DevExpress.XtraEditors.SimpleButton btnKasaHareket;
         private DevExpress.XtraEditors.SimpleButton btnAra;
         private DevExpress.XtraEditors.SimpleButton btnGuncelle;
         private DevExpress.XtraEditors.SimpleButton btnSil;

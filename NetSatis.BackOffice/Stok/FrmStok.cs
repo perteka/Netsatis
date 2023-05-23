@@ -109,13 +109,6 @@ namespace NetSatis.BackOffice.Stok
                 GetAll();
             }
         }
-        private void btnStokHareket_Click(object sender, EventArgs e)
-        {
-            secilen = gridView1.GetFocusedRowCellValue(colStokKodu).ToString();
-            string secilenAd = gridView1.GetFocusedRowCellValue(colStokAdi).ToString();
-            FrmStokHareket form = new FrmStokHareket(secilen, secilenAd);
-            form.ShowDialog();
-        }
 
         private void btnRapor_Click(object sender, EventArgs e)
         {

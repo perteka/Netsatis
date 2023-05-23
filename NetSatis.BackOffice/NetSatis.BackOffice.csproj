@@ -119,23 +119,11 @@
     <Compile Include="Cari\FrmCari.Designer.cs">
       <DependentUpon>FrmCari.cs</DependentUpon>
     </Compile>
-    <Compile Include="Cari\FrmCariHareket.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Cari\FrmCariHareket.Designer.cs">
-      <DependentUpon>FrmCariHareket.cs</DependentUpon>
-    </Compile>
     <Compile Include="Cari\FrmCariIslem.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Cari\FrmCariIslem.Designer.cs">
       <DependentUpon>FrmCariIslem.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Cari\FrmCariSec.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Cari\FrmCariSec.Designer.cs">
-      <DependentUpon>FrmCariSec.cs</DependentUpon>
     </Compile>
     <Compile Include="Depo\FrmDepo.cs">
       <SubType>Form</SubType>
@@ -143,23 +131,11 @@
     <Compile Include="Depo\FrmDepo.Designer.cs">
       <DependentUpon>FrmDepo.cs</DependentUpon>
     </Compile>
-    <Compile Include="Depo\FrmDepoHareket.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Depo\FrmDepoHareket.Designer.cs">
-      <DependentUpon>FrmDepoHareket.cs</DependentUpon>
-    </Compile>
     <Compile Include="Depo\FrmDepoIslem.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Depo\FrmDepoIslem.Designer.cs">
       <DependentUpon>FrmDepoIslem.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Depo\FrmDepoSec.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Depo\FrmDepoSec.Designer.cs">
-      <DependentUpon>FrmDepoSec.cs</DependentUpon>
     </Compile>
     <Compile Include="DövizKurları\FrmDovizKurlari.cs">
       <SubType>Form</SubType>
@@ -197,23 +173,11 @@
     <Compile Include="Kasa\FrmKasa.Designer.cs">
       <DependentUpon>FrmKasa.cs</DependentUpon>
     </Compile>
-    <Compile Include="Kasa\FrmKasaHareket.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Kasa\FrmKasaHareket.Designer.cs">
-      <DependentUpon>FrmKasaHareket.cs</DependentUpon>
-    </Compile>
     <Compile Include="Kasa\FrmKasaIslem.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Kasa\FrmKasaIslem.Designer.cs">
       <DependentUpon>FrmKasaIslem.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Kasa\FrmKasaSec.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Kasa\FrmKasaSec.Designer.cs">
-      <DependentUpon>FrmKasaSec.cs</DependentUpon>
     </Compile>
     <Compile Include="Personel\FrmPersoneIslem.cs">
       <SubType>Form</SubType>
@@ -259,12 +223,6 @@
     <Compile Include="RaporOlustur\FrmStokRapor.Designer.cs">
       <DependentUpon>FrmStokRapor.cs</DependentUpon>
     </Compile>
-    <Compile Include="Stok\FrmStokHareket.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Stok\FrmStokHareket.Designer.cs">
-      <DependentUpon>FrmStokHareket.cs</DependentUpon>
-    </Compile>
     <Compile Include="Stok\FrmStok.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -294,12 +252,6 @@
     </Compile>
     <Compile Include="ÖdemeTürü\FrmOdemeTuru.Designer.cs">
       <DependentUpon>FrmOdemeTuru.cs</DependentUpon>
-    </Compile>
-    <Compile Include="ÖdemeTürü\FrmOdemeTuruHareket.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ÖdemeTürü\FrmOdemeTuruHareket.Designer.cs">
-      <DependentUpon>FrmOdemeTuruHareket.cs</DependentUpon>
     </Compile>
     <Compile Include="ÖdemeTürü\FrmOdemeTuruIslem.cs">
       <SubType>Form</SubType>
@@ -331,26 +283,14 @@
     <EmbeddedResource Include="Cari\FrmCari.resx">
       <DependentUpon>FrmCari.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Cari\FrmCariHareket.resx">
-      <DependentUpon>FrmCariHareket.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Cari\FrmCariIslem.resx">
       <DependentUpon>FrmCariIslem.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Cari\FrmCariSec.resx">
-      <DependentUpon>FrmCariSec.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Depo\FrmDepo.resx">
       <DependentUpon>FrmDepo.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Depo\FrmDepoHareket.resx">
-      <DependentUpon>FrmDepoHareket.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Depo\FrmDepoIslem.resx">
       <DependentUpon>FrmDepoIslem.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Depo\FrmDepoSec.resx">
-      <DependentUpon>FrmDepoSec.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DövizKurları\FrmDovizKurlari.resx">
       <DependentUpon>FrmDovizKurlari.cs</DependentUpon>
@@ -370,14 +310,8 @@
     <EmbeddedResource Include="Kasa\FrmKasa.resx">
       <DependentUpon>FrmKasa.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Kasa\FrmKasaHareket.resx">
-      <DependentUpon>FrmKasaHareket.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Kasa\FrmKasaIslem.resx">
       <DependentUpon>FrmKasaIslem.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Kasa\FrmKasaSec.resx">
-      <DependentUpon>FrmKasaSec.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Personel\FrmPersoneIslem.resx">
       <DependentUpon>FrmPersoneIslem.cs</DependentUpon>
@@ -411,9 +345,6 @@
     <EmbeddedResource Include="RaporOlustur\FrmStokRapor.resx">
       <DependentUpon>FrmStokRapor.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Stok\FrmStokHareket.resx">
-      <DependentUpon>FrmStokHareket.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Stok\FrmStok.resx">
       <DependentUpon>FrmStok.cs</DependentUpon>
     </EmbeddedResource>
@@ -429,9 +360,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ÖdemeTürü\FrmOdemeTuru.resx">
       <DependentUpon>FrmOdemeTuru.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ÖdemeTürü\FrmOdemeTuruHareket.resx">
-      <DependentUpon>FrmOdemeTuruHareket.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ÖdemeTürü\FrmOdemeTuruIslem.resx">
       <DependentUpon>FrmOdemeTuruIslem.cs</DependentUpon>

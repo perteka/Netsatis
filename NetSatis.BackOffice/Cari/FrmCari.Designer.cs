@@ -73,8 +73,8 @@ namespace NetSatis.BackOffice.Cari
             this.colBakiye = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridSplitContainer1 = new DevExpress.XtraGrid.GridSplitContainer();
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
+            this.btnRapor = new DevExpress.XtraEditors.SimpleButton();
             this.btnKapat = new DevExpress.XtraEditors.SimpleButton();
-            this.btnCariHareket = new DevExpress.XtraEditors.SimpleButton();
             this.btnAra = new DevExpress.XtraEditors.SimpleButton();
             this.btnGuncelle = new DevExpress.XtraEditors.SimpleButton();
             this.btnKopyala = new DevExpress.XtraEditors.SimpleButton();
@@ -82,7 +82,6 @@ namespace NetSatis.BackOffice.Cari
             this.btnDuzenle = new DevExpress.XtraEditors.SimpleButton();
             this.btnEkle = new DevExpress.XtraEditors.SimpleButton();
             this.lblBaslik = new DevExpress.XtraEditors.LabelControl();
-            this.btnRapor = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainerControl1.Panel1)).BeginInit();
             this.splitContainerControl1.Panel1.SuspendLayout();
@@ -579,7 +578,6 @@ namespace NetSatis.BackOffice.Cari
             // 
             this.groupControl1.Controls.Add(this.btnRapor);
             this.groupControl1.Controls.Add(this.btnKapat);
-            this.groupControl1.Controls.Add(this.btnCariHareket);
             this.groupControl1.Controls.Add(this.btnAra);
             this.groupControl1.Controls.Add(this.btnGuncelle);
             this.groupControl1.Controls.Add(this.btnKopyala);
@@ -594,6 +592,18 @@ namespace NetSatis.BackOffice.Cari
             this.groupControl1.TabIndex = 4;
             this.groupControl1.Text = "Menü";
             // 
+            // btnRapor
+            // 
+            this.btnRapor.ImageOptions.ImageIndex = 10;
+            this.btnRapor.ImageOptions.ImageList = this.imgMenu;
+            this.btnRapor.Location = new System.Drawing.Point(768, 40);
+            this.btnRapor.Margin = new System.Windows.Forms.Padding(4);
+            this.btnRapor.Name = "btnRapor";
+            this.btnRapor.Size = new System.Drawing.Size(119, 64);
+            this.btnRapor.TabIndex = 4;
+            this.btnRapor.Text = "Rapor\r\nOluştur\r\n";
+            this.btnRapor.Click += new System.EventHandler(this.btnRapor_Click);
+            // 
             // btnKapat
             // 
             this.btnKapat.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
@@ -607,23 +617,11 @@ namespace NetSatis.BackOffice.Cari
             this.btnKapat.Text = "Kapat";
             this.btnKapat.Click += new System.EventHandler(this.btnKapat_Click);
             // 
-            // btnCariHareket
-            // 
-            this.btnCariHareket.ImageOptions.ImageIndex = 5;
-            this.btnCariHareket.ImageOptions.ImageList = this.imgMenu;
-            this.btnCariHareket.Location = new System.Drawing.Point(516, 39);
-            this.btnCariHareket.Margin = new System.Windows.Forms.Padding(4);
-            this.btnCariHareket.Name = "btnCariHareket";
-            this.btnCariHareket.Size = new System.Drawing.Size(118, 64);
-            this.btnCariHareket.TabIndex = 2;
-            this.btnCariHareket.Text = "Cari Hareket";
-            this.btnCariHareket.Click += new System.EventHandler(this.btnCariHareket_Click);
-            // 
             // btnAra
             // 
             this.btnAra.ImageOptions.ImageIndex = 9;
             this.btnAra.ImageOptions.ImageList = this.imgMenu;
-            this.btnAra.Location = new System.Drawing.Point(768, 39);
+            this.btnAra.Location = new System.Drawing.Point(642, 39);
             this.btnAra.Margin = new System.Windows.Forms.Padding(4);
             this.btnAra.Name = "btnAra";
             this.btnAra.Size = new System.Drawing.Size(118, 64);
@@ -635,7 +633,7 @@ namespace NetSatis.BackOffice.Cari
             // 
             this.btnGuncelle.ImageOptions.ImageIndex = 6;
             this.btnGuncelle.ImageOptions.ImageList = this.imgMenu;
-            this.btnGuncelle.Location = new System.Drawing.Point(642, 39);
+            this.btnGuncelle.Location = new System.Drawing.Point(516, 40);
             this.btnGuncelle.Margin = new System.Windows.Forms.Padding(4);
             this.btnGuncelle.Name = "btnGuncelle";
             this.btnGuncelle.Size = new System.Drawing.Size(118, 64);
@@ -709,18 +707,6 @@ namespace NetSatis.BackOffice.Cari
             this.lblBaslik.TabIndex = 3;
             this.lblBaslik.Text = "Cari Kartları";
             // 
-            // btnRapor
-            // 
-            this.btnRapor.ImageOptions.ImageIndex = 10;
-            this.btnRapor.ImageOptions.ImageList = this.imgMenu;
-            this.btnRapor.Location = new System.Drawing.Point(894, 39);
-            this.btnRapor.Margin = new System.Windows.Forms.Padding(4);
-            this.btnRapor.Name = "btnRapor";
-            this.btnRapor.Size = new System.Drawing.Size(119, 64);
-            this.btnRapor.TabIndex = 4;
-            this.btnRapor.Text = "Rapor\r\nOluştur\r\n";
-            this.btnRapor.Click += new System.EventHandler(this.btnRapor_Click);
-            // 
             // FrmCari
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
@@ -763,7 +749,6 @@ namespace NetSatis.BackOffice.Cari
         private DevExpress.XtraGrid.GridSplitContainer gridSplitContainer1;
         public DevExpress.XtraEditors.GroupControl groupControl1;
         private DevExpress.XtraEditors.SimpleButton btnKapat;
-        private DevExpress.XtraEditors.SimpleButton btnCariHareket;
         private DevExpress.XtraEditors.SimpleButton btnAra;
         private DevExpress.XtraEditors.SimpleButton btnGuncelle;
         private DevExpress.XtraEditors.SimpleButton btnKopyala;

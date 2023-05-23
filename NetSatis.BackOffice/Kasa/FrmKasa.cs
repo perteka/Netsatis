@@ -95,10 +95,5 @@ namespace NetSatis.BackOffice.Kasa
                 Guncelle();
             }
         }
-
-        private void btnKasaHareket_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }

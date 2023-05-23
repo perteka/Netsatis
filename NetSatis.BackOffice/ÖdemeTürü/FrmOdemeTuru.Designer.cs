@@ -36,7 +36,6 @@ namespace NetSatis.BackOffice.ÖdemeTürü
             this.btnRapor = new DevExpress.XtraEditors.SimpleButton();
             this.imgMenu = new System.Windows.Forms.ImageList(this.components);
             this.btnKapat = new DevExpress.XtraEditors.SimpleButton();
-            this.btnStokHareket = new DevExpress.XtraEditors.SimpleButton();
             this.btnAra = new DevExpress.XtraEditors.SimpleButton();
             this.btnGuncelle = new DevExpress.XtraEditors.SimpleButton();
             this.btnSil = new DevExpress.XtraEditors.SimpleButton();
@@ -98,7 +97,6 @@ namespace NetSatis.BackOffice.ÖdemeTürü
             // 
             this.groupControl1.Controls.Add(this.btnRapor);
             this.groupControl1.Controls.Add(this.btnKapat);
-            this.groupControl1.Controls.Add(this.btnStokHareket);
             this.groupControl1.Controls.Add(this.btnAra);
             this.groupControl1.Controls.Add(this.btnGuncelle);
             this.groupControl1.Controls.Add(this.btnSil);
@@ -116,7 +114,7 @@ namespace NetSatis.BackOffice.ÖdemeTürü
             // 
             this.btnRapor.ImageOptions.ImageIndex = 11;
             this.btnRapor.ImageOptions.ImageList = this.imgMenu;
-            this.btnRapor.Location = new System.Drawing.Point(767, 35);
+            this.btnRapor.Location = new System.Drawing.Point(641, 35);
             this.btnRapor.Margin = new System.Windows.Forms.Padding(4);
             this.btnRapor.Name = "btnRapor";
             this.btnRapor.Size = new System.Drawing.Size(119, 64);
@@ -154,22 +152,11 @@ namespace NetSatis.BackOffice.ÖdemeTürü
             this.btnKapat.Text = "Kapat";
             this.btnKapat.Click += new System.EventHandler(this.btnKapat_Click);
             // 
-            // btnStokHareket
-            // 
-            this.btnStokHareket.ImageOptions.ImageIndex = 5;
-            this.btnStokHareket.ImageOptions.ImageList = this.imgMenu;
-            this.btnStokHareket.Location = new System.Drawing.Point(389, 35);
-            this.btnStokHareket.Margin = new System.Windows.Forms.Padding(4);
-            this.btnStokHareket.Name = "btnStokHareket";
-            this.btnStokHareket.Size = new System.Drawing.Size(118, 64);
-            this.btnStokHareket.TabIndex = 4;
-            this.btnStokHareket.Text = "Stok\r\nHareket";
-            // 
             // btnAra
             // 
             this.btnAra.ImageOptions.ImageIndex = 1;
             this.btnAra.ImageOptions.ImageList = this.imgMenu;
-            this.btnAra.Location = new System.Drawing.Point(641, 35);
+            this.btnAra.Location = new System.Drawing.Point(515, 35);
             this.btnAra.Margin = new System.Windows.Forms.Padding(4);
             this.btnAra.Name = "btnAra";
             this.btnAra.Size = new System.Drawing.Size(118, 64);
@@ -181,7 +168,7 @@ namespace NetSatis.BackOffice.ÖdemeTürü
             // 
             this.btnGuncelle.ImageOptions.ImageIndex = 0;
             this.btnGuncelle.ImageOptions.ImageList = this.imgMenu;
-            this.btnGuncelle.Location = new System.Drawing.Point(515, 35);
+            this.btnGuncelle.Location = new System.Drawing.Point(389, 35);
             this.btnGuncelle.Margin = new System.Windows.Forms.Padding(4);
             this.btnGuncelle.Name = "btnGuncelle";
             this.btnGuncelle.Size = new System.Drawing.Size(118, 64);
@@ -469,7 +456,6 @@ namespace NetSatis.BackOffice.ÖdemeTürü
         private DevExpress.XtraEditors.LabelControl lblBaslik;
         public DevExpress.XtraEditors.GroupControl groupControl1;
         private DevExpress.XtraEditors.SimpleButton btnKapat;
-        private DevExpress.XtraEditors.SimpleButton btnStokHareket;
         private DevExpress.XtraEditors.SimpleButton btnAra;
         private DevExpress.XtraEditors.SimpleButton btnGuncelle;
         private DevExpress.XtraEditors.SimpleButton btnSil;

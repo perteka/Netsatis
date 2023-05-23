@@ -118,13 +118,6 @@ namespace NetSatis.BackOffice.Cari
             }
         }
 
-        private void btnCariHareket_Click(object sender, EventArgs e)
-        {
-            secilen = gridView1.GetFocusedRowCellValue(colCariKodu).ToString();
-            string secilenAd = gridView1.GetFocusedRowCellValue(colCariAdi).ToString();
-            FrmCariHareket form = new FrmCariHareket(secilen, secilenAd);
-            form.ShowDialog();
-        }
 
         private void btnRapor_Click(object sender, EventArgs e)
         {
