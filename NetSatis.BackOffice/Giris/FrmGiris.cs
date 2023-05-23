@@ -31,7 +31,7 @@ namespace NetSatis.BackOffice.Giris
 
             if (kullanici != null)
             {
-                MessageBox.Show("Giriş Başarılı!");
+              /*  MessageBox.Show("Giriş Başarılı!");*/
                 // Ana uygulamayı açmak için gerekli kodu buraya ekleyin
                 this.Hide();
 

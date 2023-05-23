@@ -39,16 +39,10 @@ namespace NetSatis.BackOffice.Ana_Menü
             DevExpress.XtraEditors.TileItemElement tileItemElement7 = new DevExpress.XtraEditors.TileItemElement();
             DevExpress.XtraEditors.TileItemElement tileItemElement8 = new DevExpress.XtraEditors.TileItemElement();
             DevExpress.XtraEditors.TileItemElement tileItemElement9 = new DevExpress.XtraEditors.TileItemElement();
-            DevExpress.XtraEditors.TileItemElement tileItemElement18 = new DevExpress.XtraEditors.TileItemElement();
-            DevExpress.XtraEditors.TileItemElement tileItemElement10 = new DevExpress.XtraEditors.TileItemElement();
-            DevExpress.XtraEditors.TileItemElement tileItemElement17 = new DevExpress.XtraEditors.TileItemElement();
             DevExpress.XtraEditors.TileItemElement tileItemElement11 = new DevExpress.XtraEditors.TileItemElement();
             DevExpress.XtraEditors.TileItemElement tileItemElement12 = new DevExpress.XtraEditors.TileItemElement();
+            DevExpress.XtraEditors.TileItemElement tileItemElement10 = new DevExpress.XtraEditors.TileItemElement();
             DevExpress.XtraEditors.TileItemElement tileItemElement13 = new DevExpress.XtraEditors.TileItemElement();
-            DevExpress.XtraEditors.TileItemElement tileItemElement14 = new DevExpress.XtraEditors.TileItemElement();
-            DevExpress.XtraEditors.TileItemElement tileItemElement15 = new DevExpress.XtraEditors.TileItemElement();
-            DevExpress.XtraEditors.TileItemElement tileItemElement16 = new DevExpress.XtraEditors.TileItemElement();
-            DevExpress.XtraEditors.TileItemElement tileItemElement19 = new DevExpress.XtraEditors.TileItemElement();
             this.tileControl1 = new DevExpress.XtraEditors.TileControl();
             this.tileGroup1 = new DevExpress.XtraEditors.TileGroup();
             this.tileItem6 = new DevExpress.XtraEditors.TileItem();
@@ -60,16 +54,10 @@ namespace NetSatis.BackOffice.Ana_Menü
             this.tileItem10 = new DevExpress.XtraEditors.TileItem();
             this.tileItem11 = new DevExpress.XtraEditors.TileItem();
             this.tileItem12 = new DevExpress.XtraEditors.TileItem();
-            this.tileItem2 = new DevExpress.XtraEditors.TileItem();
-            this.tileItem19 = new DevExpress.XtraEditors.TileItem();
-            this.tileItem5 = new DevExpress.XtraEditors.TileItem();
             this.tileGroup2 = new DevExpress.XtraEditors.TileGroup();
-            this.tileItem21 = new DevExpress.XtraEditors.TileItem();
             this.tileItem4 = new DevExpress.XtraEditors.TileItem();
             this.tileItem25 = new DevExpress.XtraEditors.TileItem();
-            this.tileItem24 = new DevExpress.XtraEditors.TileItem();
-            this.tileItem3 = new DevExpress.XtraEditors.TileItem();
-            this.tileItem22 = new DevExpress.XtraEditors.TileItem();
+            this.tileItem5 = new DevExpress.XtraEditors.TileItem();
             this.tileItem1 = new DevExpress.XtraEditors.TileItem();
             this.SuspendLayout();
             // 
@@ -107,7 +95,7 @@ namespace NetSatis.BackOffice.Ana_Menü
             this.tileGroup1.Items.Add(this.tileItem10);
             this.tileGroup1.Items.Add(this.tileItem11);
             this.tileGroup1.Items.Add(this.tileItem12);
-            this.tileGroup1.Items.Add(this.tileItem19);
+            this.tileGroup1.Items.Add(this.tileItem5);
             this.tileGroup1.Name = "tileGroup1";
             this.tileGroup1.Text = "İşlemler";
             // 
@@ -122,7 +110,7 @@ namespace NetSatis.BackOffice.Ana_Menü
             tileItemElement1.Text = "Stok Kartları";
             this.tileItem6.Elements.Add(tileItemElement1);
             this.tileItem6.Id = 16;
-            this.tileItem6.ItemSize = DevExpress.XtraEditors.TileItemSize.Medium;
+            this.tileItem6.ItemSize = DevExpress.XtraEditors.TileItemSize.Wide;
             this.tileItem6.Name = "tileItem6";
             this.tileItem6.ItemClick += new DevExpress.XtraEditors.TileItemClickEventHandler(this.tileItem6_ItemClick);
             // 
@@ -137,7 +125,7 @@ namespace NetSatis.BackOffice.Ana_Menü
             tileItemElement2.Text = "Cari Kartlar";
             this.tileItem7.Elements.Add(tileItemElement2);
             this.tileItem7.Id = 17;
-            this.tileItem7.ItemSize = DevExpress.XtraEditors.TileItemSize.Medium;
+            this.tileItem7.ItemSize = DevExpress.XtraEditors.TileItemSize.Wide;
             this.tileItem7.Name = "tileItem7";
             this.tileItem7.ItemClick += new DevExpress.XtraEditors.TileItemClickEventHandler(this.tileItem7_ItemClick);
             // 
@@ -152,7 +140,7 @@ namespace NetSatis.BackOffice.Ana_Menü
             tileItemElement3.Text = "İndirimler";
             this.tileItem8.Elements.Add(tileItemElement3);
             this.tileItem8.Id = 18;
-            this.tileItem8.ItemSize = DevExpress.XtraEditors.TileItemSize.Medium;
+            this.tileItem8.ItemSize = DevExpress.XtraEditors.TileItemSize.Wide;
             this.tileItem8.Name = "tileItem8";
             this.tileItem8.ItemClick += new DevExpress.XtraEditors.TileItemClickEventHandler(this.tileItem8_ItemClick);
             // 
@@ -167,7 +155,7 @@ namespace NetSatis.BackOffice.Ana_Menü
             tileItemElement4.Text = "Toplu Fiyat Değişikliği";
             this.tileItem14.Elements.Add(tileItemElement4);
             this.tileItem14.Id = 20;
-            this.tileItem14.ItemSize = DevExpress.XtraEditors.TileItemSize.Medium;
+            this.tileItem14.ItemSize = DevExpress.XtraEditors.TileItemSize.Wide;
             this.tileItem14.Name = "tileItem14";
             this.tileItem14.ItemClick += new DevExpress.XtraEditors.TileItemClickEventHandler(this.tileItem14_ItemClick);
             // 
@@ -187,7 +175,7 @@ namespace NetSatis.BackOffice.Ana_Menü
             tileItemElement5.Text = "Plasiyerler";
             this.tileItem9.Elements.Add(tileItemElement5);
             this.tileItem9.Id = 9;
-            this.tileItem9.ItemSize = DevExpress.XtraEditors.TileItemSize.Medium;
+            this.tileItem9.ItemSize = DevExpress.XtraEditors.TileItemSize.Wide;
             this.tileItem9.Name = "tileItem9";
             this.tileItem9.ItemClick += new DevExpress.XtraEditors.TileItemClickEventHandler(this.tileItem9_ItemClick);
             // 
@@ -202,7 +190,7 @@ namespace NetSatis.BackOffice.Ana_Menü
             tileItemElement6.Text = "Ajanda";
             this.tileItem20.Elements.Add(tileItemElement6);
             this.tileItem20.Id = 27;
-            this.tileItem20.ItemSize = DevExpress.XtraEditors.TileItemSize.Medium;
+            this.tileItem20.ItemSize = DevExpress.XtraEditors.TileItemSize.Wide;
             this.tileItem20.Name = "tileItem20";
             this.tileItem20.ItemClick += new DevExpress.XtraEditors.TileItemClickEventHandler(this.tileItem20_ItemClick);
             // 
@@ -215,7 +203,7 @@ namespace NetSatis.BackOffice.Ana_Menü
             tileItemElement7.Text = "Depolar";
             this.tileItem10.Elements.Add(tileItemElement7);
             this.tileItem10.Id = 10;
-            this.tileItem10.ItemSize = DevExpress.XtraEditors.TileItemSize.Medium;
+            this.tileItem10.ItemSize = DevExpress.XtraEditors.TileItemSize.Wide;
             this.tileItem10.Name = "tileItem10";
             this.tileItem10.ItemClick += new DevExpress.XtraEditors.TileItemClickEventHandler(this.tileItem10_ItemClick);
             // 
@@ -230,7 +218,7 @@ namespace NetSatis.BackOffice.Ana_Menü
             tileItemElement8.Text = "Kasalar";
             this.tileItem11.Elements.Add(tileItemElement8);
             this.tileItem11.Id = 11;
-            this.tileItem11.ItemSize = DevExpress.XtraEditors.TileItemSize.Medium;
+            this.tileItem11.ItemSize = DevExpress.XtraEditors.TileItemSize.Wide;
             this.tileItem11.Name = "tileItem11";
             this.tileItem11.ItemClick += new DevExpress.XtraEditors.TileItemClickEventHandler(this.tileItem11_ItemClick);
             // 
@@ -245,82 +233,16 @@ namespace NetSatis.BackOffice.Ana_Menü
             tileItemElement9.Text = "Ödeme Türleri";
             this.tileItem12.Elements.Add(tileItemElement9);
             this.tileItem12.Id = 12;
-            this.tileItem12.ItemSize = DevExpress.XtraEditors.TileItemSize.Medium;
+            this.tileItem12.ItemSize = DevExpress.XtraEditors.TileItemSize.Wide;
             this.tileItem12.Name = "tileItem12";
             this.tileItem12.ItemClick += new DevExpress.XtraEditors.TileItemClickEventHandler(this.tileItem12_ItemClick);
             // 
-            // tileItem2
-            // 
-            this.tileItem2.AppearanceItem.Normal.BackColor = System.Drawing.Color.SlateBlue;
-            this.tileItem2.AppearanceItem.Normal.BackColor2 = System.Drawing.Color.White;
-            this.tileItem2.AppearanceItem.Normal.BorderColor = System.Drawing.Color.Green;
-            this.tileItem2.AppearanceItem.Normal.Options.UseBackColor = true;
-            this.tileItem2.AppearanceItem.Normal.Options.UseBorderColor = true;
-            tileItemElement18.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image17")));
-            tileItemElement18.Text = "Özgün Rapor Sihirbazı";
-            this.tileItem2.Elements.Add(tileItemElement18);
-            this.tileItem2.Id = 25;
-            this.tileItem2.ItemSize = DevExpress.XtraEditors.TileItemSize.Medium;
-            this.tileItem2.Name = "tileItem2";
-            this.tileItem2.ItemClick += new DevExpress.XtraEditors.TileItemClickEventHandler(this.tileItem2_ItemClick);
-            // 
-            // tileItem19
-            // 
-            this.tileItem19.AppearanceItem.Normal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.tileItem19.AppearanceItem.Normal.BackColor2 = System.Drawing.Color.White;
-            this.tileItem19.AppearanceItem.Normal.BorderColor = System.Drawing.Color.Green;
-            this.tileItem19.AppearanceItem.Normal.Options.UseBackColor = true;
-            this.tileItem19.AppearanceItem.Normal.Options.UseBorderColor = true;
-            tileItemElement10.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image9")));
-            tileItemElement10.Text = "Sms";
-            this.tileItem19.Elements.Add(tileItemElement10);
-            this.tileItem19.Id = 26;
-            this.tileItem19.ItemSize = DevExpress.XtraEditors.TileItemSize.Medium;
-            this.tileItem19.Name = "tileItem19";
-            this.tileItem19.ItemClick += new DevExpress.XtraEditors.TileItemClickEventHandler(this.tileItem19_ItemClick);
-            // 
-            // tileItem5
-            // 
-            this.tileItem5.AppearanceItem.Normal.BackColor = System.Drawing.Color.DodgerBlue;
-            this.tileItem5.AppearanceItem.Normal.BackColor2 = System.Drawing.Color.White;
-            this.tileItem5.AppearanceItem.Normal.BorderColor = System.Drawing.Color.Green;
-            this.tileItem5.AppearanceItem.Normal.Options.UseBackColor = true;
-            this.tileItem5.AppearanceItem.Normal.Options.UseBorderColor = true;
-            tileItemElement17.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image16")));
-            tileItemElement17.Text = "Döviz Kurları";
-            this.tileItem5.Elements.Add(tileItemElement17);
-            this.tileItem5.Id = 15;
-            this.tileItem5.ItemSize = DevExpress.XtraEditors.TileItemSize.Medium;
-            this.tileItem5.Name = "tileItem5";
-            this.tileItem5.ItemClick += new DevExpress.XtraEditors.TileItemClickEventHandler(this.tileItem5_ItemClick);
-            // 
             // tileGroup2
             // 
-            this.tileGroup2.Items.Add(this.tileItem21);
             this.tileGroup2.Items.Add(this.tileItem4);
             this.tileGroup2.Items.Add(this.tileItem25);
-            this.tileGroup2.Items.Add(this.tileItem24);
-            this.tileGroup2.Items.Add(this.tileItem3);
-            this.tileGroup2.Items.Add(this.tileItem22);
-            this.tileGroup2.Items.Add(this.tileItem5);
-            this.tileGroup2.Items.Add(this.tileItem2);
             this.tileGroup2.Name = "tileGroup2";
             this.tileGroup2.Text = "Diğer İşlemler";
-            // 
-            // tileItem21
-            // 
-            this.tileItem21.AppearanceItem.Normal.BackColor = System.Drawing.Color.DodgerBlue;
-            this.tileItem21.AppearanceItem.Normal.BackColor2 = System.Drawing.Color.White;
-            this.tileItem21.AppearanceItem.Normal.BorderColor = System.Drawing.Color.Green;
-            this.tileItem21.AppearanceItem.Normal.Options.UseBackColor = true;
-            this.tileItem21.AppearanceItem.Normal.Options.UseBorderColor = true;
-            tileItemElement11.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image10")));
-            tileItemElement11.Text = "Ayarlar";
-            this.tileItem21.Elements.Add(tileItemElement11);
-            this.tileItem21.Id = 29;
-            this.tileItem21.ItemSize = DevExpress.XtraEditors.TileItemSize.Medium;
-            this.tileItem21.Name = "tileItem21";
-            this.tileItem21.ItemClick += new DevExpress.XtraEditors.TileItemClickEventHandler(this.tileItem21_ItemClick);
             // 
             // tileItem4
             // 
@@ -329,11 +251,11 @@ namespace NetSatis.BackOffice.Ana_Menü
             this.tileItem4.AppearanceItem.Normal.BorderColor = System.Drawing.Color.Green;
             this.tileItem4.AppearanceItem.Normal.Options.UseBackColor = true;
             this.tileItem4.AppearanceItem.Normal.Options.UseBorderColor = true;
-            tileItemElement12.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image11")));
-            tileItemElement12.Text = "Yedekleme";
-            this.tileItem4.Elements.Add(tileItemElement12);
+            tileItemElement11.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image10")));
+            tileItemElement11.Text = "Yedekleme";
+            this.tileItem4.Elements.Add(tileItemElement11);
             this.tileItem4.Id = 14;
-            this.tileItem4.ItemSize = DevExpress.XtraEditors.TileItemSize.Medium;
+            this.tileItem4.ItemSize = DevExpress.XtraEditors.TileItemSize.Wide;
             this.tileItem4.Name = "tileItem4";
             this.tileItem4.ItemClick += new DevExpress.XtraEditors.TileItemClickEventHandler(this.tileItem4_ItemClick);
             // 
@@ -344,63 +266,33 @@ namespace NetSatis.BackOffice.Ana_Menü
             this.tileItem25.AppearanceItem.Normal.BorderColor = System.Drawing.Color.Green;
             this.tileItem25.AppearanceItem.Normal.Options.UseBackColor = true;
             this.tileItem25.AppearanceItem.Normal.Options.UseBorderColor = true;
-            tileItemElement13.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image12")));
-            tileItemElement13.Text = "Web Sitemiz";
-            this.tileItem25.Elements.Add(tileItemElement13);
+            tileItemElement12.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image11")));
+            tileItemElement12.Text = "Web Sitemiz";
+            this.tileItem25.Elements.Add(tileItemElement12);
             this.tileItem25.Id = 36;
-            this.tileItem25.ItemSize = DevExpress.XtraEditors.TileItemSize.Medium;
+            this.tileItem25.ItemSize = DevExpress.XtraEditors.TileItemSize.Wide;
             this.tileItem25.Name = "tileItem25";
             // 
-            // tileItem24
+            // tileItem5
             // 
-            this.tileItem24.AppearanceItem.Normal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.tileItem24.AppearanceItem.Normal.BackColor2 = System.Drawing.Color.White;
-            this.tileItem24.AppearanceItem.Normal.BorderColor = System.Drawing.Color.Green;
-            this.tileItem24.AppearanceItem.Normal.Options.UseBackColor = true;
-            this.tileItem24.AppearanceItem.Normal.Options.UseBorderColor = true;
-            tileItemElement14.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image13")));
-            tileItemElement14.Text = "Hakkında";
-            this.tileItem24.Elements.Add(tileItemElement14);
-            this.tileItem24.Id = 32;
-            this.tileItem24.ItemSize = DevExpress.XtraEditors.TileItemSize.Medium;
-            this.tileItem24.Name = "tileItem24";
-            this.tileItem24.ItemClick += new DevExpress.XtraEditors.TileItemClickEventHandler(this.tileItem24_ItemClick);
-            // 
-            // tileItem3
-            // 
-            this.tileItem3.AppearanceItem.Normal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.tileItem3.AppearanceItem.Normal.BackColor2 = System.Drawing.Color.White;
-            this.tileItem3.AppearanceItem.Normal.BorderColor = System.Drawing.Color.Green;
-            this.tileItem3.AppearanceItem.Normal.Options.UseBackColor = true;
-            this.tileItem3.AppearanceItem.Normal.Options.UseBorderColor = true;
-            tileItemElement15.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image14")));
-            tileItemElement15.Text = "Güncelleme";
-            this.tileItem3.Elements.Add(tileItemElement15);
-            this.tileItem3.Id = 13;
-            this.tileItem3.ItemSize = DevExpress.XtraEditors.TileItemSize.Medium;
-            this.tileItem3.Name = "tileItem3";
-            this.tileItem3.ItemClick += new DevExpress.XtraEditors.TileItemClickEventHandler(this.tileItem3_ItemClick);
-            // 
-            // tileItem22
-            // 
-            this.tileItem22.AppearanceItem.Normal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.tileItem22.AppearanceItem.Normal.BackColor2 = System.Drawing.Color.White;
-            this.tileItem22.AppearanceItem.Normal.BorderColor = System.Drawing.Color.Green;
-            this.tileItem22.AppearanceItem.Normal.Options.UseBackColor = true;
-            this.tileItem22.AppearanceItem.Normal.Options.UseBorderColor = true;
-            tileItemElement16.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image15")));
-            tileItemElement16.Text = "Lisans Bilgileri";
-            this.tileItem22.Elements.Add(tileItemElement16);
-            this.tileItem22.Id = 30;
-            this.tileItem22.ItemSize = DevExpress.XtraEditors.TileItemSize.Medium;
-            this.tileItem22.Name = "tileItem22";
-            this.tileItem22.ItemClick += new DevExpress.XtraEditors.TileItemClickEventHandler(this.tileItem22_ItemClick);
+            this.tileItem5.AppearanceItem.Normal.BackColor = System.Drawing.Color.DodgerBlue;
+            this.tileItem5.AppearanceItem.Normal.BackColor2 = System.Drawing.Color.White;
+            this.tileItem5.AppearanceItem.Normal.BorderColor = System.Drawing.Color.Green;
+            this.tileItem5.AppearanceItem.Normal.Options.UseBackColor = true;
+            this.tileItem5.AppearanceItem.Normal.Options.UseBorderColor = true;
+            tileItemElement10.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image9")));
+            tileItemElement10.Text = "Döviz Kurları";
+            this.tileItem5.Elements.Add(tileItemElement10);
+            this.tileItem5.Id = 15;
+            this.tileItem5.ItemSize = DevExpress.XtraEditors.TileItemSize.Wide;
+            this.tileItem5.Name = "tileItem5";
+            this.tileItem5.ItemClick += new DevExpress.XtraEditors.TileItemClickEventHandler(this.tileItem5_ItemClick);
             // 
             // tileItem1
             // 
-            tileItemElement19.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image18")));
-            tileItemElement19.Text = "Stoklar";
-            this.tileItem1.Elements.Add(tileItemElement19);
+            tileItemElement13.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image12")));
+            tileItemElement13.Text = "Stoklar";
+            this.tileItem1.Elements.Add(tileItemElement13);
             this.tileItem1.Id = 0;
             this.tileItem1.Name = "tileItem1";
             this.tileItem1.ItemClick += new DevExpress.XtraEditors.TileItemClickEventHandler(this.tileItem1_ItemClick);
@@ -431,18 +323,12 @@ namespace NetSatis.BackOffice.Ana_Menü
         private DevExpress.XtraEditors.TileItem tileItem6;
         private DevExpress.XtraEditors.TileItem tileItem7;
         private DevExpress.XtraEditors.TileGroup tileGroup2;
-        private DevExpress.XtraEditors.TileItem tileItem3;
         private DevExpress.XtraEditors.TileItem tileItem4;
         private DevExpress.XtraEditors.TileItem tileItem5;
         private DevExpress.XtraEditors.TileItem tileItem8;
         private DevExpress.XtraEditors.TileItem tileItem14;
         private DevExpress.XtraEditors.TileItem tileItem1;
-        private DevExpress.XtraEditors.TileItem tileItem2;
-        private DevExpress.XtraEditors.TileItem tileItem19;
         private DevExpress.XtraEditors.TileItem tileItem20;
-        private DevExpress.XtraEditors.TileItem tileItem21;
-        private DevExpress.XtraEditors.TileItem tileItem22;
-        private DevExpress.XtraEditors.TileItem tileItem24;
         private DevExpress.XtraEditors.TileItem tileItem25;
     }
 }

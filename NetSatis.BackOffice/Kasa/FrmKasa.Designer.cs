@@ -240,7 +240,10 @@ namespace NetSatis.BackOffice.Kasa
             this.layoutView1.DetailHeight = 437;
             this.layoutView1.GridControl = this.gridcontKasalar;
             this.layoutView1.HiddenItems.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
-            this.layoutViewField_colId});
+            this.layoutViewField_colId,
+            this.layoutViewField_colKasaGiris,
+            this.layoutViewField_colKasaCikis,
+            this.layoutViewField_colBakiye});
             this.layoutView1.Name = "layoutView1";
             this.layoutView1.TemplateCard = this.layoutViewCard1;
             // 
@@ -369,9 +372,9 @@ namespace NetSatis.BackOffice.Kasa
             // layoutViewField_colKasaCikis
             // 
             this.layoutViewField_colKasaCikis.EditorPreferredWidth = 99;
-            this.layoutViewField_colKasaCikis.Location = new System.Drawing.Point(0, 128);
+            this.layoutViewField_colKasaCikis.Location = new System.Drawing.Point(0, 102);
             this.layoutViewField_colKasaCikis.Name = "layoutViewField_colKasaCikis";
-            this.layoutViewField_colKasaCikis.Size = new System.Drawing.Size(211, 26);
+            this.layoutViewField_colKasaCikis.Size = new System.Drawing.Size(211, 52);
             this.layoutViewField_colKasaCikis.TextSize = new System.Drawing.Size(96, 16);
             // 
             // colBakiye
@@ -389,9 +392,9 @@ namespace NetSatis.BackOffice.Kasa
             // layoutViewField_colBakiye
             // 
             this.layoutViewField_colBakiye.EditorPreferredWidth = 99;
-            this.layoutViewField_colBakiye.Location = new System.Drawing.Point(0, 154);
+            this.layoutViewField_colBakiye.Location = new System.Drawing.Point(0, 102);
             this.layoutViewField_colBakiye.Name = "layoutViewField_colBakiye";
-            this.layoutViewField_colBakiye.Size = new System.Drawing.Size(211, 26);
+            this.layoutViewField_colBakiye.Size = new System.Drawing.Size(211, 78);
             this.layoutViewField_colBakiye.TextSize = new System.Drawing.Size(96, 16);
             // 
             // colSatisOzelFiyati
@@ -406,9 +409,9 @@ namespace NetSatis.BackOffice.Kasa
             // layoutViewField_colSatisOzelFiyati
             // 
             this.layoutViewField_colSatisOzelFiyati.EditorPreferredWidth = 99;
-            this.layoutViewField_colSatisOzelFiyati.Location = new System.Drawing.Point(0, 180);
+            this.layoutViewField_colSatisOzelFiyati.Location = new System.Drawing.Point(0, 102);
             this.layoutViewField_colSatisOzelFiyati.Name = "layoutViewField_colSatisOzelFiyati";
-            this.layoutViewField_colSatisOzelFiyati.Size = new System.Drawing.Size(211, 26);
+            this.layoutViewField_colSatisOzelFiyati.Size = new System.Drawing.Size(211, 104);
             this.layoutViewField_colSatisOzelFiyati.TextSize = new System.Drawing.Size(96, 16);
             // 
             // colAciklama
@@ -437,9 +440,6 @@ namespace NetSatis.BackOffice.Kasa
             this.layoutViewField_colKasaAdi,
             this.layoutViewField_colYetkiliKodu,
             this.layoutViewField_colYetkiliAdi,
-            this.layoutViewField_colKasaGiris,
-            this.layoutViewField_colKasaCikis,
-            this.layoutViewField_colBakiye,
             this.layoutViewField_colSatisOzelFiyati,
             this.layoutViewField_colAciklama});
             this.layoutViewCard1.Name = "layoutViewCard1";
