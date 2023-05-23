@@ -3,6 +3,8 @@ using NetSatis.BackOffice.Ajanda;
 using NetSatis.BackOffice.Cari;
 using NetSatis.BackOffice.Depo;
 using NetSatis.BackOffice.DövizKurları;
+using NetSatis.BackOffice.FiyatDegistir;
+using NetSatis.BackOffice.İndirim;
 using NetSatis.BackOffice.Kasa;
 using NetSatis.BackOffice.ÖdemeTürü;
 using NetSatis.BackOffice.Personel;
@@ -56,7 +58,8 @@ namespace NetSatis.BackOffice.Ana_Menü
 
         private void tileItem8_ItemClick(object sender, TileItemEventArgs e)
         {
-
+            FrmIndirim form = new FrmIndirim();
+            form.Show();
         }
 
         private void tileItem18_ItemClick(object sender, TileItemEventArgs e)
@@ -94,7 +97,8 @@ namespace NetSatis.BackOffice.Ana_Menü
 
         private void tileItem14_ItemClick(object sender, TileItemEventArgs e)
         {
-
+            FrmTopluFiyat form = new FrmTopluFiyat();
+            form.Show();
         }
 
         private void tileItem13_ItemClick(object sender, TileItemEventArgs e)
