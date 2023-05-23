@@ -182,7 +182,7 @@ namespace NetSatis.BackOffice
             // 
             // barButtonItem6
             // 
-            this.barButtonItem6.Caption = "Plasiyerler";
+            this.barButtonItem6.Caption = "Personel";
             this.barButtonItem6.Id = 6;
             this.barButtonItem6.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem6.ImageOptions.Image")));
             this.barButtonItem6.Name = "barButtonItem6";
